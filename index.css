@@ -16,6 +16,11 @@ body {
     animation: spin 10s linear infinite;
     scale: 1.7;
 }
+@media(max-width:700px){
+    .frame{
+        scale: 1.5;
+    }
+}
 .frame div {
     position: absolute;
     width: 100%;
@@ -23,7 +28,6 @@ body {
     border: 0.5px solid #eff7f810;
     border-radius: 37% 38% 49% 51% / 41% 43% 57% 60%;
     transform-origin: bottom center;
-
     rotate: calc(36deg * var(--d));
 }
 .frame div:nth-child(odd) {
