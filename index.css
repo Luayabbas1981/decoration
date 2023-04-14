@@ -32,12 +32,26 @@ body {
 }
 .frame div:nth-child(odd) {
     background-color: #03a9f40d;
+    scale: 0 1;
+    animation: scale 8s ease-in-out infinite alternate-reverse ;
 }
 .frame div:nth-child(even) {
     background-color: #ff980017;
+   animation: color 2s 6s linear infinite alternate-reverse;
 }
 @keyframes spin {
     from {
         rotate: 360deg;
+    }
+}
+@keyframes scale {
+   
+    to{
+        scale: 1 1;
+    }
+}
+@keyframes color {
+    to{
+        background-color: #00d5ff17;
     }
 }
