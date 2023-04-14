@@ -13,7 +13,7 @@ body {
     width: 120px;
     height: 120px;
     transform-origin: bottom center;
-      animation: spin 8s linear infinite;  
+      animation: spin 5s linear infinite;  
     scale: 1.7;
 }
 @media(max-width:700px){
@@ -33,15 +33,15 @@ body {
    
 }
 .frame div:nth-child(odd) {
-    background-color: #03a9f40d;
+    background-color: #036bf40d;
     top: 19px;
     height: 85%;
     scale: 0 1;
      animation: scale 8s ease-in-out infinite alternate-reverse ;  
 }
 .frame div:nth-child(even) { 
-    background-color: #ff980017;
-     animation: color 2s 6s linear infinite alternate-reverse;  
+    background-color: #ffbb0017;
+     animation: color 4s 6s ease-in-out infinite alternate-reverse;  
 }
 @keyframes spin {
     from {
