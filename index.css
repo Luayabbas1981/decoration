@@ -26,21 +26,21 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 0.5px solid #eff7f810;
+    border: 0.5px solid #eff7f815;
     border-radius: 50% 50% 50% 50% / 35% 36% 65% 65% ;
     transform-origin: bottom center;
     rotate: calc(36deg * var(--d));
    
 }
 .frame div:nth-child(odd) {
-    background-color: #dcf4030d;
+    background-color: #ffd50014;
     top: 19px;
     height: 85%;
     scale: 0 1;
      animation: scale 8s ease-in-out infinite alternate-reverse ;  
 }
 .frame div:nth-child(even) { 
-    background-color: #ff080017;
+    background-color: #ff080022;
      animation: color 4s 6s ease-in-out infinite alternate-reverse;  
 }
 @keyframes spin {
