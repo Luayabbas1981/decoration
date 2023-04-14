@@ -13,7 +13,7 @@ body {
     width: 120px;
     height: 120px;
     transform-origin: bottom center;
-      animation: spin 5s linear infinite;  
+      animation: spin 4s linear infinite;  
     scale: 1.7;
 }
 @media(max-width:700px){
