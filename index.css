@@ -33,14 +33,14 @@ body {
    
 }
 .frame div:nth-child(odd) {
-    background-color: #036bf40d;
+    background-color: #dcf4030d;
     top: 19px;
     height: 85%;
     scale: 0 1;
      animation: scale 8s ease-in-out infinite alternate-reverse ;  
 }
 .frame div:nth-child(even) { 
-    background-color: #ffbb0017;
+    background-color: #ff080017;
      animation: color 4s 6s ease-in-out infinite alternate-reverse;  
 }
 @keyframes spin {
