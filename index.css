@@ -19,6 +19,7 @@ body {
 @media(max-width:700px){
     .frame{
         scale: 1.2;
+        
     }
 }
 .frame div {
