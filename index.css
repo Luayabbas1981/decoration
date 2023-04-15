@@ -47,7 +47,7 @@ body {
 }
 .odd {
     background-color: #ffd50014;
-    top: 22px;
+    top: 15%;
     height: 85%;
     scale: 0 1;
     animation: scale 6s ease-in-out infinite alternate-reverse ;  
