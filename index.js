@@ -8,6 +8,7 @@ const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
 const magnifyingPlus = document.querySelector("#magnifying-plus")
 const magnifyingMinus = document.querySelector("#magnifying-minus")
+const infosContainer = document.querySelector(".infos-container")
 
 
 
@@ -17,7 +18,7 @@ oddDivs.map(item=> item.classList.add("even-animi"))
 function evenColor (color){
    
         divsArray.map((item,i)=>{
-            return i % 2 === 0? item.setAttribute("id",`${color}`):""
+            return i % 2 === 0? "":item.setAttribute("id",`${color}`)
         })
   
     color1.textContent=color.toUpperCase()
@@ -26,7 +27,7 @@ function evenColor (color){
 function oddColor (color){
     
     divsArray.map((item,i)=>{
-        return i % 2 === 0? "":item.setAttribute("id",`${color}`)
+        return i % 2 === 0? item.setAttribute("id",`${color}`):""
     })
 
 color2.textContent=color.toUpperCase()
@@ -46,11 +47,16 @@ color2.style=`color:${color}`
     magnifyingPlus.classList.toggle("f-screen")
     frame.classList.toggle("frame-center")
     magnifyingMinus.classList.toggle("f-screen")
+   
  }
  function glass(){
     frame.classList.toggle("frame-magnifying")
     magnifyingPlus.classList.toggle("f-screen")
  }
+ function showInfos (){
+    infosContainer.classList.toggle("show-infos")
+ }
+ 
 function resetApp(){
     location.reload()
 }

@@ -2,7 +2,7 @@ body {
 
     height: 100vh;
     font-family: "Noto Sans", sans-serif;
-    background-color: #000;
+   background-color: #000;
     overflow: hidden;
   
 }
@@ -120,7 +120,8 @@ body {
 .fc , .sc{
     display: flex;
     justify-content: center;
-    column-gap: 2rem;
+    column-gap: 2rem
+    
 }
 .fc >div , .sc>div{
    
@@ -136,6 +137,12 @@ body {
     opacity: .7;
     scale: 1.3 1;
     color: #aaa;
+}
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
 }
 button{
    
@@ -170,3 +177,40 @@ button{
     background-color: #ff980014;
 }
 
+#infos{
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    font-size: 20px;
+    color: white;
+}
+
+.infos-container{
+    position: fixed;
+    top: 5%;
+    left: 9%;
+    width: 300px;
+    height: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    color: #777;
+    background-color: #eee;
+   font-size: 14px;
+   transform-origin: top left;
+   scale: 0;
+}
+.show-infos{
+animation: show-infos .7s linear forwards;
+
+}
+
+@keyframes show-infos{
+    to{
+        scale: 1;
+    }
+}
+
+.infos-container >h2, h6{
+    text-align: center;
+}
