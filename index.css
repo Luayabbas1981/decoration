@@ -61,7 +61,7 @@ body {
     background-color: #ff080022;
 }
 .even-animi{
-    animation: color 4s 5s ease-in-out infinite alternate-reverse;   
+    animation: color 4s 5s linear infinite alternate-reverse;   
 
 }
 @keyframes spin {
