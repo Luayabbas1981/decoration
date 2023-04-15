@@ -6,7 +6,8 @@ const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
 const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
-const magnifying = document.querySelector("#magnifying")
+const magnifyingPlus = document.querySelector("#magnifying-plus")
+const magnifyingMinus = document.querySelector("#magnifying-minus")
 
 
 
@@ -43,12 +44,12 @@ color2.style=`color:${color}`
     controls.classList.toggle("f-screen")
     upArrow.classList.toggle("f-screen")
     magnifying.classList.toggle("f-screen")
-    
     frame.classList.toggle("frame-center")
     
  }
  function glass(){
-    controls.style="--b:1.5"
+    frame.classList.toggle("frame-magnifying")
+    magnifyingPlus.classList.toggle("f-screen")
  }
 function resetApp(){
     location.reload()
