@@ -197,7 +197,7 @@ button{
     border-top-left-radius: 0;
     color: #777;
     background-color: #eee;
-   font-size: 12px;
+   font-size: 13px;
    transform-origin: top left;
    scale: 0;
 }
@@ -217,6 +217,6 @@ animation: show-infos .7s linear forwards;
     }
 }
 
-.infos-container >h2, h6{
+.infos-container >h2, h5{
     text-align: center;
 }
