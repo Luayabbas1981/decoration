@@ -176,20 +176,25 @@ button{
 #orange{
     background-color: #ff980014;
 }
+.infos-sec{
+    position: relative;
+    top: -100px;
+    left: -30px;
 
+}
 #infos{
-    position: fixed;
-    top: 3%;
-    left: 5%;
+    position: absolute;
+    top: 10px;
+    left: 50px;
     font-size: 20px;
     color: white;
     animation: infos-symbol 1s 4 alternate;
 }
 
 .infos-container{
-    position: fixed;
-    top: 6%;
-    left: 8%;
+    position: absolute;
+    top: 30px;
+    left: 65px;
     width: 250px;
     height: 340px;
     padding: 1rem;
