@@ -43,9 +43,9 @@ color2.style=`color:${color}`
  function fullScreen(){
     controls.classList.toggle("f-screen")
     upArrow.classList.toggle("f-screen")
-    magnifying.classList.toggle("f-screen")
+    magnifyingPlus.classList.toggle("f-screen")
     frame.classList.toggle("frame-center")
-    
+    magnifyingMinus.classList.toggle("f-screen")
  }
  function glass(){
     frame.classList.toggle("frame-magnifying")
