@@ -5,6 +5,7 @@ const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
 const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
+const magnifying = document.querySelector("#magnifying")
 
 
 
@@ -40,6 +41,10 @@ color2.style=`color:${color}`
  function fullScreen(){
     controls.classList.toggle("f-screen")
     upArrow.classList.toggle("f-screen")
+    magnifying.classList.toggle("f-screen")
+ }
+ function glass(){
+    controls.style="--b:1.5"
  }
 function resetApp(){
     location.reload()
