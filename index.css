@@ -18,9 +18,10 @@ body > i{
     font-size: xx-large;
 }
 .frame {
+    margin-top: 50px;
    margin-bottom: 220px;
-    width:150px;
-    height: 150px;
+    width:145px;
+    height: 145px;
     transform-origin: bottom center;
     animation: spin 4s linear infinite;  
    
@@ -81,6 +82,11 @@ body > i{
     background-color: #aaaaaa00;
   
 }
+@media (max-width:700px){
+    .controls{
+        scale: .7;
+    }
+}
 .f-screen{
   
      display: none; 
@@ -133,7 +139,7 @@ button{
 
 }
 #yellow{
-    background-color: #ffd90022;
+    background-color: #ffd90014;
 
 }
 #red{
