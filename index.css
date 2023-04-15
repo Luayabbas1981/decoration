@@ -18,7 +18,7 @@ body > i{
     font-size: xx-large;
 }
 .frame {
-    margin-top: 50px;
+    margin-top: 80px;
    margin-bottom: 220px;
     width:145px;
     height: 145px;
@@ -96,7 +96,7 @@ body > i{
     position: absolute;
     font-size: xx-large;
     top: 190px;
-    right: 8px;
+    right: -20px;
     color: #ffffff69;
 }
 
