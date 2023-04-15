@@ -3,6 +3,8 @@ const oddDivs = Array.from(document.querySelectorAll(".even"))
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
+const controls = document.querySelector(".controls")
+const upArrow = document.querySelector("#up-arrow")
 
 
 
@@ -35,7 +37,10 @@ color2.style=`color:${color}`
         return item.classList.toggle("even-animi")
     })
     }
- 
+ function fullScreen(){
+    controls.classList.toggle("f-screen")
+    upArrow.classList.toggle("f-screen")
+ }
 function resetApp(){
     location.reload()
 }

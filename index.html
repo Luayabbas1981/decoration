@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>decoration</title>
 </head>
 <body>
@@ -36,16 +37,16 @@
     <section class="controls">
       
         <div class="fc">
-            <div onclick="evenColor(`green`)" style="background-color:#86d92590;"></div>
-            <div onclick="evenColor(`violet`)" style="background-color:#e80bd690;"></div>
-            <div onclick="evenColor(`yellow`)" style="background-color:#f2db0890;"></div>
+            <div onclick="evenColor(`green`)" style="background-color:#64b507;"></div>
+            <div onclick="evenColor(`blueviolet`)" style="background-color:#a30195;"></div>
+            <div onclick="evenColor(`yellow`)" style="background-color:#d0bb02;"></div>
         </div>
         <div class="color1">standard color</div>
       
         <div class="sc">
-            <div onclick="oddColor(`red`)" style="background-color:#f2080890;"></div>
-            <div onclick="oddColor(`blue`)" style="background-color:#0881f290;"></div>
-            <div onclick="oddColor(`orange`)" style="background-color:#ff980090;" ></div>
+            <div onclick="oddColor(`red`)" style="background-color:#c80303;"></div>
+            <div onclick="oddColor(`blue`)" style="background-color:#0787fe;"></div>
+            <div onclick="oddColor(`orange`)" style="background-color:#ff9800;" ></div>
         </div>
         <div class="color2">standard color</div>
         <div>
@@ -53,7 +54,9 @@
             <button class="color3" onclick="thirdColor()">3rd color off</button>
             <button onclick="resetApp()">Reset</button>
         </div>
+        <i class="fa-solid fa-angles-down" onclick="fullScreen()"></i>
     </section>
+    <i id="up-arrow" class="fa-solid fa-angles-up f-screen" onclick="fullScreen()" ></i>
  <script src="index.js"></script>
 </body>
 </html>
