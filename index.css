@@ -7,9 +7,9 @@ body {
 
 
 .frame {
-    margin: 80px auto 200px auto;
-    width:130px;
-    height: 130px;
+    margin: 40px auto 200px auto;
+    width:140px;
+    height: 140px;
     transform-origin: bottom center;
     animation: spin 4s linear infinite;  
    
