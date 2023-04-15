@@ -1,4 +1,4 @@
-const divsArray =  Array.from(document.getElementsByTagName(".frame > div"))
+const divsArray =  Array.from(document.querySelectorAll(".frame > div"))
 const oddDivs = Array.from(document.querySelectorAll(".even"))
 const frame = document.querySelector(".frame")
 const color1 = document.querySelector(".color1")
