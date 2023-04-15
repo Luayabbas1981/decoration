@@ -94,7 +94,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
-    row-gap: 1.5rem;
+    row-gap: 1rem;
     background-color: #aaaaaa00;
   
 }
@@ -111,7 +111,7 @@ body {
 }
 .controls >i{
     position: absolute;
-    font-size: xx-large;
+    font-size:  x-large;
     top: 100px;
     right: 5px;
     color: #ffffff69;
@@ -151,7 +151,7 @@ button{
    
     width: 140px;
     height: 35px;
-    font-size: 19px;
+    font-size: 15px;
     font-style: italic;
     font-weight: bold;
     border-radius: 1rem;
