@@ -11,7 +11,7 @@ body {
 
 body > i{
     position: absolute;
-    top: 72%;
+    top: 85%;
     left: 50%;
     translate: -50%;
     color: #fff;
@@ -23,7 +23,7 @@ body > i{
     width:145px;
     height: 145px;
     transform-origin: bottom center;
-    animation: spin 4s linear infinite;  
+    animation: spin 3.3s linear infinite;  
    
 }
 
@@ -42,7 +42,7 @@ body > i{
     top: 25px;
     height: 85%;
     scale: 0 1;
-    animation: scale 8s ease-in-out infinite alternate-reverse ;  
+    animation: scale 6s ease-in-out infinite alternate-reverse ;  
 }
 .even { 
     background-color: #ff080022;
