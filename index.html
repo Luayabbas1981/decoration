@@ -5,31 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap" rel="stylesheet">
     <title>decoration</title>
 </head>
 <body>
-    <div class="frame">
-        <div class="leave1" style="--d:1"></div>
-        <div class="leave2" style="--d:2"></div>
-        <div class="leave3" style="--d:3"></div>
-        <div class="leave4" style="--d:4"></div>
-        <div class="leave5" style="--d:5"></div>
-        <div class="leave6" style="--d:6"></div>
-        <div class="leave7" style="--d:7"></div>
-        <div class="leave8" style="--d:8"></div>
-        <div class="leave9" style="--d:9"></div>
-        <div class="leave10" style="--d:10"></div>
-        <div class="leave11" style="--d:11"></div>
-        <div class="leave12" style="--d:12"></div>
-        <div class="leave13" style="--d:13"></div>
-        <div class="leave14" style="--d:14"></div>
-        <div class="leave15" style="--d:15"></div>
-        <div class="leave16" style="--d:16"></div>
-        <div class="leave17" style="--d:17"></div>
-        <div class="leave18" style="--d:18"></div>
-        <div class="leave19" style="--d:19"></div>
-        <div class="leave20" style="--d:20"></div>
-    </div>
- 
+    <section class="frame">
+        <div class="odd" style="--d:1"></div>
+        <div class="even" style="--d:2"></div>
+        <div class="odd" style="--d:3"></div>
+        <div class="even" style="--d:4"></div>
+        <div class="odd" style="--d:5"></div>
+        <div class="even" style="--d:6"></div>
+        <div class="odd" style="--d:7"></div>
+        <div class="even" style="--d:8"></div>
+        <div class="odd" style="--d:9"></div>
+        <div class="even" style="--d:10"></div>
+        <div class="odd" style="--d:11"></div>
+        <div class="even" style="--d:12"></div>
+        <div class="odd" style="--d:13"></div>
+        <div class="even" style="--d:14"></div>
+        <div class="odd" style="--d:15"></div>
+        <div class="even" style="--d:16"></div>
+        <div class="odd" style="--d:17"></div>
+        <div class="even" style="--d:18"></div>
+        <div class="odd" style="--d:19"></div>
+        <div class="even" style="--d:20"></div>
+    </section>
+    <section class="controls">
+      
+        <div class="fc">
+            <div onclick="evenColor(`green`)" style="background-color:#86d92590;"></div>
+            <div onclick="evenColor(`violet`)" style="background-color:#e80bd690;"></div>
+            <div onclick="evenColor(`yellow`)" style="background-color:#f2db0890;"></div>
+        </div>
+        <div class="color1">standard color</div>
+      
+        <div class="sc">
+            <div onclick="oddColor(`red`)" style="background-color:#f2080890;"></div>
+            <div onclick="oddColor(`blue`)" style="background-color:#0881f290;"></div>
+            <div onclick="oddColor(`orange`)" style="background-color:#ff980090;" ></div>
+        </div>
+        <div class="color2">standard color</div>
+        <div>
+
+            <button class="color3" onclick="thirdColor()">3rd color off</button>
+            <button onclick="resetApp()">Reset</button>
+        </div>
+    </section>
+ <script src="index.js"></script>
 </body>
 </html>
