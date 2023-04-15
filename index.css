@@ -1,7 +1,5 @@
 body {
     height: 100vh;
-    
-  
     font-family: "Noto Sans", sans-serif;
     overflow: hidden;
     background-color: #000;
@@ -9,9 +7,9 @@ body {
 
 
 .frame {
-    margin: 80px auto 250px auto;
-    width:150px;
-    height: 150px;
+    margin: 80px auto 200px auto;
+    width:130px;
+    height: 130px;
     transform-origin: bottom center;
     animation: spin 4s linear infinite;  
    
@@ -19,7 +17,7 @@ body {
 @media(max-width:700px){
     
     .controls{
-        scale: .8;
+        scale: .9 ;
     }
 }
 .odd, .even {
@@ -76,7 +74,7 @@ body {
 .fc , .sc{
     display: flex;
     justify-content: center;
-    column-gap: 1rem;
+    column-gap: 2rem;
 }
 .fc >div , .sc>div{
    
