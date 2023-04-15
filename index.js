@@ -1,5 +1,6 @@
 const divsArray =  Array.from(document.getElementsByTagName("div"))
 const oddDivs = Array.from(document.querySelectorAll(".even"))
+const frame = document.querySelector(".frame")
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
@@ -42,6 +43,9 @@ color2.style=`color:${color}`
     controls.classList.toggle("f-screen")
     upArrow.classList.toggle("f-screen")
     magnifying.classList.toggle("f-screen")
+    
+    frame.classList.toggle("frame-center")
+    
  }
  function glass(){
     controls.style="--b:1.5"

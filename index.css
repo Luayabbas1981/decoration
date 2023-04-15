@@ -34,7 +34,9 @@ body {
     animation: spin 3.3s linear infinite;  
     
 }
-
+.frame-center{
+    top: 28%;
+}
 .odd, .even {
     position: absolute;
     width: 100%;
@@ -78,7 +80,7 @@ body {
 
 .controls{
     position: relative;
-    top: 30%;
+    top: 28%;
     left: 50%;
     translate: -50%;
     width: 300px;
@@ -97,12 +99,7 @@ body {
     .controls{
         scale: .7;
     }
-    @keyframes scale {
    
-        to{
-            scale: .8 1;
-        }
-    }
 } */
 .f-screen{
   
