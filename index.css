@@ -14,7 +14,7 @@ body > i{
     top: 85%;
     left: 50%;
     translate: -50%;
-    color: #fff;
+    color: #ffffff6e;
     font-size: xx-large;
 }
 .frame {
@@ -95,9 +95,9 @@ body > i{
 .controls >i{
     position: absolute;
     font-size: xx-large;
-    top: 200px;
+    top: 190px;
     right: 8px;
-    color: white;
+    color: #ffffff69;
 }
 
 .fc , .sc{
