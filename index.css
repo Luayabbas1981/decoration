@@ -158,10 +158,13 @@ button{
     background-color: #999;
     color: #ffffff;
 }
-@media(max-width:400px){
+@media(max-width:420px){
+    .controls{
+        scale: 1 .8;
+    }
     button{
-        height: fit-content;
-        font-size: 12px;
+        
+        font-size: 15px;
     } 
 }
 
