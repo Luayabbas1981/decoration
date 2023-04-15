@@ -243,6 +243,6 @@ animation: show-infos .6s linear forwards;
     left: 8px;
     height: 200px;
     font-size: 11px;
-    color: rgb(251, 74, 30);
+    color: rgb(251, 30, 30);
     writing-mode: vertical-rl;
 }
