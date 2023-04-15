@@ -25,7 +25,7 @@ body {
 }
 .frame {
     position: relative;
-    top: 10%;
+    top: 5%;
     left: 50%;
     translate: -50%;
     width:145px;
@@ -78,7 +78,7 @@ body {
 
 .controls{
     position: relative;
-    top: 35%;
+    top: 30%;
     left: 50%;
     translate: -50%;
     width: 300px;
@@ -112,8 +112,8 @@ body {
 .controls >i{
     position: absolute;
     font-size: xx-large;
-    top: 190px;
-    right: -20px;
+    top: 100px;
+    right: 5px;
     color: #ffffff69;
 }
 
