@@ -15,6 +15,23 @@ const infosContainer = document.querySelector(".infos-container")
 oddDivs.map(item=> item.classList.add("even-animi"))
 
 
+function setSecondMove (){
+    if((divsArray[0].style="--d:1")){
+        let x= 0
+        for(i=0;i<divsArray.length;++i){ 
+            x+= .5
+            divsArray[i].style=`--d:${x}`  
+        } 
+        return
+    } 
+}
+function setFirstMove (){
+        for(i=0;i<=divsArray.length;++i){ 
+            console.log(i)
+            divsArray[i].style=`--d:${i}`   
+        } 
+    }
+
 function evenColor (color){
    
         divsArray.map((item,i)=>{

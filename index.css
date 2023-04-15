@@ -150,8 +150,7 @@ body {
 button{
    
     width: 140px;
-    height: 35px;
-    font-size: 19px;
+    font-size: 12px;
     font-style: italic;
     font-weight: bold;
     border-radius: 1rem;
@@ -236,6 +235,6 @@ animation: show-infos .6s linear forwards;
     left: 8px;
     height: 200px;
     font-size: 11px;
-    color: red;
+    color: rgb(251, 74, 30);
     writing-mode: vertical-rl;
 }
