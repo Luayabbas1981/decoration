@@ -94,6 +94,12 @@ body {
     .controls{
         scale: .7;
     }
+    @keyframes scale {
+   
+        to{
+            scale: .8 1;
+        }
+    }
 }
 .f-screen{
   
