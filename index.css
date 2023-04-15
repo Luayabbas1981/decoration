@@ -31,7 +31,7 @@ body {
     width:145px;
     height: 145px;
     transform-origin: bottom center;
-    animation: spin 3.3s linear infinite;  
+    animation: spin 4s linear infinite;  
     
 }
 .frame-center{
@@ -61,7 +61,7 @@ body {
     background-color: #ff080022;
 }
 .even-animi{
-    animation: colo 4s 6s ease-in-out infinite alternate-reverse;   
+    animation: color 4s 5s ease-in-out infinite alternate-reverse;   
 
 }
 @keyframes spin {
@@ -77,7 +77,7 @@ body {
 }
  @keyframes color {
     to{
-        background-color: #00d5ff17;
+        background-color: #00f2ff17;
     }
 } 
 
