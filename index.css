@@ -152,12 +152,12 @@ body {
 }
 button{
     width: 140px;
-    height: 35px;
+    height: 32px;
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
     border-radius: 1rem;
-    background-color: #aeacac;
+    background-color: #cbc9c9;
     color: #ffffff;
 }
 @media(max-width:420px){
