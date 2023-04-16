@@ -113,24 +113,7 @@ color2.style=`background-color:${color}`
 
 
     }
-    /* function colorReset(){
-        divsArray.map((item,i)=>{
-            return i % 2 === 0? "":item.setAttribute( "style",`--d:${i+=.5} ;--c:#ffd50014`)
-        })
-        divsArray.map((item,i)=>{
-            return i % 2 === 0? item.setAttribute ("style",`--d:${i+=1} ;--c:#ff080022`):""
-        })
-  
-    } */
- /* function fullScreen(){
-    frame.classList.remove("frame-magnifying")
-    controls.classList.toggle("f-screen")
-    upArrow.classList.toggle("f-screen")
-    magnifyingPlus.classList.toggle("f-screen")
-    magnifyingMinus.classList.toggle("f-screen")
-    frame.classList.toggle("frame-center")
    
- } */
  function fullScreen(){
     
     frame.classList.add("frame-center")
