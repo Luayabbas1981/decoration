@@ -115,7 +115,7 @@ body {
     font-size:  x-large;
     top: 100px;
     right: 5px;
-    color: #ffffff69;
+    color: #ffffffcd;
 }
 
 .fc , .sc{
@@ -170,6 +170,20 @@ button{
     .controls{
         top: 40%;
         scale: 1.4;
+    }
+}
+@media(min-width:1200px){
+    .infos-sec{
+        position: absolute;
+        translate: 250px 40px;
+        scale: 1.4;
+    
+    }
+    @keyframes infos-symbol{
+        to{
+            scale: 1.6;
+            color: gold;
+        }
     }
 }
 #green{
