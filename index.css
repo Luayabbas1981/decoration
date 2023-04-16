@@ -178,7 +178,9 @@ button{
     } 
 }
 @media(min-width:800px){
-   
+   .frame-center{
+    top: 25%;
+   }
     .controls{
         top: 40%;
         scale: 1.4;
