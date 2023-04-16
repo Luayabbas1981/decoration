@@ -87,7 +87,7 @@ body {
     top: 28%;
     left: 50%;
     translate: -50%;
-    width: /* 300px */320px;
+    width: 320px;
     height:270px ;
     padding: 1rem;
     display: flex;
@@ -114,7 +114,7 @@ body {
     position: absolute;
     font-size:  x-large;
     top: 100px;
-    right: 5px;
+    right: 16px;
     color: #ffffffcd;
 }
 
@@ -125,12 +125,22 @@ body {
     
 }
 .fc >div , .sc>div{
-   
+   position: relative;
     width: 40px;
     height: 35px;
-    border-radius: 30% 70% 70% 30% / 30% 44% 56% 70% ;
+    border-radius: 63% 37% 32% 68% / 52% 70% 30% 48%   ;
     border: 1px solid;
     
+}
+.fc >div::before , .sc>div::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: #000;
 }
 .color1,.color2{
     height: 20px;
