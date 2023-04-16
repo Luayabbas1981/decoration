@@ -39,7 +39,7 @@ function evenColor (color){
         })
   
     color1.textContent=color.toUpperCase()
-    color1.style=`color:${color}`
+    color1.style=`background-color:${color}`
 }
 function oddColor (color){
     
@@ -48,7 +48,7 @@ function oddColor (color){
     })
 
 color2.textContent=color.toUpperCase()
-color2.style=`color:${color}`
+color2.style=`background-color:${color}`
 }
 
  function thirdColor(){
