@@ -15,10 +15,10 @@ const twentyBtn = document.querySelector(".twenty")
 letcolorArray= [ "yellow","red","blue","cyan","lightblue","coral","darkorange","deebskyblue","gold","hotpink","chocolate","lightsalmon","orchid"]
 
 oddDivs.map(item=> item.classList.add("even-animi"))
-twentyBtn.style="color:#ffeb3b"
+twentyBtn.style="color:#0079b3"
 
 function setFirstMove (){
-    tenBtn.style="color:#ffeb3b"
+    tenBtn.style="color:#0079b3"
     twentyBtn.style="color:white"
     if((divsArray[0].style="--d:1")){
         let x= 0
@@ -30,7 +30,7 @@ function setFirstMove (){
     } 
 }
 function setSecondMove (){
-    twentyBtn.style="color:#ffeb3b"
+    twentyBtn.style="color:#0079b3"
     tenBtn.style="color:white"
         for(i=0;i<=divsArray.length;++i){ 
             console.log(i)
