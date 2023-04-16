@@ -68,6 +68,10 @@ color2.style=`background-color:${color}`
     })
     }
     function randomColor (){
+        color1.style="background-color:black"
+        color2.style="background-color:black"
+        color1.textContent="1st color"
+        color2.textContent="2nd color"
         color3.classList.remove("color3")
     oddDivs.map((item)=>{  
         return item.classList.remove("even-animi")
