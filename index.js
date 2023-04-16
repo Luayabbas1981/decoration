@@ -39,7 +39,7 @@ function setSecondMove (){
         
     }
 
-function evenColor (color){
+function oddColor (color){
    
         divsArray.map((item,i)=>{
             return i % 2 === 0? "":item.setAttribute("id",`${color}`)
@@ -48,7 +48,7 @@ function evenColor (color){
     color1.textContent=color.toUpperCase()
     color1.style=`background-color:${color}`
 }
-function oddColor (color){
+function evenColor (color){
     
     divsArray.map((item,i)=>{
         return i % 2 === 0? item.setAttribute("id",`${color}`):""
@@ -65,6 +65,15 @@ color2.style=`background-color:${color}`
         return item.classList.toggle("even-animi")
     })
     }
+    /* function colorReset(){
+        divsArray.map((item,i)=>{
+            return i % 2 === 0? "":item.setAttribute( "style",`--d:${i+=.5} ;--c:#ffd50014`)
+        })
+        divsArray.map((item,i)=>{
+            return i % 2 === 0? item.setAttribute ("style",`--d:${i+=1} ;--c:#ff080022`):""
+        })
+  
+    } */
  /* function fullScreen(){
     frame.classList.remove("frame-magnifying")
     controls.classList.toggle("f-screen")
