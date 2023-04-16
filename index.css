@@ -12,7 +12,7 @@ body {
     top: 88%;
     left: 40%;
     translate: -50%;
-    color: #ffffff6e;
+    color: #ffffffae;
     font-size: xx-large;
 }
 #magnifying-plus,#magnifying-minus{
@@ -20,9 +20,10 @@ body {
     top: 88%;
     left: 60%;
     translate: -50%;
-    color: #ffffff6e;
+    color: #ffffffae;
     font-size: xx-large;
 }
+
 .frame {
     position: relative;
     top: 5%;
@@ -107,7 +108,7 @@ body {
 .f-screen{
   
      display: none; 
-     opacity: 0; 
+     
 }
 .controls >i{
     position: absolute;
