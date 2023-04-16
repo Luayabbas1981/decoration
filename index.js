@@ -22,7 +22,7 @@ twentyBtn.style="color:#0079b3"
 
 function setFirstMove (){
     tenBtn.style="color:#0079b3"
-    twentyBtn.style="color:white"
+    twentyBtn.style="color:#6e6c6c"
     if((divsArray[0].style="--d:1")){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
@@ -34,7 +34,7 @@ function setFirstMove (){
 }
 function setSecondMove (){
     twentyBtn.style="color:#0079b3"
-    tenBtn.style="color:white"
+    tenBtn.style="color:#6e6c6c"
         for(i=0;i<=divsArray.length;++i){ 
             console.log(i)
             divsArray[i].style=`--d:${i}`   
