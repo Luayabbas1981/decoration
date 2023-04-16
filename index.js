@@ -58,17 +58,35 @@ color2.style=`color:${color}`
         return item.classList.toggle("even-animi")
     })
     }
- function fullScreen(){
+ /* function fullScreen(){
+    frame.classList.remove("frame-magnifying")
     controls.classList.toggle("f-screen")
     upArrow.classList.toggle("f-screen")
     magnifyingPlus.classList.toggle("f-screen")
-    frame.classList.toggle("frame-center")
     magnifyingMinus.classList.toggle("f-screen")
+    frame.classList.toggle("frame-center")
    
+ } */
+ function fullScreen(){
+    
+    frame.classList.toggle("frame-center")
+     controls.classList.add("f-screen")
+     magnifyingPlus.classList.remove("f-screen")
+     magnifyingMinus.classList.remove("f-screen")
+     upArrow.classList.remove("f-screen")
+ } 
+ function showControls (){
+    frame.classList.remove("frame-magnifying")
+    controls.classList.remove("f-screen")
+    upArrow.classList.add("f-screen")
+    magnifyingPlus.classList.add("f-screen")
+    magnifyingMinus.classList.add("f-screen")
+    frame.classList.remove("frame-center")
  }
  function glass(){
     frame.classList.toggle("frame-magnifying")
     magnifyingPlus.classList.toggle("f-screen")
+  
  }
  function showInfos (){
     infosContainer.classList.toggle("show-infos")
