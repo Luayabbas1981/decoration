@@ -207,8 +207,8 @@ button{
     position: absolute;
     top: 30px;
     left: 62px;
-    width: 250px;
-    height: 340px;
+    width: 270px;
+    height: 360px;
     padding: 1rem;
     border-radius: 1rem;
     color: #777;
@@ -240,7 +240,7 @@ animation: show-infos .6s linear forwards;
 }
 .warning{
     position: absolute;
-    top: 90px;
+    top: 89px;
     left: 8px;
     height: 200px;
     font-size: 11px;
