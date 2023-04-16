@@ -165,7 +165,16 @@ button{
         font-size: 15px;
     } 
 }
-
+@media(min-width:800px){
+    .frame{
+        top: 10%;
+        scale: 1.2;
+    }
+    .controls{
+        top: 40%;
+        scale: 1.4;
+    }
+}
 #green{
     background-color: #59ff0014;
 }
