@@ -87,7 +87,7 @@ body {
     top: 28%;
     left: 50%;
     translate: -50%;
-    width: 300px;
+    width: /* 300px */320px;
     height:270px ;
     padding: 1rem;
     display: flex;
@@ -151,7 +151,7 @@ body {
     gap: .5rem;
 }
 button{
-    width: 140px;
+    width: 100px;
     height: 32px;
     font-size: 15px;
     font-style: italic;
@@ -187,26 +187,6 @@ button{
             color: gold;
         }
     }
-}
-#green{
-    background-color: #59ff0014;
-}
-#blueviolet{
-    background-color: #e80bd614;
-
-}
-#yellow{
-    background-color: #ffd90014;
-
-}
-#red{
-    background-color: #f2080814;
-}
-#blue{
-    background-color: #0881f214;
-}
-#orange{
-    background-color: #ff980014;
 }
 .infos-sec{
     position: fixed;
@@ -267,4 +247,81 @@ animation: show-infos .6s linear forwards;
     font-size: 11px;
     color: rgb(251, 30, 30);
     writing-mode: vertical-rl;
+}
+#green{
+    background-color: #59ff0018;
+}
+#blueviolet{
+    background-color: #e80bd618;
+
+}
+#yellow{
+    background-color: #ffd90018;
+
+}
+#red{
+    background-color: #f2080818;
+}
+#blue{
+    background-color: #0881f218;
+}
+#orange{
+    background-color: #ff980018;
+}
+#cyan{
+    background-color: #00ffff18;
+}
+#lightblue{
+    background-color:#add8e618;
+}
+#coral{
+    background-color:#ff7f5018;
+}
+#hotpink{
+    background-color:#ff69b418;
+}
+#lightsalmon{
+    background-color:#ffa07a18;
+}
+#orchid{
+    background-color:#da70d618;
+}
+#lime{
+    background-color:#00ff0018;
+}
+#aquamarine{
+    background-color: #7fffd418;
+}
+#lawngreen{
+    background-color: #7cfc0018;
+}
+#turquoise{
+    background-color: #40e0d018;
+}
+#yellowgreen{
+    background-color: #9acd3218;
+}
+#darkorange{
+    background-color: #ff8c0018;
+}
+#deebskyblue{
+    background-color: #00bfff18;
+}
+#gold{
+    background-color: #ffd70018;
+}
+#chocolate{
+    background-color: #d2691e18;
+}
+#chartreuse{
+    background-color: #7fff0018;
+}
+#magenta{
+    background-color: #ff00ff18;
+}
+#violet{
+    background-color: #ee82ee18;
+}
+#white{
+    background-color: #ffffff30;
 }

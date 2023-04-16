@@ -12,7 +12,10 @@ const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 
-letcolorArray= [ "yellow","red","blue","cyan","lightblue","coral","darkorange","deebskyblue","gold","hotpink","chocolate","lightsalmon","orchid"]
+let firstColorArray= [ "cyan","lightblue","coral","hotpink","lightsalmon","orchid","lime","	aquamarine","lawngreen","turquoise","yellowgreen"]
+
+let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","chartreuse","magenta","violet","white"]
+console.log(secondColorArray.length)
 
 oddDivs.map(item=> item.classList.add("even-animi"))
 twentyBtn.style="color:#0079b3"
@@ -63,6 +66,44 @@ color2.style=`background-color:${color}`
     oddDivs.map((item)=>{  
         return item.classList.toggle("even-animi")
     })
+    }
+    function randomColor (){
+        color3.classList.remove("color3")
+    oddDivs.map((item)=>{  
+        return item.classList.remove("even-animi")
+    })
+
+        let x = Math.floor(Math.random()* firstColorArray.length ) +1
+        console.log(x)
+        divsArray.map((item,i)=>{
+            return i % 2 === 0? item.setAttribute("id",`${firstColorArray[x -1]}`):""
+        })
+        let y = Math.floor(Math.random()* secondColorArray.length ) +1
+        console.log(y)
+        divsArray.map((item,i)=>{
+            return i % 2 === 0? "": item.setAttribute("id",`${secondColorArray[y - 1]}`)
+        })
+
+
+    }
+    function randomColorTwo (){
+        color3.classList.remove("color3")
+    oddDivs.map((item)=>{  
+        return item.classList.remove("even-animi")
+    })
+
+        let x = Math.floor(Math.random()* firstColorArray.length ) 
+        console.log(x)
+        divsArray.map((item,i)=>{
+            return i % 2 === 0?"": item.setAttribute("id",`${firstColorArray[x]}`)
+        })
+        let y = Math.floor(Math.random()* secondColorArray.length ) 
+        console.log(y)
+        divsArray.map((item,i)=>{
+            return i % 2 === 0?  item.setAttribute("id",`${secondColorArray[y]}`):""
+        })
+
+
     }
     /* function colorReset(){
         divsArray.map((item,i)=>{
