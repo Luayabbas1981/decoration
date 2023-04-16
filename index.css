@@ -56,7 +56,7 @@ body {
     top: 15%;
     height: 85%;
     scale: 0 1;
-    animation: scale 6s ease-in-out infinite alternate-reverse ;  
+    animation: scale 4s ease-in-out infinite alternate-reverse ;  
 }
 .even { 
     background-color: #ff080022;
