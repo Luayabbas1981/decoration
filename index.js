@@ -15,7 +15,7 @@ const twentyBtn = document.querySelector(".twenty")
 
 
 oddDivs.map(item=> item.classList.add("even-animi"))
-
+tenBtn.style="color:cyan"
 
 function setSecondMove (){
     tenBtn.style="color:white"
