@@ -48,7 +48,7 @@ body {
     border: 0.5px solid #eff7f815;
     border-radius: 50% 50% 50% 50% / 35% 36% 65% 65% ;
     transform-origin: bottom center;
-    rotate: calc(18deg * var(--d));
+    rotate: calc(36deg * var(--d));
    
 }
 .odd {

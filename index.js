@@ -18,23 +18,23 @@ let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","
 console.log(secondColorArray.length)
 
 oddDivs.map(item=> item.classList.add("even-animi"))
-twentyBtn.style="color:#0079b3"
+tenBtn.style="color:#0079b3"
 
-function setFirstMove (){
-    tenBtn.style="color:#0079b3"
-    twentyBtn.style="color:#6e6c6c"
+function setSecondMove (){
+    twentyBtn.style="color:#0079b3"
+    tenBtn.style="color:#6e6c6c"
     if((divsArray[0].style="--d:1")){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
-            x+= 2
+            x+= .5
             divsArray[i].style=`--d:${x}`  
         } 
         return
     } 
 }
-function setSecondMove (){
-    twentyBtn.style="color:#0079b3"
-    tenBtn.style="color:#6e6c6c"
+function setFirstMove (){
+    tenBtn.style="color:#0079b3"
+    twentyBtn.style="color:#6e6c6c"
         for(i=0;i<=divsArray.length;++i){ 
             console.log(i)
             divsArray[i].style=`--d:${i}`   
@@ -91,6 +91,10 @@ color2.style=`background-color:${color}`
 
     }
     function randomColorTwo (){
+        color1.style="background-color:black"
+        color2.style="background-color:black"
+        color1.textContent="1st color"
+        color2.textContent="2nd color"
         color3.classList.remove("color3")
     oddDivs.map((item)=>{  
         return item.classList.remove("even-animi")
