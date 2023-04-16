@@ -65,6 +65,16 @@ body {
     animation: color 4s 5s linear infinite alternate-reverse;   
 
 }
+.rose-center{
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffff0080;
+}
 @keyframes spin {
     from {
         rotate: -360deg;

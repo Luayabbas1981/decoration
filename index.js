@@ -1,4 +1,4 @@
-const divsArray =  Array.from(document.querySelectorAll(".frame > div"))
+const divsArray =  Array.from(document.querySelectorAll(".frame > .odd ,.even"))
 const oddDivs = Array.from(document.querySelectorAll(".even"))
 const frame = document.querySelector(".frame")
 const color1 = document.querySelector(".color1")
@@ -12,6 +12,7 @@ const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 
+console.log(divsArray)
 let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse"]
 
 let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
