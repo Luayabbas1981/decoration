@@ -185,6 +185,9 @@ button{
         top: 40%;
         scale: 1.4;
     }
+    .infos-container{
+        width: 340px;
+    }
 }
 @media(min-width:1200px){
     .infos-sec{
@@ -230,6 +233,7 @@ button{
    transform-origin: top left;
    scale: 0;
 }
+
 .show-infos{
 animation: show-infos .6s linear forwards;
 
@@ -254,11 +258,15 @@ animation: show-infos .6s linear forwards;
 .warning{
     position: absolute;
     top: 87px;
-    left: 8px;
+    left: 3px;
     height: 300px;
-    font-size: 11px;
+    font-size: 10px;
     color: rgb(251, 30, 30);
     writing-mode: vertical-rl;
+    word-break: break-all;
+}
+span{
+    font-size: large;
 }
 #green{
     background-color: #59ff0018;
