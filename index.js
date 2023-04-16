@@ -12,9 +12,9 @@ const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 
-let firstColorArray= [ "cyan","lightblue","coral","hotpink","lightsalmon","orchid","lime","	aquamarine","lawngreen","turquoise","yellowgreen"]
+let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse"]
 
-let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","chartreuse","magenta","violet","white"]
+let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
 console.log(secondColorArray.length)
 
 oddDivs.map(item=> item.classList.add("even-animi"))
@@ -77,15 +77,15 @@ color2.style=`background-color:${color}`
         return item.classList.remove("even-animi")
     })
 
-        let x = Math.floor(Math.random()* firstColorArray.length ) +1
+        let x = Math.floor(Math.random()* firstColorArray.length ) 
         console.log(x)
         divsArray.map((item,i)=>{
-            return i % 2 === 0? item.setAttribute("id",`${firstColorArray[x -1]}`):""
+            return i % 2 === 0? item.setAttribute("id",`${firstColorArray[x]}`):""
         })
-        let y = Math.floor(Math.random()* secondColorArray.length ) +1
+        let y = Math.floor(Math.random()* secondColorArray.length ) 
         console.log(y)
         divsArray.map((item,i)=>{
-            return i % 2 === 0? "": item.setAttribute("id",`${secondColorArray[y - 1]}`)
+            return i % 2 === 0? "": item.setAttribute("id",`${secondColorArray[y]}`)
         })
 
 
