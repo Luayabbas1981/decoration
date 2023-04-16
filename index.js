@@ -12,7 +12,7 @@ const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 
-
+letcolorArray= [ "yellow","red","blue","cyan","lightblue","coral","darkorange","deebskyblue","gold","hotpink","chocolate","lightsalmon","orchid"]
 
 oddDivs.map(item=> item.classList.add("even-animi"))
 twentyBtn.style="color:#ffeb3b"
