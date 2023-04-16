@@ -76,7 +76,7 @@ color2.style=`background-color:${color}`
  } */
  function fullScreen(){
     
-    frame.classList.toggle("frame-center")
+    frame.classList.add("frame-center")
      controls.classList.add("f-screen")
      magnifyingPlus.classList.remove("f-screen")
      magnifyingMinus.classList.remove("f-screen")
