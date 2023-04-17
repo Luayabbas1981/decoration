@@ -240,10 +240,11 @@ button{
     height: 428px;
     padding: 1rem;
     border-radius: 1rem;
-    color: #cecccc;
-    background-color: #eeeeee24;
+    color: #b9b6b6;
+    background-color: #eeeeee32;
    font-size: 11.5px;
    transform-origin: top left;
+   backdrop-filter: blur(4px);
    scale: 0;
 }
 
@@ -272,8 +273,8 @@ animation: show-infos .6s linear forwards;
     top: 87px;
     left: 8px;
     height: 320px;
-    font-size: 10px;
-    color: rgb(251, 30, 30);
+    font-size: 10.5px;
+    color: rgb(84, 127, 247);
     writing-mode: vertical-rl;
     word-break: break-all;
 }
