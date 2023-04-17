@@ -32,7 +32,7 @@ body {
     width:145px;
     height: 145px;
     transform-origin: bottom center;
-    animation: spin 4s linear infinite;  
+    animation: spin 3.5s linear infinite;  
     
 }
 .frame-center{
