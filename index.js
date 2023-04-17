@@ -66,7 +66,7 @@ color2.style=`background-color:${color}`
         return item.classList.toggle("even-animi")
     })
     }
-    function randomColor (){
+    function randomColorOne (){
         color1.style="background-color:black"
         color2.style="background-color:black"
         randomBtn.classList.remove("r2-c")
@@ -82,6 +82,8 @@ color2.style=`background-color:${color}`
         })
         
     }
+
+    
     function randomColorTwo (){
         randomBtn.classList.toggle("r2-c")
         color1.style="background-color:black"
