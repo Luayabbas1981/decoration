@@ -42,7 +42,7 @@ function setSecondMove (){
 }
 
 function oddColor (color){
-   
+         randomBtn.classList.remove("r2-c")
         divsArray.map((item,i)=>{
             return i % 2 === 0? "":item.setAttribute("id",`${color}`)
         })
@@ -51,7 +51,7 @@ function oddColor (color){
     color1.style=`background-color:${color}`
 }
 function evenColor (color){
-    
+    randomBtn.classList.remove("r2-c")
     divsArray.map((item,i)=>{
         return i % 2 === 0? item.setAttribute("id",`${color}`):""
     })
