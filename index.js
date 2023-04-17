@@ -13,7 +13,7 @@ const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 
 console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse"]
+let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato"]
 
 let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
 
@@ -70,10 +70,10 @@ color2.style=`background-color:${color}`
         color2.style="background-color:black"
         color1.textContent="1st color"
         color2.textContent="2nd color"
-        color3.classList.remove("color3")
+        /* color3.classList.remove("color3")
     oddDivs.map((item)=>{  
         return item.classList.remove("even-animi")
-    })
+    }) */
 
         let x = Math.floor(Math.random()* firstColorArray.length ) 
         let y = Math.floor(Math.random()* secondColorArray.length ) 
@@ -90,10 +90,10 @@ color2.style=`background-color:${color}`
         color2.style="background-color:black"
         color1.textContent="1st color"
         color2.textContent="2nd color"
-        color3.classList.remove("color3")
+       /*  color3.classList.remove("color3")
     oddDivs.map((item)=>{  
         return item.classList.remove("even-animi")
-    })
+    }) */
 
         let x = Math.floor(Math.random()* firstColorArray.length ) 
         let y = Math.floor(Math.random()* secondColorArray.length ) 

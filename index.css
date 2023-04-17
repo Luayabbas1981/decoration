@@ -289,7 +289,7 @@ span{
 
 }
 #red{
-    background-color: #f2080815;
+    background-color: #fc282815;
 }
 #blue{
     background-color: #0881f215;
@@ -304,31 +304,31 @@ span{
     background-color:#add8e615;
 }
 #coral{
-    background-color:#ff7f5015;
+    background-color:#fe865a15;
 }
 #hotpink{
-    background-color:#ff69b415;
+    background-color:#fc75b915;
 }
 #lightsalmon{
-    background-color:#ffa07a15;
+    background-color:#ffae8e15;
 }
 #orchid{
-    background-color:#da70d615;
+    background-color:#e379e015;
 }
 #lime{
-    background-color:#00ff7715;
+    background-color:#5ff5a515;
 }
 #aquamarine{
-    background-color: #7fffd415;
+    background-color: #8fddc315;
 }
 #lawngreen{
-    background-color: #9bfc0015;
+    background-color: #c2f66f15;
 }
 #turquoise{
     background-color: #40e0d015;
 }
 #yellowgreen{
-    background-color: #9acd3215;
+    background-color: #a8d44e15;
 }
 #darkorange{
     background-color: #ff8c0015;
@@ -346,11 +346,14 @@ span{
     background-color: #ff004c15;
 }
 #magenta{
-    background-color: #f728f715;
+    background-color: #f838f815;
 }
 #violet{
     background-color: #ee82ee15;
 }
 #white{
     background-color: #ffffff18;
+}
+#tomato{
+    background-color: #ff634715;
 }
