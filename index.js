@@ -22,6 +22,8 @@ oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn.classList.add("r-id")
 
+
+
 function setFirstMove (){
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
@@ -43,8 +45,7 @@ function setSecondMove (){
 }
 
 function oddColor (color){
-    randomBtn.classList.add("r-id")
-    clearInterval(interval)
+   
          randomBtn.classList.remove("r2-c")
         divsArray.map((item,i)=>{
             return i % 2 === 0? "":item.setAttribute("id",`${color}`)
@@ -52,10 +53,13 @@ function oddColor (color){
   
     color1.textContent=color.toUpperCase()
     color1.style=`background-color:${color}`
+    if(interval){
+        randomBtn.classList.add("r-id")
+        clearInterval(interval)
+    }
 }
+
 function evenColor (color){
-    randomBtn.classList.add("r-id")
-    clearInterval(interval)
     randomBtn.classList.remove("r2-c")
     divsArray.map((item,i)=>{
         return i % 2 === 0? item.setAttribute("id",`${color}`):""
@@ -63,6 +67,11 @@ function evenColor (color){
 
 color2.textContent=color.toUpperCase()
 color2.style=`background-color:${color}`
+
+if(interval){
+    randomBtn.classList.add("r-id")
+    clearInterval(interval)
+}
 }
 
  function thirdColor(){
@@ -71,9 +80,9 @@ color2.style=`background-color:${color}`
         return item.classList.toggle("even-animi")
     })
     }
+
     function randomColorOne (){
-        randomBtn.classList.add("r-id")
-        clearInterval(interval)
+       
         color1.style="background-color:black"
         color2.style="background-color:black"
         randomBtn.classList.remove("r2-c")
@@ -87,9 +96,14 @@ color2.style=`background-color:${color}`
         divsArray.map((item,i)=>{
             return i % 2 === 0? "": item.setAttribute("id",`${secondColorArray[y]}`)
         })
-        
+        if(interval){
+            randomBtn.classList.add("r-id")
+
+            clearInterval(interval)
+        }
     }
 
+    let interval
     function randomColorTwo (){
 
         randomBtn.classList.toggle("r2-c")
