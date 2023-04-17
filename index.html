@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>decoration</title>
 </head>
-<body>
+<body onclick="infosSymbolAlert()">
     <section class="frame frame-center" >
         <div class="odd" style="--d:1"></div>
         <div class="even" style="--d:2"></div>
@@ -72,7 +72,7 @@
         <i  class="fa-solid fa-magnifying-glass-minus"onclick="glass()"></i>
     </div>
     <section class="infos-sec">
-    <div class="infos-symbol">
+    <div id="infos-symbol" class="infos-symbol">
         <i  class="fa-solid fa-circle-question" onclick="showInfos()"></i>
     </div>
     <div class="infos-container ">

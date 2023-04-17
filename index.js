@@ -8,6 +8,7 @@ const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
 const magnifyingPlus = document.querySelector("#magnifying-plus")
 const magnifyingMinus = document.querySelector("#magnifying-minus")
+const infosSymbol = document.querySelector("#infos-symbol")
 const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
@@ -164,15 +165,26 @@ if(interval){
   
  }
  function showInfos (){
+    infosSymbol.classList.remove(".infos-symbol2")
     if(!infosContainer.classList.contains("show-infos")){
 
         infosContainer.classList.add("show-infos")
-        infosContainer.classList.remove("show-infos2")
+        infosContainer.classList.remove("hide-infos")
     } else{
         infosContainer.classList.remove("show-infos")
-        infosContainer.classList.add("show-infos2")
+        infosContainer.classList.add("hide-infos")
     }
    
+ }
+ function infosSymbolAlert (){
+    if(infosContainer.classList.contains("show-infos")){
+
+        infosSymbol.classList.remove("infos-symbol")
+        setTimeout(() => {
+            
+            infosSymbol.classList.add("infos-symbol")
+        }, 1);
+    }
  }
  
 function resetApp(){

@@ -234,6 +234,7 @@ button{
     color: gold;
     animation: infos-symbol 1s 4 alternate;
 }
+
 @keyframes infos-symbol{
     to{
         scale: 1.3;
@@ -260,8 +261,8 @@ button{
 animation: show-infos .6s linear forwards;
 
 }
-.show-infos2{
-    animation: show-infos2 .6s linear forwards;
+.hide-infos{
+    animation: hide-infos .6s linear forwards;
     
     }
 
@@ -274,7 +275,7 @@ animation: show-infos .6s linear forwards;
        
     }
 }
-@keyframes show-infos2{
+@keyframes hide-infos{
     from{
         scale: 1;
     }
