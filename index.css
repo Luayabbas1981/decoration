@@ -206,7 +206,7 @@ button{
     .infos-sec{
         position: absolute;
         translate: 250px 40px;
-        scale: 1.4;
+        scale: 1.2;
     
     }
     @keyframes infos-symbol{
