@@ -42,6 +42,7 @@ function setSecondMove (){
 }
 
 function oddColor (color){
+    clearInterval(interval)
          randomBtn.classList.remove("r2-c")
         divsArray.map((item,i)=>{
             return i % 2 === 0? "":item.setAttribute("id",`${color}`)
@@ -51,6 +52,7 @@ function oddColor (color){
     color1.style=`background-color:${color}`
 }
 function evenColor (color){
+    clearInterval(interval)
     randomBtn.classList.remove("r2-c")
     divsArray.map((item,i)=>{
         return i % 2 === 0? item.setAttribute("id",`${color}`):""
@@ -67,6 +69,7 @@ color2.style=`background-color:${color}`
     })
     }
     function randomColorOne (){
+        clearInterval(interval)
         color1.style="background-color:black"
         color2.style="background-color:black"
         randomBtn.classList.remove("r2-c")
@@ -83,7 +86,6 @@ color2.style=`background-color:${color}`
         
     }
 
-    
     function randomColorTwo (){
         randomBtn.classList.toggle("r2-c")
         color1.style="background-color:black"
@@ -95,6 +97,7 @@ color2.style=`background-color:${color}`
         return item.classList.remove("even-animi")
     }) 
 
+    interval =
         setInterval(()=>{
             let x = Math.floor(Math.random()* firstColorArray.length ) 
             let y = Math.floor(Math.random()* secondColorArray.length ) 
@@ -105,7 +108,7 @@ color2.style=`background-color:${color}`
                 return i % 2 === 0?  item.setAttribute("id",`${secondColorArray[y]}`):""
             })
     
-        },7000)
+        },6000)
        
 
     }
