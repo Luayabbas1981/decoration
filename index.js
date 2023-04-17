@@ -14,9 +14,9 @@ const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
 
 console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato"]
+let firstColorArray= [ "cyan","lightblue","white","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato"]
 
-let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
+let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
 
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
