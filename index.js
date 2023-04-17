@@ -164,7 +164,15 @@ if(interval){
   
  }
  function showInfos (){
-    infosContainer.classList.toggle("show-infos")
+    if(!infosContainer.classList.contains("show-infos")){
+
+        infosContainer.classList.add("show-infos")
+        infosContainer.classList.remove("show-infos2")
+    } else{
+        infosContainer.classList.remove("show-infos")
+        infosContainer.classList.add("show-infos2")
+    }
+   
  }
  
 function resetApp(){
