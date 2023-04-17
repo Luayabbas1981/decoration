@@ -237,11 +237,11 @@ button{
     top: 30px;
     left: 62px;
     width: 270px;
-    height: 410px;
+    height: 428px;
     padding: 1rem;
     border-radius: 1rem;
-    color: #777;
-    background-color: #eee;
+    color: #cecccc;
+    background-color: #eeeeee24;
    font-size: 11.5px;
    transform-origin: top left;
    scale: 0;
