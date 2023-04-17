@@ -1,9 +1,9 @@
-# Decoration - Colorful Rose App
+## Decoration - Colorful Rose App
 ### Description:
 #### This app allowed you to mix three colors and see which colors come out!
 ### Tools :
 #### HTML CSS3 JS
-## Instructions
+### Instructions
 - To get controls area press the up-arrow symbol
 - 1st color is the main color "the big leaves"
 - 2nd color is the secondary color "the small leaves"
