@@ -88,6 +88,11 @@ if(interval){
         randomBtn.classList.remove("r2-c")
         color1.textContent="1st color"
         color2.textContent="2nd color"
+        color3.classList.remove("color3")
+        oddDivs.map((item)=>{  
+            return item.classList.remove("even-animi")
+        }) 
+
         let x = Math.floor(Math.random()* firstColorArray.length ) 
         let y = Math.floor(Math.random()* secondColorArray.length ) 
         divsArray.map((item,i)=>{
