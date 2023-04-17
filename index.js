@@ -20,6 +20,7 @@ let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","
 
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
+randomBtn.classList.add("r-id")
 
 function setFirstMove (){
     tenBtn.style="color:#0079b3"
@@ -87,6 +88,7 @@ color2.style=`background-color:${color}`
     }
 
     function randomColorTwo (){
+
         randomBtn.classList.toggle("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
@@ -97,7 +99,9 @@ color2.style=`background-color:${color}`
         return item.classList.remove("even-animi")
     }) 
 
-    interval =
+    if(randomBtn.classList.contains("r-id")){
+        randomBtn.classList.remove("r-id")
+        interval =
         setInterval(()=>{
             let x = Math.floor(Math.random()* firstColorArray.length ) 
             let y = Math.floor(Math.random()* secondColorArray.length ) 
@@ -107,12 +111,15 @@ color2.style=`background-color:${color}`
             divsArray.map((item,i)=>{
                 return i % 2 === 0?  item.setAttribute("id",`${secondColorArray[y]}`):""
             })
-    
+            
         },6000)
-       
-
+    }else{
+        clearInterval(interval)
+        randomBtn.classList.add("r-id")
     }
-   
+       
+    }
+
  function fullScreen(){
     
     frame.classList.add("frame-center")
