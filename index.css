@@ -200,7 +200,7 @@ button{
     }
     .infos-sec{
         position: absolute;
-        translate: 300px 40px;
+        translate: 12vw 40px;
         scale: 1.2 ;
     
     }
@@ -208,14 +208,13 @@ button{
 @media(min-width:1200px){
     .infos-sec{
         position: absolute;
-        translate: 510px 40px;
+        translate: 25vw 40px;
         scale: 1.3 ;
     
     }
     @keyframes infos-symbol{
         to{
             scale: 1.6;
-            color: gold;
         }
     }
 }
@@ -294,9 +293,9 @@ animation: show-infos .6s linear forwards;
     position: absolute;
     top: 85px;
     left: 8px;
-    height: 320px;
-    font-size: 10.5px;
-    color: rgb(84, 127, 247);
+    height: 350px;
+    font-size: 11px;
+    color: #327aff;
     writing-mode: vertical-rl;
     word-break: break-all;
 }
