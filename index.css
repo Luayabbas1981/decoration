@@ -265,7 +265,6 @@ animation: show-infos .6s linear forwards;
     
     }
 
-
 @keyframes show-infos{
     from{
         scale: 0;
@@ -292,7 +291,7 @@ animation: show-infos .6s linear forwards;
 }
 .warning{
     position: absolute;
-    top: 87px;
+    top: 85px;
     left: 8px;
     height: 320px;
     font-size: 10.5px;
