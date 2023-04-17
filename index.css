@@ -52,14 +52,14 @@ body {
    
 }
 .odd {
-    background-color: #ffd50014;
+    background-color: #ffc18214;
     top: 15%;
     height: 85%;
     scale: 0 1;
     animation: scale 4s ease-in-out infinite alternate-reverse ;  
 }
 .even { 
-    background-color: #ff080022;
+    background-color: #f6544e22;
 }
 .even-animi{
     animation: color 4s 5s linear infinite alternate-reverse;   
