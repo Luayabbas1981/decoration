@@ -180,6 +180,9 @@ button{
     background-color: #cbc9c9;
     color: #6e6c6c;
 }
+.r2-c{
+    color: #9b19b1;
+}
 @media(max-width:420px){
    
     button{
@@ -239,7 +242,7 @@ button{
     border-radius: 1rem;
     color: #777;
     background-color: #eee;
-   font-size: 12px;
+   font-size: 11.5px;
    transform-origin: top left;
    scale: 0;
 }

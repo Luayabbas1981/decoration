@@ -11,6 +11,7 @@ const magnifyingMinus = document.querySelector("#magnifying-minus")
 const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
+const randomBtn = document.querySelector(".r2")
 
 console.log(divsArray)
 let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato"]
@@ -68,13 +69,9 @@ color2.style=`background-color:${color}`
     function randomColor (){
         color1.style="background-color:black"
         color2.style="background-color:black"
+        randomBtn.classList.remove("r2-c")
         color1.textContent="1st color"
         color2.textContent="2nd color"
-        /* color3.classList.remove("color3")
-    oddDivs.map((item)=>{  
-        return item.classList.remove("even-animi")
-    }) */
-
         let x = Math.floor(Math.random()* firstColorArray.length ) 
         let y = Math.floor(Math.random()* secondColorArray.length ) 
         divsArray.map((item,i)=>{
@@ -86,24 +83,28 @@ color2.style=`background-color:${color}`
         
     }
     function randomColorTwo (){
+        randomBtn.classList.toggle("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
         color1.textContent="1st color"
         color2.textContent="2nd color"
-       /*  color3.classList.remove("color3")
+        color3.classList.remove("color3")
     oddDivs.map((item)=>{  
         return item.classList.remove("even-animi")
-    }) */
+    }) 
 
-        let x = Math.floor(Math.random()* firstColorArray.length ) 
-        let y = Math.floor(Math.random()* secondColorArray.length ) 
-        divsArray.map((item,i)=>{
-            return i % 2 === 0?"": item.setAttribute("id",`${firstColorArray[x]}`)
-        })
-        divsArray.map((item,i)=>{
-            return i % 2 === 0?  item.setAttribute("id",`${secondColorArray[y]}`):""
-        })
-
+        setInterval(()=>{
+            let x = Math.floor(Math.random()* firstColorArray.length ) 
+            let y = Math.floor(Math.random()* secondColorArray.length ) 
+            divsArray.map((item,i)=>{
+                return i % 2 === 0?"": item.setAttribute("id",`${firstColorArray[x]}`)
+            })
+            divsArray.map((item,i)=>{
+                return i % 2 === 0?  item.setAttribute("id",`${secondColorArray[y]}`):""
+            })
+    
+        },7000)
+       
 
     }
    
