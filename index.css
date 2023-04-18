@@ -309,11 +309,11 @@ span{
         font-size: 12px;
     }
     #up-arrow{ 
-        left: 21%; 
+        left: 20.5%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
-        left: 79%;
+        left: 80.5%;
         font-size:27px ; 
     }
 }
