@@ -280,14 +280,14 @@ span{
         display: none;
     }
     .infos-container{
-        width: 230px;
-        height: 500px;
+        width: 220px;
+        height: 450px;
+        line-height: 12px;
     }
     .infos-sec{
         position: absolute;
-        translate: 30px 40px;
-        
-    
+        translate: 10px 5px;
+
     }
 }
 @media(min-width:800px){
