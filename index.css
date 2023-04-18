@@ -76,6 +76,7 @@ body {
     background-color: #ffff0080;
 }
 
+/* Controls section */
 .controls{
     position: relative;
     top: 28%;
@@ -162,6 +163,9 @@ button{
 .r2-c{
     color: #9b19b1;
 }
+
+/* Infos section */
+
 .infos-sec{
     position: fixed;
     top: 20px;
