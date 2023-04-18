@@ -356,6 +356,10 @@ span{
         left: 81%;
         font-size:27px ; 
     }
+    .mad{
+        top: 4%;
+        right: 6%;
+    }
 }
 @media(min-width:800px){
    .frame-center{
