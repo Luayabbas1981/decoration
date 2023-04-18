@@ -12,7 +12,7 @@ body {
     top: 88%;
     left: 40%;
     translate: -50%;
-    color: #ffffffae;
+    color: #ffffffca;
     font-size: xx-large;
     animation: up-symbol 1.5s alternate-reverse;
 }
@@ -23,7 +23,7 @@ body {
     translate: -50%;
     color: #ffffffae;
     font-size: xx-large;
-    animation: spin 1.5s ;
+    animation:up-symbol 1.5s alternate-reverse   ;
 }
 .controls-infos{
     position: absolute;
@@ -309,11 +309,11 @@ span{
         font-size: 12px;
     }
     #up-arrow{ 
-        left: 20.5%; 
+        left: 19%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
-        left: 80.5%;
+        left: 81%;
         font-size:27px ; 
     }
 }
