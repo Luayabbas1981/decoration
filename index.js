@@ -6,6 +6,7 @@ const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
 const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
+const controlsInfos = document.querySelector(".controls-infos")
 const magnifyingPlus = document.querySelector("#magnifying-plus")
 const magnifyingMinus = document.querySelector("#magnifying-minus")
 const infosSymbol = document.querySelector("#infos-symbol")
@@ -15,12 +16,10 @@ const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
 
 /* Initial values */
-window.onload = function(){
-    window.scrollTo(0,0)
-}
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn.classList.add("r-id")
+controlsInfos.textContent="3rd button active"
 
 /* Colors buttons functions */
 function oddColor (color){
@@ -151,7 +150,13 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
 
     /* show / hide controls buttons functions */
  function fullScreen(){
-    
+   if( color3.classList.contains("color3")){
+    controlsInfos.textContent="3rd button active"
+    controlsInfos.style="color:lightblue"
+   } if(randomBtn.classList.contains("r2-c")){
+    controlsInfos.textContent="Random2 button active"
+    controlsInfos.style="color:red"
+   }
     frame.classList.add("frame-center")
      controls.classList.add("f-screen")
      magnifyingPlus.classList.remove("f-screen")
@@ -159,6 +164,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
      upArrow.classList.remove("f-screen")
  } 
  function showControls (){
+    controlsInfos.textContent=""
     frame.classList.remove("frame-magnifying")
     controls.classList.remove("f-screen")
     upArrow.classList.add("f-screen")

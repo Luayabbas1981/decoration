@@ -23,6 +23,12 @@ body {
     color: #ffffffae;
     font-size: xx-large;
 }
+.controls-infos{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    translate: -50%; 
+}
 
 .frame {
     position: relative;
@@ -223,6 +229,7 @@ animation: show-infos .6s linear forwards;
 }
 span{
     font-size: large;
+    color: white;
 }
 /* Keyframes section */
 
@@ -270,7 +277,7 @@ span{
 /* Media section */
 
 
-@media(max-width:420px){
+@media(max-width:800px){
    
     button{
         
@@ -289,11 +296,30 @@ span{
         translate: 15px 8px;
 
     }
+    .controls-infos{
+        position: absolute;
+        top: 89%;
+        left: 50%;
+        translate: -50%;
+        color: gold;
+        font-size: 12px;
+    }
+    #up-arrow{ 
+        left: 25%;    
+    }
+    #magnifying-plus,#magnifying-minus{
+        left: 75%;
+       
+    }
 }
 @media(min-width:800px){
    .frame-center{
     top: 25%;
+    scale:1.3
    }
+   .frame-magnifying{
+    scale: 1.6;
+}
     .controls{
         top: 40%;
         scale: 1.2;
@@ -303,6 +329,14 @@ span{
         translate: 12vw 40px;
         scale: 1.2 ;
     
+    }
+    .controls-infos{
+        position: absolute;
+        top: 89%;
+        left: 50%;
+        translate: -50%;
+        color: gold;
+        font-size: 17px;
     }
 }
 @media(min-width:1200px){
