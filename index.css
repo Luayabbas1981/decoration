@@ -281,12 +281,12 @@ span{
     }
     .infos-container{
         width: 220px;
-        height: 450px;
-        line-height: 12px;
+        height: 435px;
+        line-height: 13px;
     }
     .infos-sec{
         position: absolute;
-        translate: 10px 5px;
+        translate: 5px 15px;
 
     }
 }
