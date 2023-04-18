@@ -333,6 +333,14 @@ span{
         color: gold;
         font-size: 18px;
     }
+    #up-arrow{ 
+        left: 21%; 
+        font-size:27px ;   
+    }
+    #magnifying-plus,#magnifying-minus{
+        left: 79%;
+        font-size:27px ; 
+    }
 }
 @media(min-width:1200px){
     .infos-sec{
@@ -345,6 +353,14 @@ span{
         to{
             scale: 1.6;
         }
+    }
+    #up-arrow{ 
+        left: 35%; 
+        font-size:30px ;   
+    }
+    #magnifying-plus,#magnifying-minus{
+        left: 65%;
+        font-size:30px ; 
     }
 }
 

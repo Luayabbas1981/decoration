@@ -157,6 +157,10 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     controlsInfos.textContent="Random2 mode active"
     controlsInfos.style="color:#2196f3"
    }
+   if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c")){
+    controlsInfos.textContent= "Random2 mode active / 3rd"
+    
+   }
     frame.classList.add("frame-center")
      controls.classList.add("f-screen")
      magnifyingPlus.classList.remove("f-screen")
