@@ -152,10 +152,10 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
  function fullScreen(){
    if( color3.classList.contains("color3")){
     controlsInfos.textContent="3rd button active"
-    controlsInfos.style="color:lightblue"
+    controlsInfos.style="color:gold"
    } if(randomBtn.classList.contains("r2-c")){
     controlsInfos.textContent="Random2 button active"
-    controlsInfos.style="color:red"
+    controlsInfos.style="color:#2196f3"
    }
     frame.classList.add("frame-center")
      controls.classList.add("f-screen")
