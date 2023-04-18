@@ -45,7 +45,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 0.5px solid #eff7f815;
+    border: 0.8px solid #eff7f815;
     border-radius: 50% 50% 50% 50% / 35% 36% 65% 65% ;
     transform-origin: bottom center;
     rotate: calc(36deg * var(--d));
@@ -299,6 +299,12 @@ animation: show-infos .6s linear forwards;
 span{
     font-size: large;
 }
+#white{
+    background-color: #ffffff18;
+}
+#black{
+    background-color: #2b2a2a2b;
+}
 #green{
     background-color: #7bff0015;
 }
@@ -373,9 +379,7 @@ span{
 #violet{
     background-color: #ee82ee15;
 }
-#white{
-    background-color: #ffffff18;
-}
 #tomato{
     background-color: #ff634715;
 }
+
