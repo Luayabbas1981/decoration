@@ -14,17 +14,51 @@ const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
 
-console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","white","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato","black"]
-
-let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink","black"]
-
+/* Initial values */
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn.classList.add("r-id")
 
+/* Colors buttons functions */
+function oddColor (color){
+   
+    randomBtn.classList.remove("r2-c")
+   divsArray.map((item,i)=>{
+       return i % 2 === 0? "":item.setAttribute("id",`${color}`)
+   })
 
+color1.textContent=color.toUpperCase()
+color1.style=`background-color:${color}`
+if(interval){
+   randomBtn.classList.add("r-id")
+   clearInterval(interval)
+}
+}
 
+function evenColor (color){
+randomBtn.classList.remove("r2-c")
+divsArray.map((item,i)=>{
+   return i % 2 === 0? item.setAttribute("id",`${color}`):""
+})
+
+color2.textContent=color.toUpperCase()
+color2.style=`background-color:${color}`
+
+if(interval){
+randomBtn.classList.add("r-id")
+clearInterval(interval)
+}
+}
+
+/* 3rd buttons function */
+function thirdColor(){
+    color3.classList.toggle("color3")
+   oddDivs.map((item)=>{  
+       return item.classList.toggle("even-animi")
+   })
+   }
+
+/* Number of leaves functions */
 function setFirstMove (){
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
@@ -45,42 +79,11 @@ function setSecondMove (){
     } 
 }
 
-function oddColor (color){
-   
-         randomBtn.classList.remove("r2-c")
-        divsArray.map((item,i)=>{
-            return i % 2 === 0? "":item.setAttribute("id",`${color}`)
-        })
-  
-    color1.textContent=color.toUpperCase()
-    color1.style=`background-color:${color}`
-    if(interval){
-        randomBtn.classList.add("r-id")
-        clearInterval(interval)
-    }
-}
+/* Random 1 and 2 buttons */
+console.log(divsArray)
+let firstColorArray= [ "cyan","lightblue","white","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato","black"]
 
-function evenColor (color){
-    randomBtn.classList.remove("r2-c")
-    divsArray.map((item,i)=>{
-        return i % 2 === 0? item.setAttribute("id",`${color}`):""
-    })
-
-color2.textContent=color.toUpperCase()
-color2.style=`background-color:${color}`
-
-if(interval){
-    randomBtn.classList.add("r-id")
-    clearInterval(interval)
-}
-}
-
- function thirdColor(){
-     color3.classList.toggle("color3")
-    oddDivs.map((item)=>{  
-        return item.classList.toggle("even-animi")
-    })
-    }
+let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink","black"]
 
     function randomColorOne (){
        
@@ -143,6 +146,7 @@ if(interval){
        
     }
 
+    /* show / hide controls buttons functions */
  function fullScreen(){
     
     frame.classList.add("frame-center")
@@ -159,11 +163,9 @@ if(interval){
     magnifyingMinus.classList.add("f-screen")
     frame.classList.remove("frame-center")
  }
- function glass(){
-    frame.classList.toggle("frame-magnifying")
-    magnifyingPlus.classList.toggle("f-screen")
-  
- }
+
+ 
+ /* Info bar functions */
  function showInfos (){
     infosSymbol.classList.remove(".infos-symbol2")
     if(!infosContainer.classList.contains("show-infos")){
@@ -187,6 +189,14 @@ if(interval){
     }
  }
  
+ /* Magnifying function */
+ function glass(){
+    frame.classList.toggle("frame-magnifying")
+    magnifyingPlus.classList.toggle("f-screen")
+  
+ }
+
+ /* Reset button function */
 function resetApp(){
     location.reload()
 }
