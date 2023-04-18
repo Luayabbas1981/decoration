@@ -33,6 +33,7 @@ body {
 }
 
 .frame {
+    perspective: 700px;
     position: relative;
     top: 5%;
     left: 50%;
@@ -66,8 +67,37 @@ body {
     scale: 0 1;
     animation: scale 4s ease-in-out infinite alternate-reverse ;  
 }
+.odd2{
+   
+    animation: scale 1s ease-in-out infinite alternate-reverse , spin 8s  alternate-reverse,
+    spin2 5s  10s alternate-reverse , spin 5s 20s alternate-reverse,
+    spin2 7s 23s alternate-reverse , spin 5s 30s alternate-reverse ,spin2 5s 35s alternate-reverse
+    , spin 8s 40s alternate-reverse , spin2 10s 50s alternate-reverse  , spin 8s 55s alternate-reverse , spin2 10s 60s alternate-reverse ;  
+}
 .even { 
     background-color: #ff080022;
+}
+
+.even2{
+ opacity: .7; 
+ animation: scale 1s ease-in-out infinite alternate-reverse , spin2 10s  alternate-reverse,
+ spin 10s  5s alternate-reverse , spin2 10s 12s alternate-reverse,
+ spin 7s 20s alternate-reverse , spin2 10s 25s alternate-reverse ,spin 10s 30s alternate-reverse
+ , spin2 8s 40s alternate-reverse , spin 10s 50s alternate-reverse  , spin2 8s 55s alternate-reverse , spin 10s 60s alternate-reverse ;
+}
+.mad{
+    position: absolute;
+    top: 9%;
+    right: 30%;
+    width: 60px;
+    color: #000;
+    background-color: gold;
+    border-radius: 1rem;
+    text-align: center;   
+    font-size: 14px; 
+}
+.end-mad{
+  z-index: -1;
 }
 .even-animi{
     animation: color 4s 5s linear infinite alternate-reverse;   
@@ -240,6 +270,11 @@ span{
         rotate: -360deg;
     }
 }
+@keyframes spin2 {
+    from {
+        rotate: 360deg;
+    }
+}
 @keyframes scale {
    
     to{
@@ -251,6 +286,11 @@ span{
         background-color: #bf00ff10;
     }
 } 
+@keyframes turn-round {
+    to{
+        rotate: x 360deg;
+    }
+}
 @keyframes show-infos{
     from{
         scale: 0;

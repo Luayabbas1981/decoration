@@ -1,5 +1,7 @@
 const divsArray =  Array.from(document.querySelectorAll(".frame > .odd ,.even"))
 const oddDivs = Array.from(document.querySelectorAll(".even"))
+const evenDivs = Array.from(document.querySelectorAll(".odd"))
+const oddDiv = document.querySelector(".frame:first-child")
 const frame = document.querySelector(".frame")
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
@@ -14,6 +16,8 @@ const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
+const madBtn = document.querySelector(".mad")
+const endMadBtn = document.querySelector(".end-mad")
 
 /* Initial values */
 oddDivs.map(item=> item.classList.add("even-animi"))
@@ -216,3 +220,16 @@ function resetApp(){
    
 }
 
+function madMode (){ 
+        controlsInfos.textContent= "Mad mode active"
+        controlsInfos.style="color:#ff9800"
+        setSecondMove ()
+        randomColorTwo() 
+        oddDivs.map(item=> item.classList.add("even2"))
+        evenDivs.map(item=> item.classList.add("odd2"))
+        madBtn.disabled = true;
+        endMadBtn.style="z-index:1"
+}
+function stopMadMode (){
+    resetApp()
+}
