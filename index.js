@@ -158,8 +158,8 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     controlsInfos.style="color:#2196f3"
    }
    if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c")){
-    controlsInfos.textContent= "Random2 mode active / 3rd"
-    controlsInfos.style="color:#9c27b0"
+    controlsInfos.textContent= "Random2 / 3rd modes active"
+    controlsInfos.style="color:#f44336"
     
    }
     frame.classList.add("frame-center")
