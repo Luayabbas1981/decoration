@@ -10,5 +10,6 @@
 - 3rd button is a auto turn on button which mix a third color with the two picked colors to get more colors out "using random1 or random2 mode will turn off the button automatically"
 - Random1 button pick every time you click it randomly colors for both leaves
 - Random2 button pick automatically every 5 seconds randomly colors for both leaves
+- mad mode is a .....
 - You can also change the numbers of leaves to either 10 or 20 
 #### Have fun!
