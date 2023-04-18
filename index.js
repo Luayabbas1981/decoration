@@ -198,7 +198,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
 
  /* Reset button function */
 function resetApp(){
-    location.reload()
     window.stop()
+    location.reload()
 }
 
