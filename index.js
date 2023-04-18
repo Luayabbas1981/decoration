@@ -15,6 +15,9 @@ const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
 
 /* Initial values */
+window.onload = function(){
+    window.scrollTo(0,0)
+}
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn.classList.add("r-id")
@@ -199,6 +202,6 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
  /* Reset button function */
 function resetApp(){
     location.reload()
-    window.stop()
+   
 }
 
