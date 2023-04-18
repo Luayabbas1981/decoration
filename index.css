@@ -283,6 +283,12 @@ span{
         width: 230px;
         height: 500px;
     }
+    .infos-sec{
+        position: absolute;
+        translate: 30px 40px;
+        
+    
+    }
 }
 @media(min-width:800px){
    .frame-center{
