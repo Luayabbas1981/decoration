@@ -302,11 +302,11 @@ span{
         font-size: 12px;
     }
     #up-arrow{ 
-        left: 22%; 
+        left: 21%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
-        left: 78%;
+        left: 79%;
         font-size:27px ; 
     }
 }

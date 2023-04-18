@@ -151,10 +151,10 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     /* show / hide controls buttons functions */
  function fullScreen(){
    if( color3.classList.contains("color3")){
-    controlsInfos.textContent="3rd button active"
+    controlsInfos.textContent="3rd color mode active"
     controlsInfos.style="color:gold"
    } if(randomBtn.classList.contains("r2-c")){
-    controlsInfos.textContent="Random2 button active"
+    controlsInfos.textContent="Random2 mode active"
     controlsInfos.style="color:#2196f3"
    }
     frame.classList.add("frame-center")
