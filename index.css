@@ -393,6 +393,13 @@ span{
         left: 79%;
         font-size:27px ; 
     }
+    .mad{
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+        top: 8%;
+        right: 15%;
+    }
 }
 @media(min-width:1200px){
     .infos-sec{
@@ -413,6 +420,13 @@ span{
     #magnifying-plus,#magnifying-minus{
         left: 65%;
         font-size:30px ; 
+    }
+    .mad{
+        width: 90px;
+        height: 35px;
+        font-size: 18px;
+        top: 8%;
+        right: 26%;
     }
 }
 
