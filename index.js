@@ -1,7 +1,6 @@
 const divsArray =  Array.from(document.querySelectorAll(".frame > .odd ,.even"))
 const oddDivs = Array.from(document.querySelectorAll(".even"))
 const evenDivs = Array.from(document.querySelectorAll(".odd"))
-const oddDiv = document.querySelector(".frame:first-child")
 const frame = document.querySelector(".frame")
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
