@@ -72,9 +72,9 @@ body {
 .odd2{
    
     animation: scale 1s ease-in-out infinite alternate-reverse , spin 15s  alternate-reverse,
-    spin2 10s  15s alternate-reverse , turn-round 5s 20s alternate-reverse,
+    spin2 3s  15s alternate-reverse , turn-round 5s 20s alternate-reverse,
     spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse
-    , spin 15s 85s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
+    , spin 15s 85s alternate-reverse, turn-round2 5s 30s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
 .even { 
     background-color: #cc00ff22;
@@ -85,7 +85,7 @@ body {
  animation: color 4s 5s linear infinite alternate-reverse,  
  scale 1s ease-in-out infinite alternate-reverse , spin2 10s  alternate-reverse,
  spin 10s  9s alternate-reverse , turn-round 5s 20s alternate-reverse,
- spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse ,spin1 10s 60s alternate-reverse
+ spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse, turn-round2 5s 50s alternate-reverse ,spin1 10s 60s alternate-reverse
  , spin2 10s 75s alternate-reverse , spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
 }
 .mad{
@@ -320,6 +320,11 @@ span{
 @keyframes turn-round {
     to{
         rotate: x 360deg;
+    }
+}
+@keyframes turn-round2 {
+    to{
+        rotate: x -360deg;
     }
 }
 @keyframes show-infos{
