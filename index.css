@@ -70,7 +70,7 @@ body {
 .odd2{
    
     animation: scale 1s ease-in-out infinite alternate-reverse , spin 10s  alternate-reverse,
-    spin2 15s  11s alternate-reverse , turn-round 15s 20s alternate-reverse,
+    spin2 15s  11s alternate-reverse , turn-round 5s 20s alternate-reverse,
     spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse
     , spin 15s 85s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
@@ -80,10 +80,10 @@ body {
 
 .even2{
  opacity: .7; 
- animation: scale 1s ease-in-out infinite alternate-reverse , spin2 10s  alternate-reverse,
- spin 10s  11s alternate , turn-round 10s 15s alternate-reverse,
- spin 7s 31s alternate-reverse , spin2 10s 38s alternate-reverse ,spin 10s 48s alternate-reverse
- , turn-round 8s 58s alternate-reverse , spin 10s 66s alternate-reverse  , spin2 8s 76s alternate-reverse , spin 10s 74s alternate-reverse infinite;
+ animation: scale 1s ease-in-out infinite alternate-reverse , 
+ spin 8s   alternate infinite, turn-round 3s 4s alternate-reverse,
+ spin 6s 15s alternate-reverse , spin2 10s 18s alternate-reverse ,spin 10s 28s alternate-reverse
+ , turn-round 8s 38s alternate-reverse , spin 10s 56s alternate-reverse  , spin2 8s 66s alternate-reverse , spin 10s 64s alternate-reverse infinite;
 }
 .mad{
     position: absolute;
