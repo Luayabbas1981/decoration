@@ -241,6 +241,7 @@ function madMode (){
         evenDivs.map(item=> item.classList.add("odd2"))
         madBtn.disabled = true;
         tenBtn.disabled = true;
+        tenBtn.textContent="Disable"
         endMadBtn.style="z-index:1"
 }
 function stopMadMode (){
