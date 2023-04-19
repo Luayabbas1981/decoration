@@ -41,11 +41,11 @@ body {
     width:145px;
     height: 145px;
     transform-origin: bottom center;
-    animation: spin 3.5s linear infinite;  
-    
-    
+    animation: spin 3.5s linear infinite;   
 }
-
+.frame-mad-mode{
+    animation: spin 3.5s linear infinite;  
+}
 .frame-center{
     top: 20%;
 }

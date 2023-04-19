@@ -120,7 +120,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
 
     let interval
     function randomColorTwo (){
-
+        
         randomBtn.classList.toggle("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
