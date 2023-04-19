@@ -235,7 +235,7 @@ function madMode (){
         controlsInfos.textContent= "Mad mode active"
         controlsInfos.style="color:#ff9800"
     }
-        thirdColor()
+        
         setSecondMove ()
         randomColorTwo() 
         oddDivs.map(item=> item.classList.add("even2"))
