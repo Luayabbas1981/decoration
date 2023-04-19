@@ -230,6 +230,7 @@ function resetApp(){
    
 }
 /*  Mad mode function */
+    let secondInterval 
 function madMode (){ 
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad mode active"
@@ -246,13 +247,23 @@ function madMode (){
         tenBtn.textContent="Disable"
         endMadBtn.style="z-index:1 ; color:#e21e1e"
         color3.classList.toggle("color3")
-   
+        secondInterval= setInterval(() => {
+            frame.classList.toggle("mad-filter")
+        }, 1500);
+
 }
 function stopMadMode (){
     resetApp()
 }
 /* Invert color function */
 function invertMode (){
-    frame.classList.toggle("filter")
-    invert.classList.toggle("invert-color")
+    if( frame.classList.toggle("mad-filter")){
+        clearInterval(secondInterval)
+        frame.classList.toggle("filter")
+        invert.classList.toggle("invert-color")
+    }else{
+
+        frame.classList.toggle("filter")
+        invert.classList.toggle("invert-color")
+    }
 }
