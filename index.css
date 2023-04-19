@@ -23,7 +23,7 @@ body {
     translate: -50%;
     color: #ffffffae;
     font-size: xx-large;
-    animation:up-symbol 1.5s alternate-reverse   ;
+    animation:up-symbol 1.5s alternate-reverse ;
 }
 .controls-infos{
     position: absolute;
@@ -61,7 +61,7 @@ body {
    
 }
 .odd {
-    background-color: #f6a44d14;
+    background-color: #89c5f314;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -75,13 +75,13 @@ body {
     , spin 15s 85s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
 .even { 
-    background-color: #9900ff22;
+    background-color: #cc00ff22;
 }
 
 .even2{
  opacity: .7; 
- animation: scale 1s ease-in-out infinite alternate-reverse , 
- spin 8s   alternate infinite, turn-round 3s 4s alternate-reverse,
+ animation: scale 1s ease-in-out infinite , 
+ spin 5s   alternate infinite, turn-round 2s 18s alternate-reverse,
  spin 6s 15s alternate-reverse , spin2 10s 18s alternate-reverse ,spin 10s 28s alternate-reverse
  , turn-round 8s 38s alternate-reverse , spin 10s 56s alternate-reverse  , spin2 8s 66s alternate-reverse , spin 10s 64s alternate-reverse infinite;
 }
@@ -194,6 +194,7 @@ button{
     font-size: 15px;
     font-style: italic;
     font-weight: bold;
+    cursor: pointer;
     border-radius: 1rem;
     background-color: gold;
     color: #000;
@@ -202,7 +203,9 @@ button{
 .r2-c{
     color:#6200ff;
 }
-
+i{
+    cursor: pointer;
+}
 /* Infos section */
 
 .infos-sec{
@@ -428,6 +431,7 @@ span{
         font-size: 18px;
         top: 10%;
         right: 26%;
+       
     }
 }
 
