@@ -243,7 +243,7 @@ function madMode (){
         madBtn.disabled = true;
         tenBtn.disabled = true;
         tenBtn.textContent="Disable"
-        endMadBtn.style="z-index:1"
+        endMadBtn.style="z-index:1 ; color:#e21e1e"
 }
 function stopMadMode (){
     resetApp()
