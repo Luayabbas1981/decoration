@@ -61,7 +61,7 @@ body {
    
 }
 .odd {
-    background-color: #f66c4d14;
+    background-color: #f6a44d14;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -75,7 +75,7 @@ body {
     , spin 15s 85s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
 .even { 
-    background-color: #ff080022;
+    background-color: #9900ff22;
 }
 
 .even2{
