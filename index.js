@@ -16,7 +16,8 @@ const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
 const madBtn = document.querySelector(".mad")
-const endMadBtn = document.querySelector(".end-mad")
+const endMadBtn = document.querySelector(".stop-mad")
+const invert = document.querySelector(".invert")
 
 /* Initial values */
 oddDivs.map(item=> item.classList.add("even-animi"))
@@ -228,7 +229,7 @@ function resetApp(){
     location.reload()
    
 }
-
+/*  Mad mode function */
 function madMode (){ 
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad mode active"
@@ -246,4 +247,9 @@ function madMode (){
 }
 function stopMadMode (){
     resetApp()
+}
+/* Invert color function */
+function invertMode (){
+    frame.classList.toggle("filter")
+    invert.classList.toggle("invert-color")
 }
