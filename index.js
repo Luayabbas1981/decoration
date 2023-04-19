@@ -240,14 +240,13 @@ function madMode (){
         setSecondMove ()
         oddDivs.map(item=> item.classList.add("even2"))
         evenDivs.map(item=> item.classList.add("odd2"))
+        frame.classList.add("frame-mad-mode")
         madBtn.disabled = true;
         tenBtn.disabled = true;
         tenBtn.textContent="Disable"
         endMadBtn.style="z-index:1 ; color:#e21e1e"
         color3.classList.toggle("color3")
-   oddDivs.map((item)=>{  
-       return item.classList.toggle("even-animi")
-   })
+   
 }
 function stopMadMode (){
     resetApp()
