@@ -257,7 +257,7 @@ function stopMadMode (){
 }
 /* Invert color function */
 function invertMode (){
-    if( frame.classList.toggle("mad-filter")){
+    if( frame.classList.contains("mad-filter")){
         clearInterval(secondInterval)
         frame.classList.toggle("filter")
         invert.classList.toggle("invert-color")
