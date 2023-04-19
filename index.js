@@ -230,13 +230,17 @@ function resetApp(){
 }
 
 function madMode (){ 
+    if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad mode active"
         controlsInfos.style="color:#ff9800"
+    }
+      
         setSecondMove ()
         randomColorTwo() 
         oddDivs.map(item=> item.classList.add("even2"))
         evenDivs.map(item=> item.classList.add("odd2"))
         madBtn.disabled = true;
+        tenBtn.disabled = true;
         endMadBtn.style="z-index:1"
 }
 function stopMadMode (){
