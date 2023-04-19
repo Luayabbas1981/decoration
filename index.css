@@ -44,7 +44,7 @@ body {
     animation: spin 3.5s linear infinite;   
 }
 .frame-mad-mode{
-    animation: spin 3.5s linear infinite;  
+    animation: spin 2.5s linear infinite;  
 }
 .frame-center{
     top: 20%;
@@ -71,8 +71,8 @@ body {
 }
 .odd2{
    
-    animation: scale 1s ease-in-out infinite alternate-reverse , spin 10s  alternate-reverse,
-    spin2 15s  11s alternate-reverse , turn-round 5s 20s alternate-reverse,
+    animation: scale 1s ease-in-out infinite alternate-reverse , spin 15s  alternate-reverse,
+    spin2 10s  15s alternate-reverse , turn-round 5s 20s alternate-reverse,
     spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse
     , spin 15s 85s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
@@ -84,9 +84,9 @@ body {
  opacity: .9; 
  animation: color 4s 5s linear infinite alternate-reverse,  
  scale 1s ease-in-out infinite alternate-reverse , spin2 10s  alternate-reverse,
- spin 10s  11s alternate-reverse , turn-round 10s 20s alternate-reverse,
- spin 15s 31s alternate-reverse , spin2 15s 45s alternate-reverse ,spin1 15s 70s alternate-reverse
- , spin2 15s 85s alternate-reverse , spin1 15s 100s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
+ spin 10s  9s alternate-reverse , turn-round 5s 20s alternate-reverse,
+ spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse ,spin1 10s 60s alternate-reverse
+ , spin2 10s 75s alternate-reverse , spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
 }
 .mad{
     position: absolute;
