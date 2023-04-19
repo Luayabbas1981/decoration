@@ -250,8 +250,12 @@ animation: show-infos .6s linear forwards;
     }
 
 
-.infos-container >h2, h5{
+.infos-container >h2{
     text-align: center;
+}
+h5{
+    text-align: center;
+    color: #ff9800;
 }
 .warning{
     position: absolute;
