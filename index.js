@@ -163,14 +163,24 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
    if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c")){
     controlsInfos.textContent= "Random2 / 3rd modes active"
     controlsInfos.style="color:#f44336"
-    
    }
+   if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
+    controlsInfos.textContent= "Mad mode active"
+    controlsInfos.style="color:#ff9800"
+}
+if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
+    controlsInfos.textContent= "Mad mode active"
+    controlsInfos.style="color:#ff9800"
+}
+   
+   
     frame.classList.add("frame-center")
      controls.classList.add("f-screen")
      magnifyingPlus.classList.remove("f-screen")
      magnifyingMinus.classList.remove("f-screen")
      upArrow.classList.remove("f-screen")
  } 
+ 
  function showControls (){
     controlsInfos.textContent=""
     frame.classList.remove("frame-magnifying")
