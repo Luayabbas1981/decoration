@@ -195,8 +195,9 @@ button{
     font-style: italic;
     font-weight: bold;
     border-radius: 1rem;
-    background-color: #cbc9c9;
-    color: #6e6c6c;
+    background-color: gold;
+    color: #000;
+    border: none;
 }
 .r2-c{
     color:#6200ff;
