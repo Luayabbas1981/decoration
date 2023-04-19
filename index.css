@@ -281,7 +281,7 @@ animation: show-infos .6s linear forwards;
 }
 .rose-symbol{
     display: inline-block;
-    animation: spin2 3s infinite linear;
+    animation: spin 3s infinite linear;
 }
 h5{
     text-align: center;
