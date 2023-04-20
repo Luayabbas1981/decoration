@@ -4,7 +4,7 @@ body {
     font-family: "Noto Sans", sans-serif;
    background-color: #000;
     overflow: hidden;
-  
+
 }
 
 #up-arrow{
@@ -44,7 +44,7 @@ body {
     animation: spin 2.5s linear infinite;   
 }
 .frame-mad-mode{
-    animation: spin 2s linear infinite;  
+    animation: spin 2s linear infinite ;  
 }
 .frame-center{
     top: 20%;
@@ -86,7 +86,7 @@ body {
  scale 1s ease-in-out infinite alternate-reverse , spin2 10s  alternate-reverse,
  spin 10s  9s alternate-reverse , turn-round 5s 20s alternate-reverse,
  spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse, turn-round2 5s 50s alternate-reverse ,spin1 10s 60s alternate-reverse
- , spin2 10s 75s alternate-reverse , spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
+ , spin2 10s 75s alternate-reverse infinite, spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
 }
 .mad{
     position: absolute;
