@@ -44,7 +44,7 @@ body {
     animation: spin 3s linear infinite;   
 }
 .frame-mad-mode{
-    animation: spin 2.1s linear infinite;  
+    animation: spin 2s linear infinite;  
 }
 .frame-center{
     top: 20%;
