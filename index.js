@@ -23,7 +23,7 @@ const invert = document.querySelector(".invert")
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn.classList.add("r-id")
-controlsInfos.textContent="3rd button active"
+controlsInfos.textContent="3rd button on"
 
 /* Colors buttons functions */
 function oddColor (color){
@@ -155,22 +155,22 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     /* show / hide controls buttons functions */
  function fullScreen(){
    if( color3.classList.contains("color3")){
-    controlsInfos.textContent="3rd color mode active"
+    controlsInfos.textContent="3rd color mode on"
     controlsInfos.style="color:gold"
    } if(randomBtn.classList.contains("r2-c")){
-    controlsInfos.textContent="Random2 mode active"
+    controlsInfos.textContent="Random2 mode on"
     controlsInfos.style="color:#2196f3"
    }
    if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c")){
-    controlsInfos.textContent= "Random2 / 3rd modes active"
+    controlsInfos.textContent= "Random2 / 3rd modes on"
     controlsInfos.style="color:#f44336"
    }
    if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
-    controlsInfos.textContent= "Mad mode active"
+    controlsInfos.textContent= "Mad mode on"
     controlsInfos.style="color:#ff9800"
 }
 if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
-    controlsInfos.textContent= "Mad mode active"
+    controlsInfos.textContent= "Mad mode on"
     controlsInfos.style="color:#ff9800"
 }
    
@@ -233,7 +233,7 @@ function resetApp(){
     let secondInterval 
 function madMode (){ 
     if(frame.classList.contains("frame-center")){
-        controlsInfos.textContent= "Mad mode active"
+        controlsInfos.textContent= "Mad mode on"
         controlsInfos.style="color:#ff9800"
     }
         
