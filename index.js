@@ -23,7 +23,7 @@ const invert = document.querySelector(".invert")
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn.classList.add("r-id")
-controlsInfos.textContent="3rd button on"
+controlsInfos.textContent="3rd mode on"
 
 /* Colors buttons functions */
 function oddColor (color){
