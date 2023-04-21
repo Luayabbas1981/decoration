@@ -232,11 +232,12 @@ function resetApp(){
 /*  Mad mode function */
     let secondInterval 
 function madMode (){ 
+    
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad mode on"
         controlsInfos.style="color:#ff9800"
     }
-        
+        fullScreen()
         randomColorTwo() 
         setSecondMove ()
         oddDivs.map(item=> item.classList.add("even2"))
