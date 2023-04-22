@@ -17,6 +17,7 @@ const twentyBtn = document.querySelector(".twenty")
 const randomBtn = document.querySelector(".r2")
 const madBtn = document.querySelector(".mad")
 const endMadBtn = document.querySelector(".stop-mad")
+const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
 
 /* Initial values */
@@ -64,6 +65,7 @@ function thirdColor(){
    })
    }
 
+
 /* Number of leaves functions */
 function setFirstMove (){
     tenBtn.style="color:#0079b3"
@@ -87,9 +89,9 @@ function setSecondMove (){
 
 /* Random 1 and 2 buttons */
 console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","white","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato","black"]
+let firstColorArray= [ "cyan","lightblue","white","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato","yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
 
-let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink","black"]
+let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
 
     function randomColorOne (){
        
@@ -250,12 +252,39 @@ function madMode (){
         color3.classList.toggle("color3")
         secondInterval= setInterval(() => {
             frame.classList.toggle("mad-filter")
+           
         }, 1500);
 
+}
+
+function mad2Mode (){
+    madMode()
+    if(frame.classList.contains("frame-center")){
+        controlsInfos.textContent= "Mad2 mode on"
+        controlsInfos.style="color:#ff9800"
+    }
+    clearInterval(secondInterval)
+    endMadBtn.style="z-index:-1 ; color:black"
+    endMadBtn2.style="z-index:1 ; color:#e21e1e"
+    thirdInterval= setInterval(() => {   
+        colorfulRose ()
+    }, 1500);
 }
 function stopMadMode (){
     resetApp()
 }
+/* Colorful Rose  */
+   
+function colorfulRose (){
+    for(i=0; i<=firstColorArray.length;i++){
+        let x = Math.floor(Math.random()* firstColorArray.length ) 
+        oddDivs[i].setAttribute("id",`${firstColorArray[x]}`)
+        evenDivs.reverse()[i].setAttribute("id",`${firstColorArray[x]}`)
+        console.log(i,x)
+       
+    }
+}
+
 /* Invert color function */
 function invertMode (){
     if( frame.classList.contains("mad-filter")){
