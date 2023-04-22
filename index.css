@@ -406,17 +406,17 @@ span{
     .mad{
         height: 28px;
         top: 1.5%;
-        right: 6%;
+        right: 3%;
     }
     .mad2{
         height: 28px;
-        top: 5.5%;
-        right: 6%;
+        top: 6%;
+        right: 3%;
     }
     .invert{
         height: 28px;
-        top: 9.5%;
-        right: 6%;
+        top: 10%;
+        right: 3%;
     }
 }
 @media(min-width:800px){
