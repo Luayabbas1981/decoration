@@ -236,6 +236,9 @@ if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2
 /*  Mad mode function */
     let secondInterval 
 function madMode (){ 
+    color3.disabled=true
+    color3.textContent="Disable"
+    color3.style="color:#6e6c6c"
     madsContainer.classList.remove("show-mads-container")
     fullScreen()
     if(frame.classList.contains("frame-center")){
@@ -268,9 +271,6 @@ function mad2Mode (){
     }
     madsContainer.classList.remove("show-mads-container")
     clearInterval(secondInterval)
-    clearInterval(thirdInterval)
-    madBtn.disabled = true;
-    madBtn2.disabled = true;
     endMadBtn.style="z-index:-1 ; color:black"
     endMadBtn2.style="z-index:1 ; color:#e21e1e"
     thirdInterval= setInterval(() => {   
