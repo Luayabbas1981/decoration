@@ -77,6 +77,7 @@ body {
     spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse , turn-round 5s 60s alternate-reverse
     , spin 15s 85s alternate-reverse, turn-round2 5s 30s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
+
 .even { 
     background-color: #cc00ff22;
 }

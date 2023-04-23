@@ -1,6 +1,6 @@
 const divsArray =  Array.from(document.querySelectorAll(".frame > .odd ,.even"))
-const oddDivs = Array.from(document.querySelectorAll(".even"))
-const evenDivs = Array.from(document.querySelectorAll(".odd"))
+const oddDivs = Array.from(document.querySelectorAll(".odd"))
+const evenDivs = Array.from(document.querySelectorAll(".even"))
 const frame = document.querySelector(".frame")
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
@@ -25,7 +25,7 @@ const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
 
 /* Initial values */
-oddDivs.map(item=> item.classList.add("even-animi"))
+evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
 controlsInfos.textContent="3rd mode on"
@@ -64,7 +64,7 @@ clearInterval(interval)
 /* 3rd buttons function */
 function thirdColor(){
     color3.classList.toggle("color3")
-   oddDivs.map((item)=>{  
+   evenDivs.map((item)=>{  
        return item.classList.toggle("even-animi")
    })
    }
@@ -93,9 +93,9 @@ function setSecondMove (){
 
 /* Random 1 and 2 buttons */
 console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","white","coral","lightsalmon","orchid","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","white","tomato","yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
+let firstColorArray= [ "cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink"]
 
-let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","white","hotpink"]
+let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink"]
 
     function randomColorOne (){
        
@@ -105,7 +105,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
         color1.textContent="1st color"
         color2.textContent="2nd color"
         color3.classList.remove("color3")
-        oddDivs.map((item)=>{  
+        evenDivs.map((item)=>{  
             return item.classList.remove("even-animi")
         }) 
 
@@ -133,7 +133,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
         color1.textContent="1st color"
         color2.textContent="2nd color"
         color3.classList.remove("color3")
-    oddDivs.map((item)=>{  
+    evenDivs.map((item)=>{  
         return item.classList.remove("even-animi")
     }) 
 
@@ -196,10 +196,10 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     if(!infosContainer.classList.contains("show-infos")){
 
         infosContainer.classList.add("show-infos")
-        infosContainer.classList.remove("hide-infos")
+        infosContainer.classList.remove("evenDivsde-infos")
     } else{
         infosContainer.classList.remove("show-infos")
-        infosContainer.classList.add("hide-infos")
+        infosContainer.classList.add("evenDivsde-infos")
     }
    
  }
@@ -236,10 +236,10 @@ function madMode1 (){
         controlsInfos.textContent= "Mad1 mode on"
         controlsInfos.style="color:#ff9800"
     }
-        randomColorTwo() 
+        randomColorTwo()  
         setSecondMove ()
-        oddDivs.map(item=> item.classList.add("even2"))
-        evenDivs.map(item=> item.classList.add("odd2"))
+        evenDivs.map(item=> item.classList.add("even2"))
+        oddDivs.map(item=> item.classList.add("odd2"))
         frame.classList.add("frame-mad-mode")
         randomBtn1.disabled=true
         randomBtn2.disabled=true
@@ -271,6 +271,8 @@ function madMode2 (){
     thirdInterval= setInterval(() => {   
         colorfulRose ()
     }, 1500);
+   
+    
 }
 function stopMadMode (){
     resetApp()
@@ -278,13 +280,15 @@ function stopMadMode (){
 /* Colorful Rose  */
    
 function colorfulRose (){
-    for(i=0; i<=firstColorArray.length;i++){
+    
+    oddDivs.map((item)=>{
         let x = Math.floor(Math.random()* firstColorArray.length ) 
-        oddDivs[i].setAttribute("id",`${firstColorArray[x]}`)
-        evenDivs.reverse()[i].setAttribute("id",`${firstColorArray[x]}`)
-        console.log(i,x)
-       
-    }
+        item.setAttribute("id",`${firstColorArray[x]}`)
+    }).reverse()
+    evenDivs.map((item)=>{
+        let x = Math.floor(Math.random()* firstColorArray.length ) 
+        item.setAttribute("id",`${firstColorArray[x]}`)
+    })
 }
 
 /* Invert color function */
