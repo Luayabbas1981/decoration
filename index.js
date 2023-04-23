@@ -94,9 +94,9 @@ function setSecondMove (){
 
 /* Random 1 and 2 buttons */
 console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink"]
+let firstColorArray= [ "cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white","white","white","white","white"]
 
-let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink"]
+let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white"]
 
     function randomColorOne (){
        
