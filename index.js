@@ -235,7 +235,7 @@ if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2
  
 /*  Mad mode function */
     let secondInterval 
-function madMode (){ 
+function madMode1 (){ 
     color3.disabled=true
     color3.textContent="Disable"
     color3.style="color:#6e6c6c"
@@ -263,8 +263,8 @@ function madMode (){
 
 }
 
-function mad2Mode (){
-    madMode()
+function madMode2 (){
+    madMode1()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
         controlsInfos.style="color:#ff9800"
