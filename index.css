@@ -63,7 +63,7 @@ body {
    
 }
 .odd {
-    background-color: #00d9ff14;
+    background-color: #e91e632e;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -100,6 +100,7 @@ body {
     padding: .16rem;
     border-radius: 1rem;
     background-color: gold;
+    border: none;
 }
 .mads-container>button{
     display: block;
