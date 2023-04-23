@@ -71,8 +71,8 @@ body {
 .odd2{
    
     animation: scale 1s ease-in-out infinite alternate-reverse , spin 15s  alternate-reverse,
-    spin2 3s  15s alternate-reverse , turn-round 5s 20s alternate-reverse,
-    spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse , turn-round 5s 60s alternate-reverse
+    spin2 3s  15s alternate-reverse , turn-round 2s 20s alternate-reverse,
+    spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse , turn-round 2s 60s alternate-reverse
     , spin 15s 85s alternate-reverse, turn-round2 5s 30s alternate-reverse , spin2 15s 100s alternate-reverse  , spin 15s 105s alternate-reverse , spin2 10s 115s alternate-reverse infinite;  
 }
 
@@ -84,8 +84,8 @@ body {
  opacity: .9; 
  animation: color 4s 5s linear infinite alternate-reverse,  
  scale 1s ease-in-out infinite alternate-reverse , spin2 10s  alternate-reverse,
- spin 10s  9s alternate-reverse , turn-round 5s 20s alternate-reverse,
- spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse, turn-round2 5s 50s alternate-reverse ,spin1 10s 60s alternate-reverse, turn-round 5s 65s alternate-reverse
+ spin 10s  9s alternate-reverse , turn-round 3s 20s alternate-reverse,
+ spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse, turn-round2 3s 50s alternate-reverse ,spin1 10s 60s alternate-reverse, turn-round 3s 65s alternate-reverse
  , spin2 10s 75s alternate-reverse infinite, spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
 }
 .mads-sec{
@@ -511,66 +511,66 @@ span{
     background-color: #2b2a2a2b;
 }
 #green{
-    background-color: #7bff0025;
+    background-color: #7bff0019;
 }
 #blueviolet{
-    background-color: #ff01ea25;
+    background-color: #ff01ea19;
 
 }
 #yellow{
-    background-color: #ffd90025;
+    background-color: #ffd90019;
 
 }
 #red{
-    background-color: #fc282825;
+    background-color: #fc282819;
 }
 #blue{
-    background-color: #0084ff25;
+    background-color: #0084ff19;
 }
 #orange{
-    background-color: #ff980025;
+    background-color: #ff980019;
 }
 #cyan{
-    background-color: #00ffff25;
+    background-color: #00ffff19;
 }
 #lightblue{
-    background-color:#00bfff25;
+    background-color:#00bfff19;
 }
 #coral{
-    background-color:#fe865a25;
+    background-color:#fe865a19;
 }
 #hotpink{
-    background-color:#fd82c025;
+    background-color:#fd82c019;
 }
 #lightsalmon{
-    background-color:#d97c5825;
+    background-color:#d97c5819;
 }
 #orchid{
-    background-color:#d74dd325;
+    background-color:#d74dd319;
 }
 #lime{
-    background-color:#45de8c25;
+    background-color:#45de8c19;
 }
 #aquamarine{
-    background-color: #13e59f25;
+    background-color: #13e59f19;
 }
 #lawngreen{
     background-color: #9ad83713;
 }
 #turquoise{
-    background-color: #0cffe725;
+    background-color: #0cffe719;
 }
 #yellowgreen{
-    background-color: #bffd4225;
+    background-color: #bffd4219;
 }
 #darkorange{
-    background-color: #ff8c0025;
+    background-color: #ff8c0019;
 }
 #deebskyblue{
-    background-color: #00bfff25;
+    background-color: #00bfff19;
 }
 #gold{
-    background-color: #ffd70025;
+    background-color: #ffd70019;
 }
 #chocolate{
     background-color: #fb6f0c12;
@@ -579,12 +579,12 @@ span{
     background-color: #ff004c12;
 }
 #magenta{
-    background-color: #f838f825;
+    background-color: #f838f819;
 }
 #violet{
-    background-color: #ee82ee25;
+    background-color: #ee82ee19;
 }
 #tomato{
-    background-color: #ff634725;
+    background-color: #ff634719;
 }
 
