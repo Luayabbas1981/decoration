@@ -171,15 +171,6 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     controlsInfos.textContent= "Random2 / 3rd modes on"
     controlsInfos.style="color:#f44336"
    }
-   if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
-    controlsInfos.textContent= "Mad1 mode on"
-    controlsInfos.style="color:#ff9800"
-}
-if( randomBtn2.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
-    controlsInfos.textContent= "Mad1 mode on"
-    controlsInfos.style="color:#ff9800"
-}
-   
    
     frame.classList.add("frame-center")
      controls.classList.add("f-screen")
