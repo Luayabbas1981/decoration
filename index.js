@@ -264,7 +264,7 @@ function madMode2 (){
     madMode1()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
-        controlsInfos.style="color:#ff00e7"
+        controlsInfos.style="color:#89dc39"
     }
     madsContainer.classList.remove("show-mads-container")
     clearInterval(secondInterval)
