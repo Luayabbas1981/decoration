@@ -333,6 +333,10 @@ span{
     font-size: large;
     color: white;
 }
+
+:disabled{
+    color: #6e6c6c;
+}
 /* Keyframes section */
 
 @keyframes spin {

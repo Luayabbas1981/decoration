@@ -239,7 +239,6 @@ if( randomBtn2.classList.contains("r2-c") && oddDivs[0].classList.contains("even
 function madMode1 (){ 
     color3.disabled=true
     color3.textContent="Disable"
-    color3.style="color:#6e6c6c"
     madsContainer.classList.remove("show-mads-container")
     fullScreen()
     if(frame.classList.contains("frame-center")){
@@ -255,8 +254,6 @@ function madMode1 (){
         randomBtn2.disabled=true
         randomBtn1.textContent="Disable"
         randomBtn2.textContent="Disable"
-        randomBtn1.style="color:#6e6c6c"
-        randomBtn2.style="color:#6e6c6c"
         madBtn.disabled = true;
         madBtn2.disabled = true;
         tenBtn.disabled = true;
