@@ -63,7 +63,7 @@ body {
    
 }
 .odd {
-    background-color: #89c5f314;
+    background-color: #00d9ff14;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -79,7 +79,7 @@ body {
 }
 
 .even { 
-    background-color: #cc00ff22;
+    background-color: #ffffff22;
 }
 
 .even2{
@@ -354,7 +354,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #ff330010;
+        background-color: #ff51000a;
     }
 } 
 @keyframes turn-round {
