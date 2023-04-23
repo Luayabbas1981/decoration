@@ -472,8 +472,7 @@ span{
         font-size:27px ; 
     }
     .mads-sec{
-        position: absolute;
-        right: 25%;
+        right: 15%;
         top: 8.5%;
     }
 }
@@ -493,7 +492,10 @@ span{
         left: 65%;
         font-size:30px ; 
     }
-   
+    .mads-sec{
+        right: 27%;
+        top: 8.5%;
+    }
 }
 
 /* Colors Ids */
