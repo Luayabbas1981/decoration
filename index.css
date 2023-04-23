@@ -61,7 +61,7 @@ body {
    
 }
 .odd {
-    background-color: #e91e6319;
+    background-color: #ff8c0025;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -77,7 +77,7 @@ body {
 }
 
 .even { 
-    background-color: #ff572230;
+    background-color: #ffd70025;
 }
 
 .even2{
@@ -151,7 +151,7 @@ body {
     filter: hue-rotate(105deg);
 }
 .even-animi{
-    animation: color 4s 5s linear infinite alternate-reverse;   
+    animation: color 4s 4s linear infinite alternate-reverse;   
 
 }
 .rose-center{
@@ -353,7 +353,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #673ab740;
+        background-color: #de1fae40;
     }
 } 
 @keyframes turn-round {
@@ -510,9 +510,7 @@ span{
 #black{
     background-color: #2b2a2a2b;
 }
-#green{
-    background-color: #7bff0019;
-}
+
 #blueviolet{
     background-color: #ff01ea19;
 
@@ -555,13 +553,13 @@ span{
     background-color: #13e59f19;
 }
 #lawngreen{
-    background-color: #9ad83713;
+    background-color: #bff56813;
 }
 #turquoise{
-    background-color: #0cffe719;
+    background-color: #46f6e419;
 }
 #yellowgreen{
-    background-color: #bffd4219;
+    background-color: #d4f78e19;
 }
 #darkorange{
     background-color: #ff8c0019;

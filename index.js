@@ -92,11 +92,12 @@ function setSecondMove (){
 }
 
 /* Random 1 and 2 buttons */
-console.log(divsArray)
-let firstColorArray= [ "cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white","white","white","white","white"]
 
-let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white"]
+let firstColorArray= [ "cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","white","white"]
 
+let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white"]
+
+let colorfulArr = ["cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","white","white","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white"]
     function randomColorOne (){
        
         color1.style="background-color:black"
@@ -283,12 +284,12 @@ function stopMadMode (){
 function colorfulRose (){
     
     oddDivs.map((item)=>{
-        let x = Math.floor(Math.random()* firstColorArray.length ) 
-        item.setAttribute("id",`${firstColorArray[x]}`)
+        let x = Math.floor(Math.random()* colorfulArr.length ) 
+        item.setAttribute("id",`${colorfulArr[x]}`)
     }).reverse()
     evenDivs.map((item)=>{
-        let x = Math.floor(Math.random()* firstColorArray.length ) 
-        item.setAttribute("id",`${firstColorArray[x]}`)
+        let x = Math.floor(Math.random()* colorfulArr.length ) 
+        item.setAttribute("id",`${colorfulArr[x]}`)
     })
 }
 
