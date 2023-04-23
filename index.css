@@ -89,34 +89,62 @@ body {
  spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse, turn-round2 5s 50s alternate-reverse ,spin1 10s 60s alternate-reverse, turn-round 5s 65s alternate-reverse
  , spin2 10s 75s alternate-reverse infinite, spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
 }
-.mad ,.mad2{
+.mads-sec{
     position: absolute;
-    top: 9%;
-    right: 30%;
+    right: 8%;
+    top: 2.5%;
+}
+.mads-sec button {
     width: 60px;
-    color: #000;
-    background-color: gold;
+    padding: .3rem;
     border-radius: 1rem;
-    text-align: center;   
-    font-size: 15px; 
+    background-color: gold;
 }
-.mad2{
-    top: 15;
+.mads-container>button{
+    display: block;
+    left: 50%;
+    translate: -50%;
+ 
+ }
+.mads-container{
+    width: 70px;
+    height: 115px;
+    padding: .4rem;
+    border-radius: 1rem;
+    background-color: #ffffff32;
+    position: absolute;
+    top: 40px;   
+    left: 50%;
+    translate: -50%;
+    scale: 1 0;
+    transform-origin: top center;
+    backdrop-filter:hue-rotate(180deg) ;
 }
-.stop-mad , .stop-mad2{
+.show-mads-container{
+    animation: show-mads 1s forwards;
+}
+@keyframes show-mads{
+    to{
+        scale: 1 1;
+    }
+}
+ .mad1, .stop-mad1{
+    position: absolute;
+    top: 10px;
+ }
+ .mad2, .stop-mad2{
+    position: absolute;
+    top: 50px;
+ }
+ .invert{
+    position: absolute;
+    top:90px;
+ }
+
+.stop-mad1 , .stop-mad2{
   z-index: -1;
 }
-.invert{
-    position: absolute;
-    top: 21%;
-    right: 26%;
-    width: 60px;
-    color: #000;
-    background-color: gold;
-    border-radius: 1rem;
-    text-align: center;   
-    font-size: 15px;  
-}
+
 .invert-color{
     color: #a123d7;
 }
@@ -215,7 +243,7 @@ body {
     justify-content: center;
     gap: .5rem;
 }
-button{
+.btn-container>button{
     width: 95px;
     height: 32px;
     font-size: 15px;
@@ -403,21 +431,7 @@ span{
         left: 81%;
         font-size:27px ; 
     }
-    .mad{
-        height: 24px;
-        top: 1.3%;
-        right: 100px;
-    }
-    .mad2{
-        height: 24px;
-        top: 1.3%;
-        right: 4%;
-    }
-    .invert{
-        height: 24px;
-        top: 50px;
-        right: 4%;
-    }
+  
 }
 @media(min-width:800px){
    .frame-center{
@@ -453,26 +467,10 @@ span{
         left: 79%;
         font-size:27px ; 
     }
-    .mad{
-        width: 80px;
-        height: 30px;
-        font-size: 18px;
-        top: 10%;
-        right: 15%;
-    }
-    .mad2{
-        width: 80px;
-        height: 30px;
-        font-size: 18px;
-        top: 15%;
-        right: 15%;
-    }
-    .invert{
-        width: 80px;
-        height: 30px;
-        font-size: 18px;
-        top: 20%;
-        right: 15%;
+    .mads-sec{
+        position: absolute;
+        right: 25%;
+        top: 8.5%;
     }
 }
 @media(min-width:1200px){
@@ -491,30 +489,7 @@ span{
         left: 65%;
         font-size:30px ; 
     }
-    .mad{
-        width: 80px;
-        height: 30px;
-        font-size: 18px;
-        top: 10%;
-        right: 26%;
-       
-    }
-    .mad2{
-        width: 80px;
-        height: 30px;
-        font-size: 18px;
-        top: 15%;
-        right: 26%;
-       
-    }
-    .invert{
-        width: 80px;
-        height: 30px;
-        font-size: 18px;
-        top: 20%;
-        right: 26%;
-       
-    }
+   
 }
 
 /* Colors Ids */

@@ -14,9 +14,12 @@ const infosSymbol = document.querySelector("#infos-symbol")
 const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
+const madsContainer = document.querySelector(".mads-container")
 const randomBtn = document.querySelector(".r2")
-const madBtn = document.querySelector(".mad")
-const endMadBtn = document.querySelector(".stop-mad")
+const madBtn = document.querySelector(".mad1")
+const endMadBtn = document.querySelector(".stop-mad1")
+const madBtn2 = document.querySelector(".mad2")
+console.log(madBtn,endMadBtn)
 const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
 
@@ -168,11 +171,11 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     controlsInfos.style="color:#f44336"
    }
    if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
-    controlsInfos.textContent= "Mad mode on"
+    controlsInfos.textContent= "Mad1 mode on"
     controlsInfos.style="color:#ff9800"
 }
 if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
-    controlsInfos.textContent= "Mad mode on"
+    controlsInfos.textContent= "Mad1 mode on"
     controlsInfos.style="color:#ff9800"
 }
    
@@ -224,20 +227,19 @@ if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2
     frame.classList.toggle("frame-magnifying")
     magnifyingPlus.classList.toggle("f-screen")
   
- }
+ }/* Mads-container function */
 
- /* Reset button function */
-function resetApp(){
-    location.reload()
-   
-}
+ function showMadsContainer (){
+    madsContainer.classList.toggle("show-mads-container")
+ }
+ 
 /*  Mad mode function */
     let secondInterval 
 function madMode (){ 
-    
+    madsContainer.classList.remove("show-mads-container")
     fullScreen()
     if(frame.classList.contains("frame-center")){
-        controlsInfos.textContent= "Mad mode on"
+        controlsInfos.textContent= "Mad1 mode on"
         controlsInfos.style="color:#ff9800"
     }
         randomColorTwo() 
@@ -246,6 +248,7 @@ function madMode (){
         evenDivs.map(item=> item.classList.add("odd2"))
         frame.classList.add("frame-mad-mode")
         madBtn.disabled = true;
+        madBtn2.disabled = true;
         tenBtn.disabled = true;
         tenBtn.textContent="Disable"
         endMadBtn.style="z-index:1 ; color:#e21e1e"
@@ -263,7 +266,11 @@ function mad2Mode (){
         controlsInfos.textContent= "Mad2 mode on"
         controlsInfos.style="color:#ff9800"
     }
+    madsContainer.classList.remove("show-mads-container")
     clearInterval(secondInterval)
+    clearInterval(thirdInterval)
+    madBtn.disabled = true;
+    madBtn2.disabled = true;
     endMadBtn.style="z-index:-1 ; color:black"
     endMadBtn2.style="z-index:1 ; color:#e21e1e"
     thirdInterval= setInterval(() => {   
@@ -287,8 +294,10 @@ function colorfulRose (){
 
 /* Invert color function */
 function invertMode (){
+    madsContainer.classList.remove("show-mads-container")
     if( frame.classList.contains("mad-filter")){
         clearInterval(secondInterval)
+        clearInterval(thirdInterval)
         frame.classList.toggle("filter")
         invert.classList.toggle("invert-color")
     }else{
@@ -296,4 +305,9 @@ function invertMode (){
         frame.classList.toggle("filter")
         invert.classList.toggle("invert-color")
     }
+}
+/* Reset button function */
+function resetApp(){
+    location.reload()
+   
 }
