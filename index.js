@@ -15,7 +15,8 @@ const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
 const madsContainer = document.querySelector(".mads-container")
-const randomBtn = document.querySelector(".r2")
+const randomBtn1 = document.querySelector(".r1")
+const randomBtn2 = document.querySelector(".r2")
 const madBtn = document.querySelector(".mad1")
 const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
@@ -26,13 +27,13 @@ const invert = document.querySelector(".invert")
 /* Initial values */
 oddDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
-randomBtn.classList.add("r-id")
+randomBtn2.classList.add("r-id")
 controlsInfos.textContent="3rd mode on"
 
 /* Colors buttons functions */
 function oddColor (color){
    
-    randomBtn.classList.remove("r2-c")
+    randomBtn2.classList.remove("r2-c")
    divsArray.map((item,i)=>{
        return i % 2 === 0? "":item.setAttribute("id",`${color}`)
    })
@@ -40,13 +41,13 @@ function oddColor (color){
 color1.textContent=color.toUpperCase()
 color1.style=`background-color:${color}`
 if(interval){
-   randomBtn.classList.add("r-id")
+   randomBtn2.classList.add("r-id")
    clearInterval(interval)
 }
 }
 
 function evenColor (color){
-randomBtn.classList.remove("r2-c")
+randomBtn2.classList.remove("r2-c")
 divsArray.map((item,i)=>{
    return i % 2 === 0? item.setAttribute("id",`${color}`):""
 })
@@ -55,7 +56,7 @@ color2.textContent=color.toUpperCase()
 color2.style=`background-color:${color}`
 
 if(interval){
-randomBtn.classList.add("r-id")
+randomBtn2.classList.add("r-id")
 clearInterval(interval)
 }
 }
@@ -100,7 +101,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
        
         color1.style="background-color:black"
         color2.style="background-color:black"
-        randomBtn.classList.remove("r2-c")
+        randomBtn2.classList.remove("r2-c")
         color1.textContent="1st color"
         color2.textContent="2nd color"
         color3.classList.remove("color3")
@@ -117,7 +118,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
             return i % 2 === 0? "": item.setAttribute("id",`${secondColorArray[y]}`)
         })
         if(interval){
-            randomBtn.classList.add("r-id")
+            randomBtn2.classList.add("r-id")
 
             clearInterval(interval)
         }
@@ -126,7 +127,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
     let interval
     function randomColorTwo (){
         
-        randomBtn.classList.toggle("r2-c")
+        randomBtn2.classList.toggle("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
         color1.textContent="1st color"
@@ -136,8 +137,8 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
         return item.classList.remove("even-animi")
     }) 
 
-    if(randomBtn.classList.contains("r-id")){
-        randomBtn.classList.remove("r-id")
+    if(randomBtn2.classList.contains("r-id")){
+        randomBtn2.classList.remove("r-id")
         interval =
         setInterval(()=>{
             let x = Math.floor(Math.random()* firstColorArray.length ) 
@@ -152,7 +153,7 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
         },5000)
     }else{
         clearInterval(interval)
-        randomBtn.classList.add("r-id")
+        randomBtn2.classList.add("r-id")
     }
        
     }
@@ -162,19 +163,19 @@ let secondColorArray= ["yellow","red","white","blue","darkorange","deepskyblue",
    if( color3.classList.contains("color3")){
     controlsInfos.textContent="3rd color mode on"
     controlsInfos.style="color:gold"
-   } if(randomBtn.classList.contains("r2-c")){
+   } if(randomBtn2.classList.contains("r2-c")){
     controlsInfos.textContent="Random2 mode on"
     controlsInfos.style="color:#2196f3"
    }
-   if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c")){
+   if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c")){
     controlsInfos.textContent= "Random2 / 3rd modes on"
     controlsInfos.style="color:#f44336"
    }
-   if(color3.classList.contains("color3") && randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
+   if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
     controlsInfos.textContent= "Mad1 mode on"
     controlsInfos.style="color:#ff9800"
 }
-if( randomBtn.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
+if( randomBtn2.classList.contains("r2-c") && oddDivs[0].classList.contains("even2")){
     controlsInfos.textContent= "Mad1 mode on"
     controlsInfos.style="color:#ff9800"
 }
@@ -250,6 +251,12 @@ function madMode1 (){
         oddDivs.map(item=> item.classList.add("even2"))
         evenDivs.map(item=> item.classList.add("odd2"))
         frame.classList.add("frame-mad-mode")
+        randomBtn1.disabled=true
+        randomBtn2.disabled=true
+        randomBtn1.textContent="Disable"
+        randomBtn2.textContent="Disable"
+        randomBtn1.style="color:#6e6c6c"
+        randomBtn2.style="color:#6e6c6c"
         madBtn.disabled = true;
         madBtn2.disabled = true;
         tenBtn.disabled = true;
