@@ -198,10 +198,10 @@ let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepsky
     if(!infosContainer.classList.contains("show-infos")){
 
         infosContainer.classList.add("show-infos")
-        infosContainer.classList.remove("evenDivsde-infos")
+        infosContainer.classList.remove("hide-infos")
     } else{
         infosContainer.classList.remove("show-infos")
-        infosContainer.classList.add("evenDivsde-infos")
+        infosContainer.classList.add("hide-infos")
     }
    
  }
