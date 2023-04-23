@@ -124,11 +124,7 @@ body {
 .show-mads-container{
     animation: show-mads 1s forwards;
 }
-@keyframes show-mads{
-    to{
-        scale: 1 1;
-    }
-}
+
  .mad1, .stop-mad1{
     position: absolute;
     top: 10px;
@@ -400,7 +396,11 @@ span{
         scale:1.2
     }
 }
-
+@keyframes show-mads{
+    to{
+        scale: 1 1;
+    }
+}
 /* Media section */
 
 
