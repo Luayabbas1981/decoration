@@ -171,6 +171,9 @@ let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepsky
    &&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent= "Random2/3rd modes on"
     controlsInfos.style="color:#f44336"
+   }else{
+    controlsInfos.textContent= "mad mode on"
+    controlsInfos.style="color:#87f903"
    }
    
     frame.classList.add("frame-center")
