@@ -26,7 +26,9 @@ const invert = document.querySelector(".invert")
 
 /* Initial values */
 window.onload= ( function(){
-    window.scrollTo(0,0)
+   setTimeout(() => {
+    frame.classList.remove("frame-magnifying")
+   }, 5);
 })()
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
