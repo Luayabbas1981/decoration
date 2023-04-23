@@ -25,7 +25,9 @@ const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
 
 /* Initial values */
-
+window.onload= ( function(){
+    window.scrollTo(0,0)
+})()
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
