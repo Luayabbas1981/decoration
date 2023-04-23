@@ -279,7 +279,7 @@ i{
 .infos-container{
     position: absolute;
     top: 30px;
-    left: 62px;
+    left: 15px;
     width: 270px;
     height: 470px;
     padding: 1rem;
@@ -415,7 +415,7 @@ span{
     }
     .infos-container{
         width: 220px;
-        height: 435px;
+        height: 470px;
         line-height: 13px;
     }
     .infos-sec{
