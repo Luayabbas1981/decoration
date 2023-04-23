@@ -79,7 +79,7 @@ body {
 }
 
 .even { 
-    background-color: #673ab740;
+    background-color: #ff572240;
 }
 
 .even2{
@@ -354,7 +354,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #ff572240;
+        background-color: #673ab740;
     }
 } 
 @keyframes turn-round {
