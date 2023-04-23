@@ -160,15 +160,16 @@ let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepsky
 
     /* show / hide controls buttons functions */
  function fullScreen(){
-   if( color3.classList.contains("color3")){
+   if( color3.classList.contains("color3")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="3rd color mode on"
     controlsInfos.style="color:gold"
-   } if(randomBtn2.classList.contains("r2-c")){
+   } if(randomBtn2.classList.contains("r2-c")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="Random2 mode on"
     controlsInfos.style="color:#2196f3"
    }
-   if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c")){
-    controlsInfos.textContent= "Random2 / 3rd modes on"
+   if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c")
+   &&  !frame.classList.contains("frame-mad-mode")){
+    controlsInfos.textContent= "Random2/3rd modes on"
     controlsInfos.style="color:#f44336"
    }
    
