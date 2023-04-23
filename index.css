@@ -425,7 +425,6 @@ span{
     }
     .controls-infos{
         top: 89%;
-        color: gold;
         font-size: 12px;
     }
     #up-arrow{ 
@@ -461,7 +460,7 @@ span{
     }
     .controls-infos{
         top: 89%;
-        color: gold;
+        color: #00ffe0;
         font-size: 18px;
     }
     #up-arrow{ 

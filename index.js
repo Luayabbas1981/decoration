@@ -162,18 +162,15 @@ let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepsky
  function fullScreen(){
    if( color3.classList.contains("color3")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="3rd color mode on"
-    controlsInfos.style="color:gold"
+    controlsInfos.style="color:#00ffe0"
    } if(randomBtn2.classList.contains("r2-c")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="Random2 mode on"
-    controlsInfos.style="color:#2196f3"
+    controlsInfos.style="color:#03def4"
    }
    if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c")
    &&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent= "Random2/3rd modes on"
-    controlsInfos.style="color:#f44336"
-   }else{
-    controlsInfos.textContent= "mad mode on"
-    controlsInfos.style="color:#87f903"
+    controlsInfos.style="color:#ff1100"
    }
    
     frame.classList.add("frame-center")
@@ -238,7 +235,7 @@ function madMode1 (){
     fullScreen()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad1 mode on"
-        controlsInfos.style="color:#ff9800"
+        controlsInfos.style="color:#dbff00"
     }
         randomColorTwo()  
         setSecondMove ()
@@ -266,7 +263,7 @@ function madMode2 (){
     madMode1()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
-        controlsInfos.style="color:#00bcd4"
+        controlsInfos.style="color:#ff00e7"
     }
     madsContainer.classList.remove("show-mads-container")
     clearInterval(secondInterval)
