@@ -151,6 +151,7 @@ body {
 .mad-filter{
     filter: hue-rotate(105deg);
 }
+
 .even-animi{
     animation: color 5s 1s linear infinite alternate-reverse;   
 
