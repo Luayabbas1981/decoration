@@ -48,6 +48,7 @@ body {
 }
 .frame-center{
     top: 20%;
+    
 }
 
 .odd, .even {
@@ -445,7 +446,7 @@ span{
     
    }
    .frame-magnifying{
-    scale: 1.2;
+    scale: 1.4;
 }
     .controls{
         top: 40%;
@@ -476,6 +477,9 @@ span{
     .mads-sec{
         right: 15%;
         top: 8.5%;
+    }
+    .frame-center{
+      scale: 1.3;
     }
 }
 @media(min-width:1200px){
