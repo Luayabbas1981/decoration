@@ -1,6 +1,6 @@
 ## Decoration - Colorful Rose App
 ### Description:
-#### This app allowed you to mix three colors and see which colors come out!
+#### This app allowed you to mix colors and see which colors come out!
 ### Tools :
 #### HTML CSS3 JS
 ### Instructions:
