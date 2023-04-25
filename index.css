@@ -41,7 +41,7 @@ body {
 
 }
 .controls-infos-container >span:last-child{
-    color: #9000ff;
+    color: #ff0000;
 }
 .frame {
     perspective: 700px;
@@ -455,16 +455,16 @@ span{
         top: 89%;
     }
     .controls-infos-container>span{
-        font-size: 10.7px;
+        font-size: 11.2px;
 
     }
     #up-arrow{ 
-        left: 15%; 
+        left: 13%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
        
-        left: 85%;
+        left: 87%;
         font-size:27px ; 
     }
     .frame-magnifying{
