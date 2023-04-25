@@ -5,6 +5,8 @@ body {
    background-color: #000;
     overflow: hidden;
     font-family: 'Bruno Ace', cursive;
+    --formOne:50% 50% 50% 50% / 35% 36% 65% 65% ;
+    --formTwo:30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 
 #up-arrow{
@@ -56,7 +58,7 @@ body {
     width: 100%;
     height: 100%;
     border: 0.8px solid #eff7f815;
-    border-radius: 50% 50% 50% 50% / 35% 36% 65% 65% ;
+    border-radius: var(--form) ;
     transform-origin: bottom center;
     rotate: calc(36deg * var(--d));
    
@@ -109,7 +111,7 @@ body {
  }
 .mads-container{
     width: 70px;
-    height: 115px;
+    height: 188px;
     padding: .4rem;
     border-radius: 1rem;
     background-color: #ffffff32;
@@ -124,18 +126,29 @@ body {
 .show-mads-container{
     animation: show-mads 1s forwards;
 }
+.form1{
+    position: absolute;
+    top: 10px;
+}
+.form-color{
+    color: #0475cf;
+}
+.form2{
+    position: absolute;
+    top: 50px; 
+}
 
  .mad1, .stop-mad1{
     position: absolute;
-    top: 10px;
+    top: 90px;
  }
  .mad2, .stop-mad2{
     position: absolute;
-    top: 50px;
+    top: 130px;
  }
  .invert{
     position: absolute;
-    top:90px;
+    top:170px;
  }
 
 .stop-mad1 , .stop-mad2{

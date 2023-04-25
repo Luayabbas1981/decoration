@@ -17,6 +17,8 @@ const twentyBtn = document.querySelector(".twenty")
 const madsContainer = document.querySelector(".mads-container")
 const randomBtn1 = document.querySelector(".r1")
 const randomBtn2 = document.querySelector(".r2")
+const firstForm = document.querySelector(".form1")
+const secondForm = document.querySelector(".form2")
 const madBtn = document.querySelector(".mad1")
 const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
@@ -74,21 +76,34 @@ function thirdColor(){
 function setFirstMove (){
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
-         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i}`   
+    if(frame.classList.contains("first-form")){
+        for(i=0;i<=divsArray.length;++i){ 
+            divsArray[i].style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% `   
         }  
+    }else{
+        for(i=0;i<=divsArray.length;++i){ 
+            divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70% `   
+        }  
+    }
+        
     }
 
 function setSecondMove (){
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
-    if((divsArray[0].style="--d:1")){
+    if(( frame.classList.contains("first-form"))){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
             x+= .5
-            divsArray[i].style=`--d:${x}`  
+            divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
         } 
-    } 
+    } if(( frame.classList.contains("second-form"))){
+        let x= 0
+    for(i=0;i<divsArray.length;++i){ 
+        x+= .5
+        divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
+    }
+    }
 }
 
 /* Random 1 and 2 buttons */
@@ -315,4 +330,26 @@ function invertMode (){
 function resetApp(){
     location.reload()
    
+}
+
+function setFirstForm(){
+    madsContainer.classList.toggle("show-mads-container")
+    frame.classList.remove("second-form")
+    frame.classList.add("first-form")
+    firstForm.classList.toggle("form-color")
+    secondForm.classList.remove("form-color")
+    divsArray.map((item,i)=>{
+        item.setAttribute("style",` --d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+    })
+}
+
+function setSecondForm (){
+    madsContainer.classList.toggle("show-mads-container")
+    frame.classList.remove("first-form")
+    frame.classList.add("second-form")
+    secondForm.classList.toggle("form-color")
+    firstForm.classList.remove("form-color")
+    divsArray.map((item,i)=>{
+        item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+    })
 }
