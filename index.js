@@ -264,7 +264,7 @@ function madMode2 (){
     madMode1()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
-        controlsInfos.style="color:#89dc39"
+        controlsInfos.style="color:#fe3f03"
     }
     madsContainer.classList.remove("show-mads-container")
     clearInterval(secondInterval)
@@ -295,6 +295,10 @@ function colorfulRose (){
 
 /* Invert color function */
 function invertMode (){
+    if(!frame.classList.contains("mad-filter")){
+        controlsInfos.textContent= "Invert mode on"
+        controlsInfos.style="color:#da00ff"
+    }
     madsContainer.classList.remove("show-mads-container")
     if( frame.classList.contains("mad-filter")){
         clearInterval(secondInterval)

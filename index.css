@@ -62,7 +62,7 @@ body {
    
 }
 .odd {
-    background-color: #ff8c0025;
+    background-color: #ff910025;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -78,7 +78,7 @@ body {
 }
 
 .even { 
-    background-color: #ffd70025;
+    background-color: #ff2f0025;
 }
 
 .even2{
@@ -153,7 +153,7 @@ body {
 }
 
 .even-animi{
-    animation: color 5s 1s linear infinite alternate-reverse;   
+    animation: color 5s 3s linear infinite alternate-reverse;   
 
 }
 .rose-center{
@@ -355,7 +355,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #de1fae40;
+        background-color: #930ff240;
     }
 } 
 @keyframes turn-round {
