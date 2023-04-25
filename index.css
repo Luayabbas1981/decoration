@@ -98,7 +98,7 @@ body {
  , spin2 10s 75s alternate-reverse infinite, spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
 }
 .even-animi{
-    animation: color 7s 3s linear infinite alternate-reverse;   
+    animation: color 4s 3s linear infinite alternate-reverse;   
 
 }
 .mads-sec{
