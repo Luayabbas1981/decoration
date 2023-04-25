@@ -141,11 +141,11 @@ function setSecondMove (){
 
 /* Random 1 and 2 buttons */
 
-let firstColorArray= [ "cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","white","white"]
+let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white"]
 
-let secondColorArray= ["yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white"]
+let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","hotpink","white","white"]
 
-let colorfulArr = ["cyan","lightblue","wevenDivste","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","wevenDivste","tomato","white","white","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white"]
+let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white"]
     function randomColorOne (){
        
         color1.style="background-color:black"
