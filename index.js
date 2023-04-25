@@ -9,6 +9,7 @@ const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
 const controlsInfos = document.querySelector(".controls-infos")
 const addControlsInfos = document.querySelector(".add-infos")
+const addControlsInfosTwo = document.querySelector(".add-infos2")
 const magnifyingPlus = document.querySelector("#magnifying-plus")
 const magnifyingMinus = document.querySelector("#magnifying-minus")
 const infosSymbol = document.querySelector("#infos-symbol")
@@ -218,6 +219,9 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
     if(frame.classList.contains("second-form")){
         addControlsInfos.textContent="/ Fromat2"
     }
+    if(addControlsInfosTwo.classList.contains("invert-on")){
+        addControlsInfosTwo.textContent="/ Invert on"
+    }
    if( color3.classList.contains("color3")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="3rd color mode on"
     controlsInfos.style="color:#00ffe0"
@@ -241,6 +245,7 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
  function showControls (){
     controlsInfos.textContent=""
     addControlsInfos.textContent=""
+    addControlsInfosTwo.textContent=""
     frame.classList.remove("frame-magnifying")
     controls.classList.remove("f-screen")
     upArrow.classList.add("f-screen")
@@ -353,7 +358,17 @@ function colorfulRose (){
 
 /* Invert color function */
 function invertMode (){
-    
+
+    addControlsInfosTwo.classList.toggle("invert-on")
+    if(frame.classList.contains("frame-center")){
+
+        addControlsInfosTwo.textContent="/ Invert on"
+    }
+    if(! addControlsInfosTwo.classList.contains("invert-on")){
+
+        addControlsInfosTwo.textContent=""
+    }
+
     madsContainer.classList.remove("show-mads-container")
     if( frame.classList.contains("mad-filter")){
         clearInterval(secondInterval)

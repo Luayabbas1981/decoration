@@ -36,8 +36,12 @@ body {
     color: aqua;
 
 }
+.controls-infos-container >span:nth-child(2){
+    color: #44ff00;
+
+}
 .controls-infos-container >span:last-child{
-    color: rgb(68, 255, 0);
+    color: #9000ff;
 
 }
 .frame {
