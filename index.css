@@ -511,6 +511,9 @@ span{
     .frame-center{
       scale: 1.3;
     }
+    .frame-magnifying{
+        scale: 1.5;
+    }
 }
 @media(min-width:1200px){
     .infos-sec{
@@ -532,9 +535,7 @@ span{
         right: 27%;
         top: 8.5%;
     }
-    .frame-magnifying{
-        scale: 1.5;
-    }
+    
 }
 
 /* Colors Ids */

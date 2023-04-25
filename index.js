@@ -212,7 +212,7 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
 
     /* show / hide controls buttons functions */
  function fullScreen(){
-  
+    frame.classList.remove("frame-magnifying")
     if(frame.classList.contains("first-form")){
         addControlsInfos.textContent="/ Fromat1"
     }
