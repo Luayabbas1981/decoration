@@ -34,6 +34,37 @@ randomBtn2.classList.add("r-id")
 controlsInfos.textContent="3rd mode on"
 addControlsInfos.textContent="/ Format1"
 
+/* Rose format */
+function setFirstForm(){
+   
+
+    addControlsInfos.textContent="/ format1"
+
+madsContainer.classList.toggle("show-mads-container")
+frame.classList.remove("second-form")
+frame.classList.add("first-form")
+firstForm.classList.toggle("form-color")
+secondForm.classList.remove("form-color")
+divsArray.map((item,i)=>{
+    item.setAttribute("style",` --d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+})
+}
+
+function setSecondForm (){
+
+
+    addControlsInfos.textContent="/ format2"
+
+madsContainer.classList.toggle("show-mads-container")
+frame.classList.remove("first-form")
+frame.classList.add("second-form")
+secondForm.classList.toggle("form-color")
+firstForm.classList.remove("form-color")
+divsArray.map((item,i)=>{
+    item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+})
+}
+
 /* Colors buttons functions */
 function oddColor (color){
    
@@ -341,32 +372,3 @@ function resetApp(){
    
 }
 
-function setFirstForm(){
-   
-
-        addControlsInfos.textContent="/ format1"
-    
-    madsContainer.classList.toggle("show-mads-container")
-    frame.classList.remove("second-form")
-    frame.classList.add("first-form")
-    firstForm.classList.toggle("form-color")
-    secondForm.classList.remove("form-color")
-    divsArray.map((item,i)=>{
-        item.setAttribute("style",` --d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
-    })
-}
-
-function setSecondForm (){
-   
-
-        addControlsInfos.textContent="/ format2"
-    
-    madsContainer.classList.toggle("show-mads-container")
-    frame.classList.remove("first-form")
-    frame.classList.add("second-form")
-    secondForm.classList.toggle("form-color")
-    firstForm.classList.remove("form-color")
-    divsArray.map((item,i)=>{
-        item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
-    })
-}
