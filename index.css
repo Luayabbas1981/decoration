@@ -32,6 +32,7 @@ body {
     top: 88%;
     left: 50%;
     translate: -50%; 
+    word-break: keep-all;
 }
 .controls-infos-container >span:first-child{
     color: aqua;
