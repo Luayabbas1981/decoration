@@ -37,8 +37,10 @@ addControlsInfos.textContent="/ Format1"
 /* Rose format */
 function setFirstForm(){
    
+    if(frame.classList.contains("frame-center")){
 
-    addControlsInfos.textContent="/ format1"
+        addControlsInfos.textContent="/ Format1"
+    }
 
 madsContainer.classList.toggle("show-mads-container")
 frame.classList.remove("second-form")
@@ -46,22 +48,22 @@ frame.classList.add("first-form")
 firstForm.classList.toggle("form-color")
 secondForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",` --d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+    item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
 })
 }
 
 function setSecondForm (){
+    if(frame.classList.contains("frame-center")){
 
-
-    addControlsInfos.textContent="/ format2"
-
+        addControlsInfos.textContent="/ Format2"
+    }
 madsContainer.classList.toggle("show-mads-container")
 frame.classList.remove("first-form")
 frame.classList.add("second-form")
 secondForm.classList.toggle("form-color")
 firstForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+    item.setAttribute("style",`--d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65%  `)
 })
 }
 
@@ -111,11 +113,11 @@ function setFirstMove (){
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% `   
+            divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70%`   
         }  
     }else{
         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70% `   
+            divsArray[i].style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% `   
         }  
     }
         
@@ -128,13 +130,13 @@ function setSecondMove (){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
             x+= .5
-            divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
+            divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
         } 
     } if(( frame.classList.contains("second-form"))){
         let x= 0
     for(i=0;i<divsArray.length;++i){ 
         x+= .5
-        divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
+        divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
     }
     }
 }

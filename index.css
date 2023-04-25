@@ -5,8 +5,6 @@ body {
    background-color: #000;
     overflow: hidden;
     font-family: 'Bruno Ace', cursive;
-    --formOne:50% 50% 50% 50% / 35% 36% 65% 65% ;
-    --formTwo:30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 
 #up-arrow{
@@ -72,7 +70,7 @@ body {
    
 }
 .odd {
-    background-color: #ff910025;
+    background-color: #97d2f720;
     top: 15%;
     height: 85%;
     scale: 0 1;
@@ -88,7 +86,7 @@ body {
 }
 
 .even { 
-    background-color: #f9492b24;
+    background-color: #0076fd24;
 }
 
 .even2{
@@ -98,6 +96,10 @@ body {
  spin 10s  9s alternate-reverse , turn-round 3s 20s alternate-reverse,
  spin 10s 31s alternate-reverse , spin2 10s 45s alternate-reverse, turn-round2 3s 50s alternate-reverse ,spin1 10s 60s alternate-reverse, turn-round 3s 65s alternate-reverse
  , spin2 10s 75s alternate-reverse infinite, spin1 10s 90s alternate-reverse  , spin2 15s 105s alternate-reverse , spin1 10s 115s alternate-reverse infinite;  
+}
+.even-animi{
+    animation: color 7s 3s linear infinite alternate-reverse;   
+
 }
 .mads-sec{
     position: absolute;
@@ -174,10 +176,6 @@ body {
     filter: hue-rotate(105deg);
 }
 
-.even-animi{
-    animation: color 5s 3s linear infinite alternate-reverse;   
-
-}
 .rose-center{
     position: absolute;
     bottom: -11px;
@@ -381,7 +379,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #930ff215;
+        background-color: #fe000030;
     }
 } 
 @keyframes turn-round {
