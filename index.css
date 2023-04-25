@@ -305,7 +305,7 @@ i{
     top: 30px;
     left: 60px;
     width: 270px;
-    height: 480px;
+    height: 440px;
     padding: 1rem ;
     border-radius: 1rem;
     color: #e4e2e2;
@@ -440,7 +440,7 @@ span{
     }
     .infos-container{
         width: 250px;
-        height: 440px;
+        height: 460px;
         line-height: 13px;
     }
     .infos-sec{
@@ -452,7 +452,7 @@ span{
         top: 89%;
     }
     .controls-infos-container>span{
-        font-size: 11px;
+        font-size: 10.5px;
 
     }
     #up-arrow{ 
