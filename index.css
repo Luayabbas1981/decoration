@@ -75,13 +75,13 @@ body {
     background-color: #97d2f720;
     top: 15%;
     height: 85%;
-    scale: 0 1;
+    scale: .3 .5;
     animation: scale 4s ease-in-out infinite alternate-reverse ; 
     box-shadow:inset 0px 0px 5px 0px #ffffff10 ; 
 }
 
 .odd2{
-   
+    scale: 0 1;
     animation: scale 1s ease-in-out infinite alternate-reverse , spin 15s  alternate-reverse,
     spin2 3s  15s alternate-reverse , turn-round 2s 20s alternate-reverse,
     spin2 15s 41s alternate-reverse , spin 15s 55s alternate-reverse ,spin2 15s 70s alternate-reverse , turn-round 2s 60s alternate-reverse
@@ -91,6 +91,7 @@ body {
 .even { 
     background-color: #0076fd24;
     box-shadow:inset 0px 0px 5px 0px #ffffff10 ; 
+   
 }
 
 .even2{
