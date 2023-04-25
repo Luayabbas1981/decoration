@@ -296,11 +296,11 @@ i{
     left: 60px;
     width: 270px;
     height: 470px;
-    padding: 1rem;
+    padding: 1rem ;
     border-radius: 1rem;
     color: #e4e2e2;
     background-color: #eeeeee19;
-   font-size: 11.5px;
+   font-size: 10.7px;
    transform-origin: top left;
    backdrop-filter: hue-rotate(180deg);
     scale: 0;
@@ -322,6 +322,7 @@ animation: show-infos .6s linear forwards;
     font-weight: 700;
     font-size: 8px;
 }
+
 .rose-symbol{
     display: inline-block;
     animation: spin 3s infinite linear;
