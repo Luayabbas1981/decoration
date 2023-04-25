@@ -229,6 +229,10 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
     controlsInfos.textContent="Random2 mode on"
     controlsInfos.style="color:#feaf03"
    }
+   if(frame.classList.contains("frame-mad-mode")){
+    controlsInfos.textContent="Mad mode on"
+    controlsInfos.style="color:#feaf03"
+   }
    
    
     frame.classList.add("frame-center")
