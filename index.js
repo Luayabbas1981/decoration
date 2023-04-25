@@ -227,13 +227,9 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
     controlsInfos.style="color:#00ffe0"
    } if(randomBtn2.classList.contains("r2-c")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="Random2 mode on"
-    controlsInfos.style="color:#03def4"
+    controlsInfos.style="color:#feaf03"
    }
-   if(color3.classList.contains("color3") && randomBtn2.classList.contains("r2-c")
-   &&  !frame.classList.contains("frame-mad-mode")){
-    controlsInfos.textContent= "Random2/3rd modes on"
-    controlsInfos.style="color:#ff1100"
-   }
+   
    
     frame.classList.add("frame-center")
      controls.classList.add("f-screen")
