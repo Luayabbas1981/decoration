@@ -8,6 +8,7 @@ const color3 = document.querySelector(".color3")
 const controls = document.querySelector(".controls")
 const upArrow = document.querySelector("#up-arrow")
 const controlsInfos = document.querySelector(".controls-infos")
+const addControlsInfos = document.querySelector(".add-infos")
 const magnifyingPlus = document.querySelector("#magnifying-plus")
 const magnifyingMinus = document.querySelector("#magnifying-minus")
 const infosSymbol = document.querySelector("#infos-symbol")
@@ -31,6 +32,7 @@ evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
 controlsInfos.textContent="3rd mode on"
+addControlsInfos.textContent="/ Format1"
 
 /* Colors buttons functions */
 function oddColor (color){
@@ -176,6 +178,12 @@ let colorfulArr = ["cyan","lightblue","wevenDivste","coral","lightsalmon","orcev
 
     /* show / hide controls buttons functions */
  function fullScreen(){
+    if(frame.classList.contains("first-form")){
+        addControlsInfos.textContent="/ Fromat1"
+    }
+    if(frame.classList.contains("second-form")){
+        addControlsInfos.textContent="/ Fromat2"
+    }
    if( color3.classList.contains("color3")&&  !frame.classList.contains("frame-mad-mode")){
     controlsInfos.textContent="3rd color mode on"
     controlsInfos.style="color:#00ffe0"
@@ -198,6 +206,7 @@ let colorfulArr = ["cyan","lightblue","wevenDivste","coral","lightsalmon","orcev
  
  function showControls (){
     controlsInfos.textContent=""
+    addControlsInfos.textContent=""
     frame.classList.remove("frame-magnifying")
     controls.classList.remove("f-screen")
     upArrow.classList.add("f-screen")
@@ -333,6 +342,10 @@ function resetApp(){
 }
 
 function setFirstForm(){
+   
+
+        addControlsInfos.textContent="/ format1"
+    
     madsContainer.classList.toggle("show-mads-container")
     frame.classList.remove("second-form")
     frame.classList.add("first-form")
@@ -344,6 +357,10 @@ function setFirstForm(){
 }
 
 function setSecondForm (){
+   
+
+        addControlsInfos.textContent="/ format2"
+    
     madsContainer.classList.toggle("show-mads-container")
     frame.classList.remove("first-form")
     frame.classList.add("second-form")

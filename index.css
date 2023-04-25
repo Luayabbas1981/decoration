@@ -27,13 +27,20 @@ body {
     font-size: xx-large;
     animation:up-symbol 1.5s alternate-reverse ;
 }
-.controls-infos{
+.controls-infos-container{
     position: absolute;
     top: 88%;
     left: 50%;
     translate: -50%; 
 }
+.controls-infos-container >span:first-child{
+    color: aqua;
 
+}
+.controls-infos-container >span:last-child{
+    color: rgb(255, 149, 0);
+
+}
 .frame {
     perspective: 700px;
     position: relative;
@@ -197,6 +204,9 @@ body {
     row-gap: 1rem;
     background-color: #aaaaaa00;
   
+}
+.add-infos{
+    color: #e4e2e2;
 }
  
 .f-screen{
@@ -438,17 +448,20 @@ span{
         translate: 15px 8px;
 
     }
-    .controls-infos{
+    .controls-infos-container{
         top: 89%;
-        color: #00ffe0;
-        font-size: 12px;
+    }
+    .controls-infos-container>span{
+        font-size: 11px;
+
     }
     #up-arrow{ 
-        left: 19%; 
+        left: 15%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
-        left: 81%;
+       
+        left: 85%;
         font-size:27px ; 
     }
     .frame-magnifying{
@@ -476,9 +489,8 @@ span{
     .infos-container >h2{
         font-size: 14px;
     }
-    .controls-infos{
-        top: 89%;
-        color: #00ffe0;
+    .controls-infos-container{
+        
         font-size: 18px;
     }
     #up-arrow{ 
