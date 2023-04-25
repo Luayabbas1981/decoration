@@ -49,7 +49,7 @@ frame.classList.add("first-form")
 firstForm.classList.toggle("form-color")
 secondForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+    item.setAttribute("style",` --d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
 })
 }
 
@@ -64,7 +64,7 @@ frame.classList.add("second-form")
 secondForm.classList.toggle("form-color")
 firstForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",`--d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65%  `)
+    item.setAttribute("style",`--d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
 })
 }
 
@@ -114,11 +114,11 @@ function setFirstMove (){
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70%`   
+            divsArray[i].style=`--d:${i};--form: 50% 50% 50% 50% / 35% 36% 65% 65%`   
         }  
     }else{
         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% `   
+            divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70%`   
         }  
     }
         
@@ -131,24 +131,24 @@ function setSecondMove (){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
             x+= .5
-            divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
+            divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
         } 
     } if(( frame.classList.contains("second-form"))){
         let x= 0
     for(i=0;i<divsArray.length;++i){ 
         x+= .5
-        divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
+        divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
     }
     }
 }
 
 /* Random 1 and 2 buttons */
 
-let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white"]
+let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","white","white"]
 
-let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","hotpink","white","white"]
+let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","hotpink","white","white","white","white"]
 
-let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white"]
+let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white"]
     function randomColorOne (){
        
         color1.style="background-color:black"
@@ -291,7 +291,7 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
  }
  
 /*  Mad mode function */
-    let secondInterval 
+    
 function madMode1 (){ 
     color3.disabled=true
     color3.textContent="Disable"
@@ -312,15 +312,10 @@ function madMode1 (){
         randomBtn2.textContent="Disable"
         madBtn.disabled = true;
         madBtn2.disabled = true;
-        tenBtn.disabled = true;
-        tenBtn.textContent="Disable"
+        tenBtn.disabled = true; 
+        tenBtn.textContent="Disable" 
         endMadBtn.style="z-index:1 ; color:#e21e1e"
         color3.classList.toggle("color3")
-        secondInterval= setInterval(() => {
-            frame.classList.toggle("mad-filter")
-           
-        }, 1500);
-
 }
 
 function madMode2 (){
@@ -330,10 +325,9 @@ function madMode2 (){
         controlsInfos.style="color:#fe3f03"
     }
     madsContainer.classList.remove("show-mads-container")
-    clearInterval(secondInterval)
     endMadBtn.style="z-index:-1 ; color:black"
     endMadBtn2.style="z-index:1 ; color:#e21e1e"
-    thirdInterval= setInterval(() => {   
+    secondInterval= setInterval(() => {   
         colorfulRose ()
     }, 1500);
    
@@ -372,7 +366,6 @@ function invertMode (){
     madsContainer.classList.remove("show-mads-container")
     if( frame.classList.contains("mad-filter")){
         clearInterval(secondInterval)
-        clearInterval(thirdInterval)
         frame.classList.toggle("filter")
         invert.classList.toggle("invert-color")
     }else{
