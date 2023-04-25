@@ -32,14 +32,14 @@ body {
     top: 88%;
     left: 50%;
     translate: -50%; 
-    word-break: keep-all;
+    text-align: center;
 }
 .controls-infos-container >span:first-child{
     color: aqua;
 
 }
 .controls-infos-container >span:last-child{
-    color: rgb(255, 149, 0);
+    color: rgb(68, 255, 0);
 
 }
 .frame {
