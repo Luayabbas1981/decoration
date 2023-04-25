@@ -158,14 +158,15 @@ body {
     position: absolute;
     top:170px;
  }
-
+ .invert-color{
+    color: #a123d7;
+}
+ 
 .stop-mad1 , .stop-mad2{
   z-index: -1;
 }
 
-.invert-color{
-    color: #a123d7;
-}
+
 .filter{
     filter: hue-rotate(125deg);
 }
@@ -453,16 +454,16 @@ span{
         top: 89%;
     }
     .controls-infos-container>span{
-        font-size: 10.5px;
+        font-size: 10.7px;
 
     }
     #up-arrow{ 
-        left: 12%; 
+        left: 15%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
        
-        left: 88%;
+        left: 85%;
         font-size:27px ; 
     }
     .frame-magnifying{
@@ -519,11 +520,11 @@ span{
     }
    
     #up-arrow{ 
-        left: 35%; 
+        left: 30%; 
         font-size:30px ;   
     }
     #magnifying-plus,#magnifying-minus{
-        left: 65%;
+        left: 70%;
         font-size:30px ; 
     }
     .mads-sec{

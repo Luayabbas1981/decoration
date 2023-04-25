@@ -209,6 +209,7 @@ let colorfulArr = ["cyan","lightblue","wevenDivste","coral","lightsalmon","orcev
 
     /* show / hide controls buttons functions */
  function fullScreen(){
+  
     if(frame.classList.contains("first-form")){
         addControlsInfos.textContent="/ Fromat1"
     }
@@ -350,10 +351,7 @@ function colorfulRose (){
 
 /* Invert color function */
 function invertMode (){
-    if(!frame.classList.contains("mad-filter")){
-        controlsInfos.textContent= "Invert mode on"
-        controlsInfos.style="color:#da00ff"
-    }
+    
     madsContainer.classList.remove("show-mads-container")
     if( frame.classList.contains("mad-filter")){
         clearInterval(secondInterval)
