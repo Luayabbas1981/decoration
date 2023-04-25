@@ -457,12 +457,12 @@ span{
 
     }
     #up-arrow{ 
-        left: 15%; 
+        left: 12%; 
         font-size:27px ;   
     }
     #magnifying-plus,#magnifying-minus{
        
-        left: 85%;
+        left: 88%;
         font-size:27px ; 
     }
     .frame-magnifying{
