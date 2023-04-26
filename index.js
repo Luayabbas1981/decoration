@@ -198,11 +198,14 @@ let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orcevenDivsd","
 let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","silver" ,"hotpink","white","white","white","white"]
 
 let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow", "silver","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white"]
+
+/* Random1 function */
+
     function randomColorOne (){
-       
+
+        randomBtn2.classList.remove("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
-        randomBtn2.classList.remove("r2-c")
         color1.textContent="1st color"
         color2.textContent="2nd color"
         color3.classList.remove("color3")
@@ -225,7 +228,10 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
         }
     }
 
+    /* Random2 function */
+
     let interval
+
     function randomColorTwo (){
         
         randomBtn2.classList.toggle("r2-c")
@@ -260,7 +266,9 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
     }
 
     /* show / hide controls buttons functions */
+
  function fullScreen(){
+
     frame.classList.remove("frame-magnifying")
     if(frame.classList.contains("first-form")){
         addControlsInfos.textContent="/ Fromat1"
@@ -290,7 +298,8 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
      magnifyingMinus.classList.remove("f-screen")
      upArrow.classList.remove("f-screen")
  } 
- 
+ /* Show controls function */
+
  function showControls (){
     controlsInfos.textContent=""
     addControlsInfos.textContent=""
@@ -305,7 +314,9 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
 
  
  /* Info bar functions */
+
  function showInfos (){
+
     infosSymbol.classList.remove(".infos-symbol2")
     if(!infosContainer.classList.contains("show-infos")){
 
@@ -329,7 +340,9 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
  }
  
  /* Magnifying function */
+
  function glass(){
+
     frame.classList.toggle("frame-magnifying")
     magnifyingPlus.classList.toggle("f-screen")
   
@@ -342,6 +355,8 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
 /*  Mad mode function */
     
 function madMode1 (){ 
+    inputColorOne.style="display:none"
+    inputColorTwo.style="display:none"
     color3.disabled=true
     color3.textContent="Disable"
     madsContainer.classList.remove("show-mads-container")
