@@ -132,6 +132,8 @@ function thirdColor(){
 function setFirstMove (){
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
+    inputColorOne.value= "#000000"
+    inputColorTwo.value="#0000000"
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
@@ -147,8 +149,11 @@ function setFirstMove (){
     }
 
 function setSecondMove (){
+    
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
+    inputColorOne.value= "#000000"
+    inputColorTwo.value="#0000000"
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
     if(( frame.classList.contains("first-form"))){
