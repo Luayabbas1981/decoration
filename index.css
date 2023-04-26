@@ -195,7 +195,7 @@ body {
 /* Controls section */
 .controls{
     position: relative;
-    top: 28%;
+    top: 33%;
     left: 50%;
     translate: -50%;
     width: 320px;
@@ -467,6 +467,10 @@ span{
     }
 }
 @media(min-width:800px){
+    .frame{
+        top: 22%;
+        scale: 1.4;
+    }
    .frame-center{
     top: 25%;
     
@@ -475,7 +479,7 @@ span{
     scale: 1.4;
 }
     .controls{
-        top: 40%;
+        top: 50%;
         scale: 1.2;
     }
     .infos-sec{

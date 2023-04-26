@@ -145,11 +145,9 @@ function setFirstMove (){
             divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70%`   
         }  
     }
-    
     }
 
 function setSecondMove (){
-    
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
