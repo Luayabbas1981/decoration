@@ -31,7 +31,7 @@ const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
 oddDivs.map(item=>item.setAttribute("id","silver"))
-evenDivs.map(item=>item.setAttribute("id","blue"))
+evenDivs.map(item=>item.setAttribute("id","blue-violet"))
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
@@ -41,7 +41,7 @@ addControlsInfos.textContent="/ Format1"
 /* Colors buttons functions */
     
 inputColorOne.addEventListener("change", function(){
-    evenDivs.map(item=>item.removeAttribute("id","blue"))
+    evenDivs.map(item=>item.removeAttribute("id","blue-violet"))
     randomBtn2.classList.remove("r2-c")
    let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
@@ -152,7 +152,7 @@ function thirdColor(){
 /* Number of leaves functions */
 function setFirstMove (){
     frame.classList.remove("second-move")
-    evenDivs.map(item=>item.setAttribute("id","blue"))
+    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     color1.style="color:#eee"
     color2.style="color:#eee"
@@ -173,7 +173,7 @@ function setFirstMove (){
 
 function setSecondMove (){
     frame.classList.add("second-move")
-    evenDivs.map(item=>item.setAttribute("id","blue"))
+    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     color1.style="color:#eee"
     color2.style="color:#eee"
@@ -198,11 +198,11 @@ function setSecondMove (){
 
 /* Random 1 and 2 buttons */
 
-let firstColorArray= [ "cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","silver", "turquoise","yellowgreen","chartreuse","tomato","white","white","white","white"]
+let firstColorArray= [ "cyan","blue-violet","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","silver", "turquoise","yellowgreen","chartreuse","tomato","white","blue-violet","white","white","white"]
 
 let secondColorArray= ["yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","silver" ,"hotpink","white","white","white","white"]
 
-let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow", "silver","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","wevenDivste","hotpink","white","white","white","white"]
+let colorfulArr = ["cyan","lightblue","blue-violet","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow", "silver","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","blue-violet","wevenDivste","hotpink","white","white","white","white"]
 
 /* Random1 function */
 

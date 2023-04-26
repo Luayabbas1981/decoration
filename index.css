@@ -381,7 +381,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #fa232330;
+        background-color: #9a00fd25;
     }
 } 
 @keyframes turn-round {
@@ -629,4 +629,7 @@ span{
 }
 #silver{
     background-color: #c0c0c030;
+}
+#blue-violet{
+    background-color: #5900fd18;
 }
