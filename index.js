@@ -55,6 +55,7 @@ inputColorOne.addEventListener("change", function(){
             item.setAttribute("style",` --d:${i + 1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
+    color1.style=`color:${chosenColorOne.slice(0,7)}`
      if(interval){
      randomBtn2.classList.add("r-id")
      clearInterval(interval)
@@ -78,6 +79,7 @@ inputColorTwo.addEventListener("change", function(){
             item.setAttribute("style",` --d:${i + 1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
+    color2.style=`color:${chosenColorTwo.slice(0,7)}`
      if(interval){
      randomBtn2.classList.add("r-id")
      clearInterval(interval)
@@ -130,6 +132,8 @@ function thirdColor(){
 
 /* Number of leaves functions */
 function setFirstMove (){
+    color1.style="color:#eee"
+    color2.style="color:#eee"
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
@@ -148,6 +152,8 @@ function setFirstMove (){
     }
 
 function setSecondMove (){
+    color1.style="color:#eee"
+    color2.style="color:#eee"
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
