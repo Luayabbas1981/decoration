@@ -26,6 +26,8 @@ const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
 const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
+const inputColorTOne = document.querySelector(".input-one")
+const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
 evenDivs.map(item=> item.classList.add("even-animi"))
@@ -36,22 +38,41 @@ addControlsInfos.textContent="/ Format1"
 
 /* Colors buttons functions */
 
-function oddColor (color){
+inputColorTwo.addEventListener("change", function(){
     randomBtn2.classList.remove("r2-c")
+    let chosenColor = inputColorTwo.value + 18
+    console.log(chosenColor)
+    if(frame.classList.contains("first-form")){
+        oddDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+         })
+    }
+    
+    if(frame.classList.contains("second-form")){
+        oddDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+         })
+    }
+
+
+     color2.style=`background-color:${chosenColor.slice(0,7)}`
+     if(interval){
+     randomBtn2.classList.add("r-id")
+     clearInterval(interval)
+     }
+
+})
+
+/* function oddColor (color){
+  
     oddDivs.map((item,i)=>{
        return  item.setAttribute("id",`${color}`)
     })
     
-    color2.textContent=color.toUpperCase()
-    color2.style=`background-color:${color}`
+   
+    } */
     
-    if(interval){
-    randomBtn2.classList.add("r-id")
-    clearInterval(interval)
-    }
-    }
-    
-function evenColor (color){
+/* function evenColor (color){
    
     randomBtn2.classList.remove("r2-c")
    evenDivs.map((item,i)=>{
@@ -65,7 +86,7 @@ if(interval){
    clearInterval(interval)
 }
 }
-
+ */
 
 /* Rose format */
 function setFirstForm(){
