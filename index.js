@@ -31,7 +31,7 @@ const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
 oddDivs.map(item=>item.setAttribute("id","silver"))
-evenDivs.map(item=>item.setAttribute("id","orange"))
+evenDivs.map(item=>item.setAttribute("id","blue"))
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
@@ -39,21 +39,20 @@ controlsInfos.textContent="3rd mode on"
 addControlsInfos.textContent="/ Format1"
 
 /* Colors buttons functions */
-
+    
 inputColorOne.addEventListener("change", function(){
-    evenDivs.map(item=>item.removeAttribute("id","orange"))
+    evenDivs.map(item=>item.removeAttribute("id","blue"))
     randomBtn2.classList.remove("r2-c")
-    let chosenColor = inputColorOne.value + 18
-    console.log(chosenColor)
+   let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
          })
     }
     
     if(frame.classList.contains("second-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
      if(interval){
@@ -62,20 +61,21 @@ inputColorOne.addEventListener("change", function(){
      }
 
 })
+
+
 inputColorTwo.addEventListener("change", function(){
     oddDivs.map(item=>item.removeAttribute("id","silver"))
     randomBtn2.classList.remove("r2-c")
-    let chosenColor = inputColorTwo.value + 18
-    console.log(chosenColor)
+    let chosenColorTwo = inputColorTwo.value + 18
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
          })
     }
     
     if(frame.classList.contains("second-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
      if(interval){
@@ -84,31 +84,6 @@ inputColorTwo.addEventListener("change", function(){
      }
 
 })
-
-/* function oddColor (color){
-  
-    oddDivs.map((item,i)=>{
-       return  item.setAttribute("id",`${color}`)
-    })
-    
-   
-    } */
-    
-/* function evenColor (color){
-   
-    randomBtn2.classList.remove("r2-c")
-   evenDivs.map((item,i)=>{
-       return item.setAttribute("id",`${color}`)
-   })
-
-color1.textContent=color.toUpperCase()
-color1.style=`background-color:${color}`
-if(interval){
-   randomBtn2.classList.add("r-id")
-   clearInterval(interval)
-}
-}
- */
 
 /* Rose format */
 function setFirstForm(){
@@ -155,6 +130,8 @@ function thirdColor(){
 
 /* Number of leaves functions */
 function setFirstMove (){
+    evenDivs.map(item=>item.setAttribute("id","blue"))
+    oddDivs.map(item=>item.setAttribute("id","silver"))
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
@@ -166,10 +143,12 @@ function setFirstMove (){
             divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70%`   
         }  
     }
-        
+    
     }
 
 function setSecondMove (){
+    evenDivs.map(item=>item.setAttribute("id","blue"))
+    oddDivs.map(item=>item.setAttribute("id","silver"))
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
     if(( frame.classList.contains("first-form"))){
@@ -178,13 +157,8 @@ function setSecondMove (){
             x+= .5
             divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
         } 
-    } if(( frame.classList.contains("second-form"))){
-        let x= 0
-    for(i=0;i<divsArray.length;++i){ 
-        x+= .5
-        divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
-    }
-    }
+    } 
+  
 }
 
 /* Random 1 and 2 buttons */
