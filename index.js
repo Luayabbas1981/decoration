@@ -24,7 +24,6 @@ const secondForm = document.querySelector(".form2")
 const madBtn = document.querySelector(".mad1")
 const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
-console.log(madBtn,endMadBtn)
 const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
 
@@ -34,6 +33,39 @@ tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
 controlsInfos.textContent="3rd mode on"
 addControlsInfos.textContent="/ Format1"
+
+/* Colors buttons functions */
+
+function oddColor (color){
+    randomBtn2.classList.remove("r2-c")
+    oddDivs.map((item,i)=>{
+       return  item.setAttribute("id",`${color}`)
+    })
+    
+    color2.textContent=color.toUpperCase()
+    color2.style=`background-color:${color}`
+    
+    if(interval){
+    randomBtn2.classList.add("r-id")
+    clearInterval(interval)
+    }
+    }
+    
+function evenColor (color){
+   
+    randomBtn2.classList.remove("r2-c")
+   evenDivs.map((item,i)=>{
+       return item.setAttribute("id",`${color}`)
+   })
+
+color1.textContent=color.toUpperCase()
+color1.style=`background-color:${color}`
+if(interval){
+   randomBtn2.classList.add("r-id")
+   clearInterval(interval)
+}
+}
+
 
 /* Rose format */
 function setFirstForm(){
@@ -68,36 +100,6 @@ divsArray.map((item,i)=>{
 })
 }
 
-/* Colors buttons functions */
-function oddColor (color){
-   
-    randomBtn2.classList.remove("r2-c")
-   divsArray.map((item,i)=>{
-       return i % 2 === 0? "":item.setAttribute("id",`${color}`)
-   })
-
-color1.textContent=color.toUpperCase()
-color1.style=`background-color:${color}`
-if(interval){
-   randomBtn2.classList.add("r-id")
-   clearInterval(interval)
-}
-}
-
-function evenColor (color){
-randomBtn2.classList.remove("r2-c")
-divsArray.map((item,i)=>{
-   return i % 2 === 0? item.setAttribute("id",`${color}`):""
-})
-
-color2.textContent=color.toUpperCase()
-color2.style=`background-color:${color}`
-
-if(interval){
-randomBtn2.classList.add("r-id")
-clearInterval(interval)
-}
-}
 
 /* 3rd buttons function */
 function thirdColor(){
