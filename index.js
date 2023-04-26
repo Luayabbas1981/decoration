@@ -26,10 +26,12 @@ const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
 const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
-const inputColorTOne = document.querySelector(".input-one")
+const inputColorOne = document.querySelector(".input-one")
 const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
+oddDivs.map(item=>item.setAttribute("id","silver"))
+evenDivs.map(item=>item.setAttribute("id","orange"))
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
@@ -38,7 +40,30 @@ addControlsInfos.textContent="/ Format1"
 
 /* Colors buttons functions */
 
+inputColorOne.addEventListener("change", function(){
+    evenDivs.map(item=>item.removeAttribute("id","orange"))
+    randomBtn2.classList.remove("r2-c")
+    let chosenColor = inputColorOne.value + 18
+    console.log(chosenColor)
+    if(frame.classList.contains("first-form")){
+        evenDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+         })
+    }
+    
+    if(frame.classList.contains("second-form")){
+        evenDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+         })
+    }
+     if(interval){
+     randomBtn2.classList.add("r-id")
+     clearInterval(interval)
+     }
+
+})
 inputColorTwo.addEventListener("change", function(){
+    oddDivs.map(item=>item.removeAttribute("id","silver"))
     randomBtn2.classList.remove("r2-c")
     let chosenColor = inputColorTwo.value + 18
     console.log(chosenColor)
@@ -53,9 +78,6 @@ inputColorTwo.addEventListener("change", function(){
             item.setAttribute("style",` --d:${i + 1};--c:${chosenColor};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
-
-
-     color2.style=`background-color:${chosenColor.slice(0,7)}`
      if(interval){
      randomBtn2.classList.add("r-id")
      clearInterval(interval)
