@@ -181,14 +181,19 @@ function setSecondMove (){
     inputColorTwo.value="#0000000"
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
-    if(( frame.classList.contains("first-form"))){
+    if(( frame.classList.contains("first-form") )){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
             x+= .5
             divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
         } 
-    } 
-  
+    } if(( frame.classList.contains("second-form"))){
+        let x= 0
+    for(i=0;i<divsArray.length;++i){ 
+        x+= .5
+        divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
+    }
+    }
 }
 
 /* Random 1 and 2 buttons */
