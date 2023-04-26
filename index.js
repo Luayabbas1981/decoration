@@ -46,13 +46,23 @@ inputColorOne.addEventListener("change", function(){
    let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
          })
     }
     
+    if(frame.classList.contains("first-form") && frame.classList.contains("second-move")){
+        evenDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+         })
+    }
     if(frame.classList.contains("second-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+         })
+    }
+    if(frame.classList.contains("second-form") && frame.classList.contains("second-move")){
+        evenDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
     color1.style=`color:${chosenColorOne.slice(0,7)}`
@@ -70,13 +80,22 @@ inputColorTwo.addEventListener("change", function(){
     let chosenColorTwo = inputColorTwo.value + 18
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
          })
     }
-    
+    if(frame.classList.contains("first-form") && frame.classList.contains("second-move")){
+        oddDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+         })
+    }
     if(frame.classList.contains("second-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i + 1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+         })
+    }
+    if(frame.classList.contains("second-form")&& frame.classList.contains("second-move")){
+        oddDivs.map((item,i)=>{
+            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
          })
     }
     color2.style=`color:${chosenColorTwo.slice(0,7)}`
@@ -132,10 +151,11 @@ function thirdColor(){
 
 /* Number of leaves functions */
 function setFirstMove (){
-    color1.style="color:#eee"
-    color2.style="color:#eee"
+    frame.classList.remove("second-move")
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
+    color1.style="color:#eee"
+    color2.style="color:#eee"
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
     tenBtn.style="color:#0079b3"
@@ -152,10 +172,11 @@ function setFirstMove (){
     }
 
 function setSecondMove (){
-    color1.style="color:#eee"
-    color2.style="color:#eee"
+    frame.classList.add("second-move")
     evenDivs.map(item=>item.setAttribute("id","blue"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
+    color1.style="color:#eee"
+    color2.style="color:#eee"
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
     twentyBtn.style="color:#0079b3"
