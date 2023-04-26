@@ -210,6 +210,10 @@ body {
     background-color: #aaaaaa00;
   
 }
+
+.input-none{
+    display: none;
+}
 .add-infos{
     color: #e4e2e2;
 }

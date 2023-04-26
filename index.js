@@ -202,7 +202,8 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
 /* Random1 function */
 
     function randomColorOne (){
-
+        inputColorOne.value= "#000000"
+        inputColorTwo.value="#0000000"
         randomBtn2.classList.remove("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
@@ -233,7 +234,8 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
     let interval
 
     function randomColorTwo (){
-        
+        inputColorOne.classList.toggle("input-none")
+        inputColorTwo.classList.toggle("input-none")
         randomBtn2.classList.toggle("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
@@ -355,8 +357,8 @@ let colorfulArr = ["cyan","lightblue","coral","lightsalmon","orcevenDivsd","lime
 /*  Mad mode function */
     
 function madMode1 (){ 
-    inputColorOne.style="display:none"
-    inputColorTwo.style="display:none"
+    inputColorOne.classList.add("input-none")
+    inputColorTwo.classList.add("input-none")
     color3.disabled=true
     color3.textContent="Disable"
     madsContainer.classList.remove("show-mads-container")
