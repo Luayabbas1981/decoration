@@ -105,8 +105,8 @@ inputColorTwo.addEventListener("change", function(){
      }
 
 })
-/* Change form move function */
-function changeAll(){
+/* Reset ( form / move ) function */
+function resetAll(){
     evenDivs.map(item=>item.setAttribute("id","blue-violet"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
@@ -116,7 +116,7 @@ function changeAll(){
 }
 /* Rose format */
 function setFirstForm(){
-    changeAll()
+    resetAll()
     if(frame.classList.contains("frame-center")){
 
         addControlsInfos.textContent="/ Format1"
@@ -133,7 +133,7 @@ divsArray.map((item,i)=>{
 }
 
 function setSecondForm (){
-    changeAll()
+    resetAll()
     if(frame.classList.contains("frame-center")){
 
         addControlsInfos.textContent="/ Format2"
@@ -160,7 +160,7 @@ function thirdColor(){
 
 /* Number of leaves functions */
 function setFirstMove (){
-    changeAll()
+    resetAll()
     frame.classList.remove("second-move")
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
@@ -176,7 +176,7 @@ function setFirstMove (){
     }
 
 function setSecondMove (){
-    changeAll()
+    resetAll()
     frame.classList.add("second-move")
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
