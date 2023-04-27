@@ -105,15 +105,18 @@ inputColorTwo.addEventListener("change", function(){
      }
 
 })
-
-/* Rose format */
-function setFirstForm(){
+/* Change form move function */
+function changeAll(){
     evenDivs.map(item=>item.setAttribute("id","blue-violet"))
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
     color1.style="color:#eee"
     color2.style="color:#eee"
+}
+/* Rose format */
+function setFirstForm(){
+    changeAll()
     if(frame.classList.contains("frame-center")){
 
         addControlsInfos.textContent="/ Format1"
@@ -130,12 +133,7 @@ divsArray.map((item,i)=>{
 }
 
 function setSecondForm (){
-    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
-    oddDivs.map(item=>item.setAttribute("id","silver"))
-    inputColorOne.value= "#000000"
-    inputColorTwo.value="#0000000"
-    color1.style="color:#eee"
-    color2.style="color:#eee"
+    changeAll()
     if(frame.classList.contains("frame-center")){
 
         addControlsInfos.textContent="/ Format2"
@@ -162,13 +160,8 @@ function thirdColor(){
 
 /* Number of leaves functions */
 function setFirstMove (){
+    changeAll()
     frame.classList.remove("second-move")
-    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
-    oddDivs.map(item=>item.setAttribute("id","silver"))
-    color1.style="color:#eee"
-    color2.style="color:#eee"
-    inputColorOne.value= "#000000"
-    inputColorTwo.value="#0000000"
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
@@ -183,13 +176,8 @@ function setFirstMove (){
     }
 
 function setSecondMove (){
+    changeAll()
     frame.classList.add("second-move")
-    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
-    oddDivs.map(item=>item.setAttribute("id","silver"))
-    inputColorOne.value= "#000000"
-    inputColorTwo.value="#0000000"
-    color1.style="color:#eee"
-    color2.style="color:#eee"
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
     if(( frame.classList.contains("first-form") )){
