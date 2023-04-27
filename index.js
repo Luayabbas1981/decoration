@@ -30,8 +30,8 @@ const inputColorOne = document.querySelector(".input-one")
 const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
-oddDivs.map(item=>item.setAttribute("id","brawn"))
-evenDivs.map(item=>item.setAttribute("id","black"))
+oddDivs.map(item=>item.setAttribute("id","white"))
+evenDivs.map(item=>item.setAttribute("id","blue-violet"))
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
@@ -75,7 +75,7 @@ inputColorOne.addEventListener("change", function(){
 
 
 inputColorTwo.addEventListener("change", function(){
-    oddDivs.map(item=>item.removeAttribute("id","brawn"))
+    oddDivs.map(item=>item.removeAttribute("id","white"))
     randomBtn2.classList.remove("r2-c")
     let chosenColorTwo = inputColorTwo.value + 18
     if(frame.classList.contains("first-form")){
@@ -109,7 +109,7 @@ inputColorTwo.addEventListener("change", function(){
 /* Reset ( form / move ) function */
 function resetAll(){
     evenDivs.map(item=>item.setAttribute("id","black"))
-    oddDivs.map(item=>item.setAttribute("id","brawn"))
+    oddDivs.map(item=>item.setAttribute("id","white"))
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
     color1.style="color:#eee"
@@ -370,6 +370,7 @@ function madMode1 (){
     }
         randomColorTwo()  
         setSecondMove ()
+        glass()
         evenDivs.map(item=> item.classList.add("even2"))
         oddDivs.map(item=> item.classList.add("odd2"))
         frame.classList.add("frame-mad-mode")
