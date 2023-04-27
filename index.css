@@ -77,7 +77,7 @@ body {
     height: 85%;
     scale: .3 .5;
     animation: scale 4s ease-in-out infinite alternate-reverse ; 
-    box-shadow:inset 0px 0px 5px 0px #ffffff10 ; 
+    box-shadow:inset 0px 0px 6px 0px #ffffff12 ; 
 }
 
 .odd2{
@@ -90,7 +90,7 @@ body {
 
 .even { 
     background-color: var(--c);
-    box-shadow:inset 0px 0px 5px 0px #ffffff10 ; 
+    box-shadow:inset 0px 0px 7px 0px #ffffff15 ; 
    
 }
 
@@ -381,7 +381,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #9a00fd25;
+        background-color: #211b2525;
     }
 } 
 @keyframes turn-round {
@@ -622,7 +622,7 @@ span{
     background-color: #f838f818;
 }
 #violet{
-    background-color: #ee82ee18;
+    background-color: #ff01ff18;
 }
 #tomato{
     background-color: #ff634718;
