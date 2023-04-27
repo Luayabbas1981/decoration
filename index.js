@@ -117,6 +117,7 @@ function resetAll(){
 }
 /* Rose format */
 function setFirstForm(){
+    secondForm.disabled= false
     resetAll()
     if(frame.classList.contains("frame-center")){
         addControlsInfos.textContent="/ Format1"
@@ -130,9 +131,11 @@ secondForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
     item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
 })
+firstForm.disabled= true
 }
 
 function setSecondForm (){
+    firstForm.disabled= false
     resetAll()
     if(frame.classList.contains("frame-center")){
 
@@ -146,6 +149,7 @@ firstForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
     item.setAttribute("style",`--d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
 })
+secondForm.disabled= true
 }
 
 

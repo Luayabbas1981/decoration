@@ -148,6 +148,10 @@ body {
 .form-color{
     color: #060bff;
 }
+.form-color:disabled{
+    color: #060bff;
+
+}
 .form2{
     position: absolute;
     top: 50px; 
