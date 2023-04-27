@@ -43,6 +43,7 @@ body {
 .controls-infos-container >span:last-child{
     color: #03a9f4;
 }
+
 .frame {
     perspective: 700px;
     position: relative;
@@ -639,4 +640,7 @@ span{
 }
 #brawn{
     background-color: #ff4b0018;
+}
+#orange2{
+    background-color: #ad511a22;
 }
