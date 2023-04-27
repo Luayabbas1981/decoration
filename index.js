@@ -112,6 +112,8 @@ function setFirstForm(){
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
+    color1.style="color:#eee"
+    color2.style="color:#eee"
     if(frame.classList.contains("frame-center")){
 
         addControlsInfos.textContent="/ Format1"
@@ -132,6 +134,8 @@ function setSecondForm (){
     oddDivs.map(item=>item.setAttribute("id","silver"))
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
+    color1.style="color:#eee"
+    color2.style="color:#eee"
     if(frame.classList.contains("frame-center")){
 
         addControlsInfos.textContent="/ Format2"
