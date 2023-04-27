@@ -46,23 +46,23 @@ inputColorOne.addEventListener("change", function(){
    let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
          })
     }
     
     if(frame.classList.contains("first-form") && frame.classList.contains("second-move")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
          })
     }
     if(frame.classList.contains("second-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
          })
     }
     if(frame.classList.contains("second-form") && frame.classList.contains("second-move")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
          })
     }
     color1.style=`color:${chosenColorOne.slice(0,7)}`
@@ -80,22 +80,23 @@ inputColorTwo.addEventListener("change", function(){
     let chosenColorTwo = inputColorTwo.value + 18
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
          })
     }
     if(frame.classList.contains("first-form") && frame.classList.contains("second-move")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
          })
     }
+    
     if(frame.classList.contains("second-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
          })
     }
     if(frame.classList.contains("second-form")&& frame.classList.contains("second-move")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
          })
     }
     color2.style=`color:${chosenColorTwo.slice(0,7)}`
@@ -127,7 +128,7 @@ frame.classList.add("first-form")
 firstForm.classList.toggle("form-color")
 secondForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",` --d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65%`)
+    item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
 })
 }
 
@@ -143,7 +144,7 @@ frame.classList.add("second-form")
 secondForm.classList.toggle("form-color")
 firstForm.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",`--d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70%`)
+    item.setAttribute("style",`--d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
 })
 }
 
@@ -165,11 +166,11 @@ function setFirstMove (){
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form: 50% 50% 50% 50% / 35% 36% 65% 65%`   
+            divsArray[i].style=`--d:${i};--form: 30% 70% 70% 30% / 30% 30% 70% 70% `   
         }  
     }else{
         for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form:30% 70% 70% 30% / 30% 30% 70% 70%`   
+            divsArray[i].style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% `   
         }  
     }
     }
@@ -183,13 +184,13 @@ function setSecondMove (){
         let x= 0
         for(i=0;i<divsArray.length;++i){ 
             x+= .5
-            divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65%`  
+            divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70% `  
         } 
     } if(( frame.classList.contains("second-form"))){
         let x= 0
     for(i=0;i<divsArray.length;++i){ 
         x+= .5
-        divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70%`  
+        divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65% `  
     }
     }
 }
