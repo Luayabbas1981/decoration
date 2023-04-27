@@ -77,7 +77,7 @@ body {
     height: 85%;
     scale: .3 .5;
     animation: scale 4s ease-in-out infinite alternate-reverse ; 
-    box-shadow:inset 0px 0px 6px 0px #ffffff12 ; 
+    box-shadow:inset 0px 0px 6px 0px #ffffff23 ; 
 }
 
 .odd2{
@@ -90,7 +90,7 @@ body {
 
 .even { 
     background-color: var(--c);
-    box-shadow:inset 0px 0px 7px 0px #ffffff15 ; 
+    box-shadow:inset 0px 0px 7px 0px #ffffff2b ; 
    
 }
 
