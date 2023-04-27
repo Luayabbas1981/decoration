@@ -30,8 +30,8 @@ const inputColorOne = document.querySelector(".input-one")
 const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
-oddDivs.map(item=>item.setAttribute("id","silver"))
-evenDivs.map(item=>item.setAttribute("id","blue-violet"))
+oddDivs.map(item=>item.setAttribute("id","brawn"))
+evenDivs.map(item=>item.setAttribute("id","black"))
 evenDivs.map(item=> item.classList.add("even-animi"))
 tenBtn.style="color:#0079b3"
 randomBtn2.classList.add("r-id")
@@ -41,7 +41,7 @@ addControlsInfos.textContent="/ Format1"
 /* Colors buttons functions */
     
 inputColorOne.addEventListener("change", function(){
-    evenDivs.map(item=>item.removeAttribute("id","blue-violet"))
+    evenDivs.map(item=>item.removeAttribute("id","black"))
     randomBtn2.classList.remove("r2-c")
    let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
@@ -75,7 +75,7 @@ inputColorOne.addEventListener("change", function(){
 
 
 inputColorTwo.addEventListener("change", function(){
-    oddDivs.map(item=>item.removeAttribute("id","silver"))
+    oddDivs.map(item=>item.removeAttribute("id","brawn"))
     randomBtn2.classList.remove("r2-c")
     let chosenColorTwo = inputColorTwo.value + 18
     if(frame.classList.contains("first-form")){
@@ -108,8 +108,8 @@ inputColorTwo.addEventListener("change", function(){
 })
 /* Reset ( form / move ) function */
 function resetAll(){
-    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
-    oddDivs.map(item=>item.setAttribute("id","silver"))
+    evenDivs.map(item=>item.setAttribute("id","black"))
+    oddDivs.map(item=>item.setAttribute("id","brawn"))
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
     color1.style="color:#eee"
@@ -257,10 +257,7 @@ let colorfulArr = ["cyan","lightblue","blue-violet","coral","lightsalmon","orcev
             let x = Math.floor(Math.random()* firstColorArray.length ) 
             let y = Math.floor(Math.random()* secondColorArray.length ) 
             divsArray.map((item,i)=>{
-                return i % 2 === 0?"": item.setAttribute("id",`${firstColorArray[x]}`)
-            })
-            divsArray.map((item,i)=>{
-                return i % 2 === 0?  item.setAttribute("id",`${secondColorArray[y]}`):""
+                return i % 2 === 0? item.setAttribute("id",`${secondColorArray[y]}`): item.setAttribute("id",`${firstColorArray[x]}`)
             })
             
         },5000)

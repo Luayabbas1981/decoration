@@ -77,7 +77,7 @@ body {
     height: 85%;
     scale: .3 .5;
     animation: scale 4s ease-in-out infinite alternate-reverse ; 
-    box-shadow:inset 0px 0px 6px 0px #ffffff23 ; 
+    box-shadow:inset 0px 0px 6px 0px #ffffff29 ; 
 }
 
 .odd2{
@@ -381,7 +381,7 @@ span{
 }
  @keyframes color {
     to{
-        background-color: #211b2525;
+        background-color: #ff7b0118;
     }
 } 
 @keyframes turn-round {
@@ -632,4 +632,7 @@ span{
 }
 #blue-violet{
     background-color: #5900fd18;
+}
+#brawn{
+    background-color: #ff4b0018;
 }
