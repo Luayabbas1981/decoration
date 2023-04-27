@@ -370,7 +370,6 @@ function madMode1 (){
     }
         randomColorTwo()  
         setSecondMove ()
-        glass()
         evenDivs.map(item=> item.classList.add("even2"))
         oddDivs.map(item=> item.classList.add("odd2"))
         frame.classList.add("frame-mad-mode")
