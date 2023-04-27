@@ -118,7 +118,6 @@ function resetAll(){
 function setFirstForm(){
     resetAll()
     if(frame.classList.contains("frame-center")){
-
         addControlsInfos.textContent="/ Format1"
     }
 
