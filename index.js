@@ -108,7 +108,7 @@ inputColorTwo.addEventListener("change", function(){
 })
 /* Reset ( form / move ) function */
 function resetAll(){
-    evenDivs.map(item=>item.setAttribute("id","black"))
+    evenDivs.map(item=>item.setAttribute("id","blue-violet"))
     oddDivs.map(item=>item.setAttribute("id","white"))
     inputColorOne.value= "#000000"
     inputColorTwo.value="#0000000"
