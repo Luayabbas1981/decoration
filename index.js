@@ -41,7 +41,7 @@ addControlsInfos.textContent="/ Format1"
 /* Colors buttons functions */
     
 inputColorOne.addEventListener("change", function(){
-    evenDivs.map(item=>item.removeAttribute("id","black"))
+    evenDivs.map(item=>item.removeAttribute("id","blue-violet"))
     randomBtn2.classList.remove("r2-c")
    let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
