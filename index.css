@@ -364,8 +364,19 @@ span{
     color: white;
 }
 
-:disabled{
-    color: #6e6c6c;
+.attention{
+    display: none;
+}
+.show-attention{
+    display: block;
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    translate: -50%;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    
 }
 /* Keyframes section */
 
@@ -434,6 +445,11 @@ span{
         scale: 1 1;
     }
 }
+@keyframes opacity {
+    to{
+        opacity: 0;
+    }
+}
 /* Media section */
 
 
@@ -474,6 +490,10 @@ span{
     }
     .frame-magnifying{
         scale: 1.15;
+    }
+    .show-attention{
+        bottom: 13%;
+        font-size: 12px;
     }
 }
 @media(min-width:800px){
@@ -523,26 +543,31 @@ span{
     .frame-magnifying{
         scale: 1.5;
     }
+    .mads-sec{
+     
+        scale: 1.1;
+    }
 }
 @media(min-width:1200px){
     .infos-sec{
         position: absolute;
-        translate: 25vw 40px;
+        translate: 26vw 60px;
         scale: 1.35 ;
     
     }
    
     #up-arrow{ 
-        left: 30%; 
+        left: 33%; 
         font-size:30px ;   
     }
     #magnifying-plus,#magnifying-minus{
-        left: 70%;
+        left: 67%;
         font-size:30px ; 
     }
     .mads-sec{
-        right: 27%;
+        right: 30%;
         top: 8.5%;
+        scale: 1.2;
     }
     
 }

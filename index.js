@@ -30,6 +30,7 @@ const inputContainerOne = document.querySelector(".fc")
 const inputContainerTwo = document.querySelector(".sc")
 const inputColorOne = document.querySelector(".input-one")
 const inputColorTwo = document.querySelector(".input-two")
+const attention = document.querySelector(".attention")
 
 /* Initial values */
 
@@ -309,9 +310,18 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
      magnifyingMinus.classList.remove("f-screen")
      upArrow.classList.remove("f-screen")
  } 
+ 
  /* Show controls function */
 
  function showControls (){
+    if(frame.classList.contains("frame-mad-mode")){
+        attention.classList.add("show-attention")
+        setTimeout(() => {
+            attention.classList.remove("show-attention")
+            
+        }, 3000);
+        return
+    }
     controlsInfos.textContent=""
     addControlsInfos.textContent=""
     addControlsInfosTwo.textContent=""
@@ -370,8 +380,6 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
 /*  Mad mode function */
     
 function madMode1 (){ 
-    color3.disabled=true
-    color3.textContent="Disable"
     madsContainer.classList.remove("show-mads-container")
     fullScreen()
     if(frame.classList.contains("frame-center")){
@@ -383,23 +391,17 @@ function madMode1 (){
         evenDivs.map(item=> item.classList.add("even2"))
         oddDivs.map(item=> item.classList.add("odd2"))
         frame.classList.add("frame-mad-mode")
-        randomBtn1.disabled=true
-        randomBtn2.disabled=true
-        randomBtn1.textContent="Disable"
-        randomBtn2.textContent="Disable"
         madBtn.disabled = true;
         madBtn2.disabled = true;
-        tenBtn.disabled = true; 
-        tenBtn.textContent="Disable" 
         endMadBtn.style="z-index:1 ; color:#e21e1e"
-        color3.classList.toggle("color3")
+       
 }
 
 function madMode2 (){
     madMode1()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
-        controlsInfos.style="color:#fe3f03"
+        controlsInfos.style="color:#00ffe7"
     }
     madsContainer.classList.remove("show-mads-container")
     endMadBtn.style="z-index:-1 ; color:black"
