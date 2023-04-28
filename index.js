@@ -320,6 +320,10 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
     magnifyingPlus.classList.add("f-screen")
     magnifyingMinus.classList.add("f-screen")
     frame.classList.remove("frame-center")
+    if(frame.classList.contains("frame-mad-mode")){
+        inputContainerOne.classList.add("input-none")
+        inputContainerTwo.classList.add("input-none")
+    }
  }
 
  
@@ -365,8 +369,6 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
 /*  Mad mode function */
     
 function madMode1 (){ 
-    inputContainerOne.classList.toggle("input-none")
-    inputContainerTwo.classList.toggle("input-none")
     color3.disabled=true
     color3.textContent="Disable"
     madsContainer.classList.remove("show-mads-container")
