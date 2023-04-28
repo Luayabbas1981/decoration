@@ -310,7 +310,7 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
      magnifyingMinus.classList.remove("f-screen")
      upArrow.classList.remove("f-screen")
  } 
- 
+
  /* Show controls function */
 
  function showControls (){
@@ -318,6 +318,7 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
         attention.classList.add("show-attention")
         setTimeout(() => {
             attention.classList.remove("show-attention")
+            madsContainer.classList.add("show-mads-container")
             
         }, 3000);
         return
@@ -396,7 +397,6 @@ function madMode1 (){
         endMadBtn.style="z-index:1 ; color:#e21e1e"
        
 }
-
 function madMode2 (){
     madMode1()
     if(frame.classList.contains("frame-center")){
