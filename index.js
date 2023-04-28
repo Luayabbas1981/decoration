@@ -398,6 +398,7 @@ function madMode1 (){
        
 }
 function madMode2 (){
+    
     madMode1()
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
