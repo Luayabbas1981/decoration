@@ -217,7 +217,7 @@ body {
 }
 
 .input-none{
-    display: none;
+   visibility: hidden;
 }
 .add-infos{
     color: #e4e2e2;
@@ -245,7 +245,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: .5rem
+    row-gap: .5rem;
+    
     
 }
 

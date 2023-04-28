@@ -26,10 +26,13 @@ const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
 const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
+const inputContainerOne = document.querySelector(".fc")
+const inputContainerTwo = document.querySelector(".sc")
 const inputColorOne = document.querySelector(".input-one")
 const inputColorTwo = document.querySelector(".input-two")
 
 /* Initial values */
+
 oddDivs.map(item=>item.setAttribute("id","white"))
 evenDivs.map(item=>item.setAttribute("id","blue-violet"))
 evenDivs.map(item=> item.classList.add("even-animi"))
@@ -242,8 +245,8 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
     let interval
 
     function randomColorTwo (){
-        inputColorOne.classList.toggle("input-none")
-        inputColorTwo.classList.toggle("input-none")
+        inputContainerOne.classList.toggle("input-none")
+        inputContainerTwo.classList.toggle("input-none")
         randomBtn2.classList.toggle("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
@@ -362,8 +365,8 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
 /*  Mad mode function */
     
 function madMode1 (){ 
-    inputColorOne.classList.add("input-none")
-    inputColorTwo.classList.add("input-none")
+    inputContainerOne.classList.toggle("input-none")
+    inputContainerTwo.classList.toggle("input-none")
     color3.disabled=true
     color3.textContent="Disable"
     madsContainer.classList.remove("show-mads-container")
