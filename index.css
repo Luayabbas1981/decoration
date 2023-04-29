@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: "calculator";
+    src: url("../digital-7-font/Digital7Monoitalic-8xKz.ttf");
+  }
 body {
 
     height: 100vh;
@@ -252,7 +255,13 @@ body {
     
     
 }
-
+.fc >div , .sc>div{
+    height: 10px;
+    user-select: all;
+    font-family: "calculator";
+    font-size: 18px;
+    color: #03c9f4;
+}
 
 .color1,.color2{
     text-align: center;
@@ -260,8 +269,8 @@ body {
     height: 15px;
     padding: .5rem;
     font-size: 11px;
+    font-weight: bold;
     scale: 1.3 1;
-    background-color: #919090;
     color: #eee;
     border-radius: 1rem;
    

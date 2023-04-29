@@ -6,6 +6,8 @@ const controls = document.querySelector(".controls")
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
+const colorOneValue = document.querySelector(".color1-value")
+const colorTwoValue = document.querySelector(".color2-value")
 const inputContainerOne = document.querySelector(".fc")
 const inputContainerTwo = document.querySelector(".sc")
 const inputColorOne = document.querySelector(".input-one")
@@ -44,7 +46,8 @@ let secondColorArray= ["orange2","yellow","red","blue","darkorange","deepskyblue
 let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow", "silver","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","blue-violet","wevenDivste","hotpink","white","white","white","white"]
 
 /* Initial values */
-
+color1.textContent= "1st color"
+color2.textContent= "2nd color"
 oddDivs.map(item=>item.setAttribute("id","white"))
 evenDivs.map(item=>item.setAttribute("id","blue-violet"))
 evenDivs.map(item=> item.classList.add("even-animi"))
@@ -59,6 +62,7 @@ inputColorOne.addEventListener("change", function(){
     evenDivs.map(item=>item.removeAttribute("id","blue-violet"))
     randomBtn2.classList.remove("r2-c")
    let  chosenColorOne = inputColorOne.value + 18
+        colorOneValue.textContent= chosenColorOne 
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
             item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form: ${firstForm}`)
@@ -93,6 +97,7 @@ inputColorTwo.addEventListener("change", function(){
     oddDivs.map(item=>item.removeAttribute("id","white"))
     randomBtn2.classList.remove("r2-c")
     let chosenColorTwo = inputColorTwo.value + 18
+    colorTwoValue.textContent= chosenColorTwo
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
             item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:${firstForm}`)
@@ -130,7 +135,10 @@ function resetAll(){
     inputColorTwo.value="#111111"
     color1.style="color:#eee"
     color2.style="color:#eee"
-    
+    color1.textContent= "1st color"
+    color2.textContent= "2nd color"
+    colorOneValue.textContent=""
+    colorTwoValue.textContent=""
 }
 /* Rose format */
 function setFirstForm(){
@@ -219,6 +227,8 @@ function setSecondMove (){
         inputContainerTwo.classList.remove("input-none")
         inputColorOne.value= "#111111"
         inputColorTwo.value="#111111"
+        colorOneValue.textContent=""
+        colorTwoValue.textContent=""
         randomBtn2.classList.remove("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
@@ -251,11 +261,15 @@ function setSecondMove (){
     function randomColorTwo (){
         inputContainerOne.classList.toggle("input-none")
         inputContainerTwo.classList.toggle("input-none")
+        inputColorOne.value= "#111111"
+        inputColorTwo.value="#111111"
+        color1.style="color:#eee"
+        color2.style="color:#eee"
+        color1.textContent= "1st color"
+        color2.textContent= "2nd color"
+        colorOneValue.textContent=""
+        colorTwoValue.textContent=""
         randomBtn2.classList.toggle("r2-c")
-        color1.style="background-color:black"
-        color2.style="background-color:black"
-        color1.textContent="1st color"
-        color2.textContent="2nd color"
         color3.classList.remove("color3")
     evenDivs.map((item)=>{  
         return item.classList.remove("even-animi")
