@@ -175,13 +175,10 @@ function setFirstMove (){
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
-        i=1
         divsArray.map((item,i)=>item.style=`--d:${i};--form: 30% 70% 70% 30% / 30% 30% 70% 70% ` )
        
     }else{
-        i=1
         divsArray.map((item,i)=>item.style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% ` )
-      
     }
     }
 
@@ -192,14 +189,11 @@ function setSecondMove (){
     tenBtn.style="color:#6e6c6c"
     if(( frame.classList.contains("first-form") )){
         divsArray.map((item,i)=>{
-           
-            
             item.style=`--d:${i / 2};--form:30% 70% 70% 30% / 30% 30% 70% 70% ` 
         })
     }
         if(( frame.classList.contains("second-form"))){
-            divsArray.map((item,i)=>{
-                
+            divsArray.map((item,i)=>{    
                 item.style=`--d:${i /2};--form:50% 50% 50% 50% / 35% 36% 65% 65%` 
             })
     }
