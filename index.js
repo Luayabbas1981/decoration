@@ -115,10 +115,11 @@ inputColorTwo.addEventListener("change", function(){
 function resetAll(){
     evenDivs.map(item=>item.setAttribute("id","blue-violet"))
     oddDivs.map(item=>item.setAttribute("id","white"))
-    inputColorOne.value= "#000000"
-    inputColorTwo.value="#0000000"
+    inputColorOne.value= "#111111"
+    inputColorTwo.value="#111111"
     color1.style="color:#eee"
     color2.style="color:#eee"
+    
 }
 /* Rose format */
 function setFirstForm(){
@@ -174,13 +175,13 @@ function setFirstMove (){
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
-        for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form: 30% 70% 70% 30% / 30% 30% 70% 70% `   
-        }  
+        i=1
+        divsArray.map((item,i)=>item.style=`--d:${i};--form: 30% 70% 70% 30% / 30% 30% 70% 70% ` )
+       
     }else{
-        for(i=0;i<=divsArray.length;++i){ 
-            divsArray[i].style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% `   
-        }  
+        i=1
+        divsArray.map((item,i)=>item.style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% ` )
+      
     }
     }
 
@@ -190,20 +191,20 @@ function setSecondMove (){
     twentyBtn.style="color:#0079b3"
     tenBtn.style="color:#6e6c6c"
     if(( frame.classList.contains("first-form") )){
-        let x= 0
-        for(i=0;i<divsArray.length;++i){ 
-            x+= .5
-            divsArray[i].style=`--d:${x};--form:30% 70% 70% 30% / 30% 30% 70% 70% `  
-        } 
-    } if(( frame.classList.contains("second-form"))){
-        let x= 0
-    for(i=0;i<divsArray.length;++i){ 
-        x+= .5
-        divsArray[i].style=`--d:${x};--form:50% 50% 50% 50% / 35% 36% 65% 65% `  
+        divsArray.map((item,i)=>{
+           
+            
+            item.style=`--d:${i / 2};--form:30% 70% 70% 30% / 30% 30% 70% 70% ` 
+        })
     }
+        if(( frame.classList.contains("second-form"))){
+            divsArray.map((item,i)=>{
+                
+                item.style=`--d:${i /2};--form:50% 50% 50% 50% / 35% 36% 65% 65%` 
+            })
     }
-}
 
+}
 /* Random 1 and 2 buttons */
 
 let firstColorArray= [ "orange2","cyan","blue-violet","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","silver", "turquoise","yellowgreen","chartreuse","tomato","white","blue-violet","white","white","white"]
@@ -215,8 +216,8 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
 /* Random1 function */
 
     function randomColorOne (){
-        inputColorOne.value= "#000000"
-        inputColorTwo.value="#0000000"
+        inputColorOne.value= "#111111"
+        inputColorTwo.value="#1111110"
         randomBtn2.classList.remove("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
