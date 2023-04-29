@@ -211,6 +211,8 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
 /* Random1 function */
 
     function randomColorOne (){
+        inputContainerOne.classList.remove("input-none")
+        inputContainerTwo.classList.remove("input-none")
         inputColorOne.value= "#111111"
         inputColorTwo.value="#1111110"
         randomBtn2.classList.remove("r2-c")
