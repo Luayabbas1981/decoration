@@ -62,7 +62,8 @@ inputColorOne.addEventListener("change", function(){
     evenDivs.map(item=>item.removeAttribute("id","blue-violet"))
     randomBtn2.classList.remove("r2-c")
    let  chosenColorOne = inputColorOne.value  + 18
-        colorOneValue.textContent= inputColorOne.value.toUpperCase() 
+   
+        colorOneValue.textContent= chosenColorOne.toUpperCase() 
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
             item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form: ${firstForm}`)
@@ -97,7 +98,7 @@ inputColorTwo.addEventListener("change", function(){
     oddDivs.map(item=>item.removeAttribute("id","white"))
     randomBtn2.classList.remove("r2-c")
     let chosenColorTwo = inputColorTwo.value + 18
-    colorTwoValue.textContent= inputColorOne.value.toUpperCase()
+    colorTwoValue.textContent= chosenColorTwo.toUpperCase()
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
             item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:${firstForm}`)
