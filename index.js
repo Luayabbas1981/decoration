@@ -61,8 +61,8 @@ addControlsInfos.textContent="/ Format1"
 inputColorOne.addEventListener("change", function(){
     evenDivs.map(item=>item.removeAttribute("id","blue-violet"))
     randomBtn2.classList.remove("r2-c")
-   let  chosenColorOne = inputColorOne.value + 18
-        colorOneValue.textContent= chosenColorOne.toUpperCase() 
+   let  chosenColorOne = inputColorOne.value  + 18
+        colorOneValue.textContent= inputColorOne.value.toUpperCase() 
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
             item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form: ${firstForm}`)
@@ -97,7 +97,7 @@ inputColorTwo.addEventListener("change", function(){
     oddDivs.map(item=>item.removeAttribute("id","white"))
     randomBtn2.classList.remove("r2-c")
     let chosenColorTwo = inputColorTwo.value + 18
-    colorTwoValue.textContent= chosenColorTwo.toUpperCase()
+    colorTwoValue.textContent= inputColorOne.value.toUpperCase()
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
             item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:${firstForm}`)
