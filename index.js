@@ -16,6 +16,7 @@ const infosSymbol = document.querySelector("#infos-symbol")
 const infosContainer = document.querySelector(".infos-container")
 const tenBtn = document.querySelector(".ten")
 const twentyBtn = document.querySelector(".twenty")
+const madSecArrow = document.querySelector(".mads-arrow >i")
 const madsContainer = document.querySelector(".mads-container")
 const randomBtn1 = document.querySelector(".r1")
 const randomBtn2 = document.querySelector(".r2")
@@ -311,11 +312,11 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
  function showControls (){
     if(frame.classList.contains("frame-mad-mode")){
         attention.classList.add("show-attention")
+        madSecArrow.classList.add("mads-arrows")
         setTimeout(() => {
             attention.classList.remove("show-attention")
-            madsContainer.classList.add("show-mads-container")
-            
-        }, 3000);
+            madSecArrow.classList.remove("mads-arrows")
+        }, 3500);
         return
     }
     controlsInfos.textContent=""

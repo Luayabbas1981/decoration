@@ -112,6 +112,20 @@ body {
     right: 5%;
     top: 4%;
 }
+.mads-arrows{
+    opacity: .6;
+    color: #fffdfd;
+    animation: attention-arrow .8s linear infinite;
+    
+}
+@keyframes attention-arrow {
+    to{
+        opacity: 1;
+       transform: translateY(35px) scale(1.6);
+
+    }
+
+}
 .mads-sec button {
     width: 60px;
     padding: .16rem;
@@ -378,6 +392,7 @@ span{
     font-size: 18px;
     
 }
+
 /* Keyframes section */
 
 @keyframes spin {
@@ -445,11 +460,7 @@ span{
         scale: 1 1;
     }
 }
-@keyframes opacity {
-    to{
-        opacity: 0;
-    }
-}
+
 /* Media section */
 
 
@@ -536,6 +547,7 @@ span{
     .mads-sec{
         right: 15%;
         top: 8.5%;
+        
     }
     .frame-center{
       scale: 1.3;
