@@ -118,14 +118,7 @@ body {
     animation: attention-arrow .8s linear infinite;
     
 }
-@keyframes attention-arrow {
-    to{
-        opacity: 1;
-       transform: translateY(35px) scale(1.6);
 
-    }
-
-}
 .mads-sec button {
     width: 60px;
     padding: .16rem;
@@ -459,6 +452,14 @@ span{
     to{
         scale: 1 1;
     }
+}
+@keyframes attention-arrow {
+    to{
+        opacity: 1;
+       transform: translateY(35px) scale(1.6);
+
+    }
+
 }
 
 /* Media section */
