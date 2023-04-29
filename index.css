@@ -153,12 +153,8 @@ body {
     position: absolute;
     top: 10px;
 }
-.form-color{
+.form-color, :disabled{
     color: #060bff;
-}
-.form-color:disabled{
-    color: #060bff;
-
 }
 .form2{
     position: absolute;
