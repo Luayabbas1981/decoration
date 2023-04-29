@@ -279,6 +279,7 @@ body {
     color: #f44336;
 }
 .btn-container{
+    margin-top: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
