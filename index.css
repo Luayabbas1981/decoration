@@ -114,7 +114,7 @@ body {
 }
 .mads-arrows{
     opacity: .6;
-    color: #ff8000;
+    color: gold;
     animation: attention-arrow .8s linear infinite;
     
 }
