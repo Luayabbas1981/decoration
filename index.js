@@ -2,10 +2,18 @@ const divsArray =  Array.from(document.querySelectorAll(".frame > .odd ,.even"))
 const oddDivs = Array.from(document.querySelectorAll(".odd"))
 const evenDivs = Array.from(document.querySelectorAll(".even"))
 const frame = document.querySelector(".frame")
+const controls = document.querySelector(".controls")
 const color1 = document.querySelector(".color1")
 const color2 = document.querySelector(".color2")
 const color3 = document.querySelector(".color3")
-const controls = document.querySelector(".controls")
+const inputContainerOne = document.querySelector(".fc")
+const inputContainerTwo = document.querySelector(".sc")
+const inputColorOne = document.querySelector(".input-one")
+const inputColorTwo = document.querySelector(".input-two")
+const tenBtn = document.querySelector(".ten")
+const twentyBtn = document.querySelector(".twenty")
+const randomBtn1 = document.querySelector(".r1")
+const randomBtn2 = document.querySelector(".r2")
 const upArrow = document.querySelector("#up-arrow")
 const controlsInfos = document.querySelector(".controls-infos")
 const addControlsInfos = document.querySelector(".add-infos")
@@ -14,24 +22,26 @@ const magnifyingPlus = document.querySelector("#magnifying-plus")
 const magnifyingMinus = document.querySelector("#magnifying-minus")
 const infosSymbol = document.querySelector("#infos-symbol")
 const infosContainer = document.querySelector(".infos-container")
-const tenBtn = document.querySelector(".ten")
-const twentyBtn = document.querySelector(".twenty")
 const madSecArrow = document.querySelector(".mads-arrow >i")
 const madsContainer = document.querySelector(".mads-container")
-const randomBtn1 = document.querySelector(".r1")
-const randomBtn2 = document.querySelector(".r2")
-const firstForm = document.querySelector(".form1")
-const secondForm = document.querySelector(".form2")
+const firstFormBtn = document.querySelector(".form1")
+const secondFormBtn = document.querySelector(".form2")
 const madBtn = document.querySelector(".mad1")
 const endMadBtn = document.querySelector(".stop-mad1")
 const madBtn2 = document.querySelector(".mad2")
 const endMadBtn2 = document.querySelector(".stop-mad2")
 const invert = document.querySelector(".invert")
-const inputContainerOne = document.querySelector(".fc")
-const inputContainerTwo = document.querySelector(".sc")
-const inputColorOne = document.querySelector(".input-one")
-const inputColorTwo = document.querySelector(".input-two")
 const attention = document.querySelector(".attention")
+/* Project variables */
+
+const firstForm = "30% 70% 70% 30% / 30% 30% 70% 70%"
+const secondForm = "50% 50% 50% 50% / 35% 36% 65% 65% "
+/* Project arrays */
+let firstColorArray= [ "orange2","cyan","blue-violet","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","silver", "turquoise","yellowgreen","chartreuse","tomato","white","blue-violet","white","white","white"]
+
+let secondColorArray= ["orange2","yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","silver" ,"hotpink","white","white","white","white"]
+
+let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow", "silver","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","blue-violet","wevenDivste","hotpink","white","white","white","white"]
 
 /* Initial values */
 
@@ -51,23 +61,23 @@ inputColorOne.addEventListener("change", function(){
    let  chosenColorOne = inputColorOne.value + 18
     if(frame.classList.contains("first-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form: ${firstForm}`)
          })
     }
     
     if(frame.classList.contains("first-form") && frame.classList.contains("second-move")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:${firstForm} `)
          })
     }
     if(frame.classList.contains("second-form")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+            item.setAttribute("style",` --d:${i *2};--c:${chosenColorOne};--form:${secondForm}`)
          })
     }
     if(frame.classList.contains("second-form") && frame.classList.contains("second-move")){
         evenDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+            item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:${secondForm} `)
          })
     }
     color1.style=`color:${chosenColorOne.slice(0,7)}`
@@ -85,23 +95,23 @@ inputColorTwo.addEventListener("change", function(){
     let chosenColorTwo = inputColorTwo.value + 18
     if(frame.classList.contains("first-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:${firstForm}`)
          })
     }
     if(frame.classList.contains("first-form") && frame.classList.contains("second-move")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:${firstForm} `)
          })
     }
     
     if(frame.classList.contains("second-form")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+            item.setAttribute("style",` --d:${(i*2)+1};--c:${chosenColorTwo};--form:${secondForm}`)
          })
     }
     if(frame.classList.contains("second-form")&& frame.classList.contains("second-move")){
         oddDivs.map((item,i)=>{
-            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+            item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:${secondForm}`)
          })
     }
     color2.style=`color:${chosenColorTwo.slice(0,7)}`
@@ -124,7 +134,7 @@ function resetAll(){
 }
 /* Rose format */
 function setFirstForm(){
-    secondForm.disabled= false
+    secondFormBtn.disabled= false
     resetAll()
     if(frame.classList.contains("frame-center")){
         addControlsInfos.textContent="/ Format1"
@@ -133,16 +143,16 @@ function setFirstForm(){
 madsContainer.classList.toggle("show-mads-container")
 frame.classList.remove("second-form")
 frame.classList.add("first-form")
-firstForm.classList.toggle("form-color")
-secondForm.classList.remove("form-color")
+firstFormBtn.classList.toggle("form-color")
+secondFormBtn.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",` --d:${i + 1};--form:30% 70% 70% 30% / 30% 30% 70% 70% `)
+    item.setAttribute("style",` --d:${i + 1};--form:${firstForm} `)
 })
-firstForm.disabled= true
+firstFormBtn.disabled= true
 }
 
 function setSecondForm (){
-    firstForm.disabled= false
+    firstFormBtn.disabled= false
     resetAll()
     if(frame.classList.contains("frame-center")){
 
@@ -151,12 +161,12 @@ function setSecondForm (){
 madsContainer.classList.toggle("show-mads-container")
 frame.classList.remove("first-form")
 frame.classList.add("second-form")
-secondForm.classList.toggle("form-color")
-firstForm.classList.remove("form-color")
+secondFormBtn.classList.toggle("form-color")
+firstFormBtn.classList.remove("form-color")
 divsArray.map((item,i)=>{
-    item.setAttribute("style",`--d:${i + 1};--form:50% 50% 50% 50% / 35% 36% 65% 65% `)
+    item.setAttribute("style",`--d:${i + 1};--form:${secondForm} `)
 })
-secondForm.disabled= true
+secondFormBtn.disabled= true
 }
 
 
@@ -176,10 +186,10 @@ function setFirstMove (){
     tenBtn.style="color:#0079b3"
     twentyBtn.style="color:#6e6c6c"
     if(frame.classList.contains("first-form")){
-        divsArray.map((item,i)=>item.style=`--d:${i};--form: 30% 70% 70% 30% / 30% 30% 70% 70% ` )
+        divsArray.map((item,i)=>item.style=`--d:${i};--form: ${firstForm} ` )
        
     }else{
-        divsArray.map((item,i)=>item.style=`--d:${i};--form:50% 50% 50% 50% / 35% 36% 65% 65% ` )
+        divsArray.map((item,i)=>item.style=`--d:${i};--form:${secondForm} ` )
     }
     }
 
@@ -190,23 +200,17 @@ function setSecondMove (){
     tenBtn.style="color:#6e6c6c"
     if(( frame.classList.contains("first-form") )){
         divsArray.map((item,i)=>{
-            item.style=`--d:${i / 2};--form:30% 70% 70% 30% / 30% 30% 70% 70% ` 
+            item.style=`--d:${i / 2};--form:${firstForm}` 
         })
     }
         if(( frame.classList.contains("second-form"))){
             divsArray.map((item,i)=>{    
-                item.style=`--d:${i /2};--form:50% 50% 50% 50% / 35% 36% 65% 65%` 
+                item.style=`--d:${i /2};--form:${secondForm}` 
             })
     }
 
 }
 /* Random 1 and 2 buttons */
-
-let firstColorArray= [ "orange2","cyan","blue-violet","lightblue","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","silver", "turquoise","yellowgreen","chartreuse","tomato","white","blue-violet","white","white","white"]
-
-let secondColorArray= ["orange2","yellow","red","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","silver" ,"hotpink","white","white","white","white"]
-
-let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalmon","orcevenDivsd","lime","aquamarine","lawngreen","turquoise","yellowgreen","chartreuse","tomato","white","white","yellow", "silver","red","wevenDivste","blue","darkorange","deepskyblue","gold","chocolate","magenta","violet","blue-violet","wevenDivste","hotpink","white","white","white","white"]
 
 /* Random1 function */
 
@@ -214,7 +218,7 @@ let colorfulArr = ["orange2","cyan","lightblue","blue-violet","coral","lightsalm
         inputContainerOne.classList.remove("input-none")
         inputContainerTwo.classList.remove("input-none")
         inputColorOne.value= "#111111"
-        inputColorTwo.value="#1111110"
+        inputColorTwo.value="#111111"
         randomBtn2.classList.remove("r2-c")
         color1.style="background-color:black"
         color2.style="background-color:black"
