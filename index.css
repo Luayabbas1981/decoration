@@ -513,6 +513,9 @@ span{
         bottom: 13%;
         font-size: 12px;
     }
+    .fc >div , .sc>div{
+        font-size: 16px;
+    }
 }
 @media(min-width:800px){
     .frame{
