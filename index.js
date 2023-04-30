@@ -413,7 +413,7 @@ function madMode1 (){
         madBtn.disabled = true;
         madBtn2.disabled = true;
         madBtn2.style="color:black";
-        endMadBtn.style="z-index:1 ; color:#e21e1e"
+        endMadBtn.style="z-index:1 ; color:#060bff"
        
 }
 function madMode2 (){
@@ -427,7 +427,7 @@ function madMode2 (){
     }
     madsContainer.classList.remove("show-mads-container")
     endMadBtn.style="z-index:-1 ; color:black"
-    endMadBtn2.style="z-index:1 ; color:#e21e1e"
+    endMadBtn2.style="z-index:1 ; color:#060bff"
     secondInterval= setInterval(() => {   
         colorfulRose ()
     }, 1500);
