@@ -56,6 +56,32 @@ randomBtn2.classList.add("r-id")
 controlsInfos.textContent="3rd mode on"
 addControlsInfos.textContent="/ Format1"
 
+/* Info bar functions */
+
+function showInfos (){
+
+    infosSymbol.classList.remove(".infos-symbol2")
+    if(!infosContainer.classList.contains("show-infos")){
+
+        infosContainer.classList.add("show-infos")
+        infosContainer.classList.remove("hide-infos")
+    } else{
+        infosContainer.classList.remove("show-infos")
+        infosContainer.classList.add("hide-infos")
+    }
+   
+ }
+ function infosSymbolAlert (){
+    if(infosContainer.classList.contains("show-infos")){
+
+        infosSymbol.classList.remove("infos-symbol")
+        setTimeout(() => {
+            
+            infosSymbol.classList.add("infos-symbol")
+        }, 1);
+    }
+ }
+ 
 /* Colors buttons functions */
     
 inputColorOne.addEventListener("change", function(){
@@ -356,31 +382,6 @@ function setSecondMove (){
  }
 
  
- /* Info bar functions */
-
- function showInfos (){
-
-    infosSymbol.classList.remove(".infos-symbol2")
-    if(!infosContainer.classList.contains("show-infos")){
-
-        infosContainer.classList.add("show-infos")
-        infosContainer.classList.remove("hide-infos")
-    } else{
-        infosContainer.classList.remove("show-infos")
-        infosContainer.classList.add("hide-infos")
-    }
-   
- }
- function infosSymbolAlert (){
-    if(infosContainer.classList.contains("show-infos")){
-
-        infosSymbol.classList.remove("infos-symbol")
-        setTimeout(() => {
-            
-            infosSymbol.classList.add("infos-symbol")
-        }, 1);
-    }
- }
  
  /* Magnifying function */
 
@@ -411,12 +412,15 @@ function madMode1 (){
         frame.classList.add("frame-mad-mode")
         madBtn.disabled = true;
         madBtn2.disabled = true;
+        madBtn2.style="color:black";
         endMadBtn.style="z-index:1 ; color:#e21e1e"
        
 }
 function madMode2 (){
     
     madMode1()
+    madBtn.style="color:black";
+
     if(frame.classList.contains("frame-center")){
         controlsInfos.textContent= "Mad2 mode on"
         controlsInfos.style="color:#00ffe7"
