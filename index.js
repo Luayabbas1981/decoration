@@ -85,7 +85,7 @@ inputColorOne.addEventListener("change", function(){
             item.setAttribute("style",` --d:${i +1};--c:${chosenColorOne};--form:${secondForm} `)
          })
     }
-    color1.style=`color:${chosenColorOne.slice(0,7)}`
+   
      if(interval){
      randomBtn2.classList.add("r-id")
      clearInterval(interval)
@@ -120,7 +120,7 @@ inputColorTwo.addEventListener("change", function(){
             item.setAttribute("style",` --d:${i +.5};--c:${chosenColorTwo};--form:${secondForm}`)
          })
     }
-    color2.style=`color:${chosenColorTwo.slice(0,7)}`
+    
      if(interval){
      randomBtn2.classList.add("r-id")
      clearInterval(interval)
