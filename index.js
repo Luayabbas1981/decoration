@@ -475,6 +475,7 @@ function invertMode (){
         invert.classList.toggle("invert-color")
     }
 }
+
 /* Reset button function */
 function resetApp(){
     location.reload()
